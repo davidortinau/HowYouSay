@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Forms"
+    x:Class="HowYouSay.Pages.HomeViewPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="MenuButton" Order="Primary" Icon="icon_menu.png" Priority="0" Command="{Binding NavToMenuCommand}" />
+        <ToolbarItem Name="AddButton" Order="Primary" Text="Add" Priority="0" Command="{Binding NavToAddCommand}" />
+        <ToolbarItem Name="FullListTab" Order="Secondary" Text="{local:Translate FullListLabel}" Priority="0" Command="{Binding ToggleCommand}" CommandParameter="full" />
+        <ToolbarItem Name="BookbarksTab" Order="Secondary" Icon="icon_bookmark.png" Priority="1" Command="{Binding ToggleCommand}" CommandParameter="bookmarked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+            <ListView ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Title}" Detail="{Binding Metadata.Date, StringFormat='{0:dddd, MMMM d yyyy}'}">
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Delete" IsDestructive="true" 
+                                          Command="{Binding BindingContext.DeleteEntryCommand, Source={x:Reference EntriesListView}" 
+                                          CommandParameter="{Binding .}" />
+                            </TextCell.ContextActions>
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

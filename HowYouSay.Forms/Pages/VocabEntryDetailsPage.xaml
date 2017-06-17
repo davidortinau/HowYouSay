@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Forms"
+	x:Class="HowYouSay.Pages.VocabEntryDetailsPage">
+	<StackLayout>
+		<Label Text="{local:Translate EntryPageTitle}" XAlign="Center" />
+		<Entry Placeholder="{local:Translate EntryInputPlaceholder}" HorizontalTextAlignment="Center"/>
+		<StackLayout>
+			<Label Text="{local:Translate TranslationLabel}" XAlign="Center" />
+			<Entry Placeholder="{local:Translate TranslationInputPlaceholder}" HorizontalTextAlignment="Center"/>
+
+			<Label Text="{local:Translate PhoneticLabel}" XAlign="Center" />
+			<Entry Placeholder="{local:Translate PhoneticInputPlaceholder}" HorizontalTextAlignment="Center"/>
+
+			<Label Text="{local:Translate LanguageLabel}" XAlign="Center" />
+			<Entry Placeholder="{local:Translate LanguageInputPlaceholder}" HorizontalTextAlignment="Center"/>
+
+			<Label Text="{local:Translate NotesLabel}" XAlign="Center" />
+			<Entry Placeholder="{local:Translate NotesInputPlaceholder}" HorizontalTextAlignment="Center"/>
+		</StackLayout>
+
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+			<Button Image="button_bookmark.png"/>
+			
+			<Button Image="button_record_mini.png"/>
+			
+		</StackLayout>
+
+	</StackLayout>
+</ContentPage>
