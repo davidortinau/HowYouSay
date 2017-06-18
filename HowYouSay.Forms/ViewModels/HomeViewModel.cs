@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -45,10 +46,10 @@ namespace HowYouSay.ViewModels
 		{
 			IsBusy = true;
 
-
 			_realm = Realm.GetInstance();
 
-            Entries = _realm.All<VocabEntry>();
+			Entries = _realm.All<VocabEntry>();
+
 			OnPropertyChanged(nameof(Entries));
 		}
 

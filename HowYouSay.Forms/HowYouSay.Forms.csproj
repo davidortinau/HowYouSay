@@ -49,6 +49,11 @@
     </Compile>
     <Compile Include="ViewModels\VocabEntryDetailsViewModel.cs" />
     <Compile Include="Pages\TranslateExtension.cs" />
+    <Compile Include="ViewModels\TranslationViewModel.cs" />
+    <Compile Include="Views\TranslationCardView.xaml.cs">
+      <DependentUpon>TranslationCardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\VocabEntryViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -56,6 +61,7 @@
     <Folder Include="Services\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Resx\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
@@ -67,6 +73,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\VocabEntryDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TranslationCardView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

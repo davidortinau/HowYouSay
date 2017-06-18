@@ -6,6 +6,7 @@ namespace HowYouSay.Models
     public class Translation : RealmObject
     {
         public string ID { get; set; }
+		public string Title { get; set; }
         public string Content { get; set; }
         public string Phonetic { get; set; }
         public string Language { get; set; }

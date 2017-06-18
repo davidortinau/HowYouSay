@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Forms"
+	x:Class="HowYouSay.Views.TranslationCardView">
+	<StackLayout>
+		<Label Text="{local:Translate TranslationLabel}" XAlign="Center" />
+		<Entry Placeholder="{local:Translate TranslationInputPlaceholder}" 
+			Text="{Binding Translation}"
+			HorizontalTextAlignment="Center"/>
+
+		<Label Text="{local:Translate PhoneticLabel}" XAlign="Center" />
+		<Entry Placeholder="{local:Translate PhoneticInputPlaceholder}" 
+			Text="{Binding Phonetic}"
+			HorizontalTextAlignment="Center"/>
+
+		<Label Text="{local:Translate LanguageLabel}" XAlign="Center" />
+		<Entry Placeholder="{local:Translate LanguageInputPlaceholder}" 
+			Text="{Binding Language}"
+			HorizontalTextAlignment="Center"/>
+
+		<Label Text="{local:Translate NotesLabel}" XAlign="Center" />
+		<Entry Placeholder="{local:Translate NotesInputPlaceholder}" 
+			Text="{Binding Notes}"
+			HorizontalTextAlignment="Center"/>
+	</StackLayout>
+</ViewCell>

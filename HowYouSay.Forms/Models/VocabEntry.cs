@@ -1,13 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using Realms;
+using System.Linq;
 
 namespace HowYouSay.Models
 {
     public class VocabEntry : RealmObject
     {
         // make this a default translation
-        public string Title { get; set; }
+        public string Title
+		{
+			get
+			{
+				if (Translations.Count > 0)
+				{
+					return Translations.First().Title;
+				}
+				else
+				{
+					return "Entry";
+				}
+			}
+		}
 
         public bool IsBookmarked { get; set; }
 
