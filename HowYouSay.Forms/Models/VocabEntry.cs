@@ -7,7 +7,7 @@ namespace HowYouSay.Models
 {
     public class VocabEntry : RealmObject
     {
-        // make this a default translation
+		[Ignored]
         public string Title
 		{
 			get
