@@ -4,7 +4,6 @@
     xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Forms"
     x:Class="HowYouSay.Pages.HomeViewPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="MenuButton" Order="Primary" Icon="icon_menu.png" Priority="0" Command="{Binding NavToMenuCommand}" />
         <ToolbarItem Name="AddButton" Order="Primary" Text="Add" Priority="0" Command="{Binding NavToAddCommand}" />
         <ToolbarItem Name="FullListTab" Order="Secondary" Text="{local:Translate FullListLabel}" Priority="0" Command="{Binding ToggleCommand}" CommandParameter="full" />
         <ToolbarItem Name="BookbarksTab" Order="Secondary" Icon="icon_bookmark.png" Priority="1" Command="{Binding ToggleCommand}" CommandParameter="bookmarked"/>

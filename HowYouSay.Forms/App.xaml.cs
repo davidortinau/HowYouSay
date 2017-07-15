@@ -27,7 +27,8 @@ namespace HowYouSay
                 DependencyService.Get<ILocalize>().SetLocale(ci); // set the Thread for locale-aware methods
             }
 
-            MainPage = new NavigationPage(new HomeViewPage());
+            //MainPage = new NavigationPage(new HomeViewPage());
+            MainPage = new MasterPage();
         }
 
         protected override void OnStart()
