@@ -21,7 +21,7 @@ namespace HowYouSay.ViewModels
 
 		public IList<TranslationViewModel> Translations { get; private set; }
 
-		public string Title
+		public new string Title
 		{
 			get
 			{

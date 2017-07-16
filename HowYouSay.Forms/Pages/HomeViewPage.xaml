@@ -2,16 +2,32 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Forms"
+    BackgroundColor="#11313F"
     x:Class="HowYouSay.Pages.HomeViewPage">
+    
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="AddButton" Order="Primary" Text="Add" Priority="0" Command="{Binding NavToAddCommand}" />
-        <ToolbarItem Name="FullListTab" Order="Secondary" Text="{local:Translate FullListLabel}" Priority="0" Command="{Binding ToggleCommand}" CommandParameter="full" />
-        <ToolbarItem Name="BookbarksTab" Order="Secondary" Icon="icon_bookmark.png" Priority="1" Command="{Binding ToggleCommand}" CommandParameter="bookmarked"/>
+        <ToolbarItem x:Name="AddButton" Order="Primary" Text="Add" Priority="0" Command="{Binding NavToAddCommand}" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
+            <StackLayout
+                HeightRequest="60"
+                Orientation="Horizontal">
+                <Button
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Fill"
+                    Text="{local:Translate FullListLabel}"
+                    Command="{Binding ToggleCommand}" CommandParameter="full" />
+                <Button
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="Fill"
+                    Image="icon_bookmark.png"
+                    Command="{Binding ToggleCommand}" CommandParameter="bookmarked" />
+            </StackLayout>
             <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
-            <ListView ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
+            <ListView 
+                BackgroundColor="#11313F"
+                ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Title}" >
@@ -24,6 +40,11 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button 
+                Command="{Binding NavToAddCommand}"
+                MinimumWidthRequest="40"
+                MinimumHeightRequest="40"
+                Image="button_add.png"/>
         </StackLayout>
 	</ContentPage.Content>
 </ContentPage>

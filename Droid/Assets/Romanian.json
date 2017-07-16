@@ -1,0 +1,1337 @@
+{
+  "vocab": [
+    {
+      "isBookmarked": false,
+      "id": "001",
+      "title": "How do you say _____?",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cum se spune ___ ?",
+          "id": "ROMANIAN-001-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "002",
+      "title": "What is your name?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cum vă cheamă?",
+          "id": "ROMANIAN-002-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-15"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cum te cheamă?",
+          "id": "ROMANIAN-002-002",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "003",
+      "title": "My name is _____.",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Numele meu este ___.",
+          "id": "ROMANIAN-003-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "004",
+      "title": "How are you?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Ce faceți?",
+          "id": "ROMANIAN-004-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Ce faci?",
+          "id": "ROMANIAN-004-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "005",
+      "title": "Where are you from?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "De unde sunteți?",
+          "id": "ROMANIAN-005-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "De unde eşti?",
+          "id": "ROMANIAN-005-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "006",
+      "title": "I am from _____.",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Sunt din ___",
+          "id": "ROMANIAN-006-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "007",
+      "title": "Do you speak English?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Vorbiți engleză?",
+          "id": "ROMANIAN-007-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Vorbeşti engleză?",
+          "id": "ROMANIAN-007-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "008",
+      "title": "I don't know.",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Nu ştiu",
+          "id": "ROMANIAN-008-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "009",
+      "title": "I don't understand you.",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Nu vă înțeleg",
+          "id": "ROMANIAN-009-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Nu te înțeleg",
+          "id": "ROMANIAN-009-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "010",
+      "title": "Do you understand me?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Ma înțelegeți?",
+          "id": "ROMANIAN-010-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Ma înțelegi?",
+          "id": "ROMANIAN-010-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "011",
+      "title": "Yes",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Da",
+          "id": "ROMANIAN-011-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "012",
+      "title": "No",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Nu",
+          "id": "ROMANIAN-012-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "013",
+      "title": "Maybe",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Poate",
+          "id": "ROMANIAN-013-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "014",
+      "title": "Thank you",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Mulțumesc",
+          "id": "ROMANIAN-014-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "015",
+      "title": "Please",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Vă rog",
+          "id": "ROMANIAN-015-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Te rog",
+          "id": "ROMANIAN-015-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "016",
+      "title": "Excuse me",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Scuzați-mă",
+          "id": "ROMANIAN-016-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Scuză-mă",
+          "id": "ROMANIAN-016-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "017",
+      "title": "How old are you?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Câti ani aveți?",
+          "id": "ROMANIAN-017-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Câti ani ai?",
+          "id": "ROMANIAN-017-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "018",
+      "title": "What time is it?",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cât este ceasul?",
+          "id": "ROMANIAN-018-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "019",
+      "title": "Do you have a job?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Munciți?",
+          "id": "ROMANIAN-019-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Munceşti? ",
+          "id": "ROMANIAN-019-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "020",
+      "title": "Where do you work?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Unde munciți?",
+          "id": "ROMANIAN-020-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Unde munceşti?",
+          "id": "ROMANIAN-020-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "021",
+      "title": "Do you go to school?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Mergeți la şcoală?",
+          "id": "ROMANIAN-021-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Mergi la şcoală?",
+          "id": "ROMANIAN-021-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "022",
+      "title": "Are you married?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Sunteți căsătorit / căsătorită? ",
+          "id": "ROMANIAN-022-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Esti căsătorit / căsătorită? ",
+          "id": "ROMANIAN-022-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "023",
+      "title": "Do you have children?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Aveți copii?",
+          "id": "ROMANIAN-023-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Ai copii?",
+          "id": "ROMANIAN-023-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "024",
+      "title": "What do you do for fun?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cum vă distrați?",
+          "id": "ROMANIAN-024-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cum te distrezi?",
+          "id": "ROMANIAN-024-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "025",
+      "title": "I like _____.",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Îmi place ___",
+          "id": "ROMANIAN-025-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "026",
+      "title": "Which soccer team do you support?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cu ce echipă de fotbal țineti?",
+          "id": "ROMANIAN-026-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cu ce echipă de fotbal ții?",
+          "id": "ROMANIAN-026-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "027",
+      "title": "Boy",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Băiat",
+          "id": "ROMANIAN-027-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "028",
+      "title": "Kid",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Copil",
+          "id": "ROMANIAN-028-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "029",
+      "title": "Watch out!",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Atenție!",
+          "id": "ROMANIAN-029-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "030",
+      "title": "Cab driver",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Șofer de taxi",
+          "id": "ROMANIAN-030-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "031",
+      "title": "Police Officer",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Polițist",
+          "id": "ROMANIAN-031-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "032",
+      "title": "Police Station",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Poliție",
+          "id": "ROMANIAN-032-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "033",
+      "title": "What do you want?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Ce vreți?",
+          "id": "ROMANIAN-033-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Ce vrei?",
+          "id": "ROMANIAN-033-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "034",
+      "title": "How much does this cost?",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cât costă?",
+          "id": "ROMANIAN-034-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "035",
+      "title": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Luni, Marți, Miercuri, Joi, Vineri, Sâmbată, Duminică",
+          "id": "ROMANIAN-035-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "036",
+      "title": "Exit",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Ieşire",
+          "id": "ROMANIAN-036-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "037",
+      "title": "Breakfast, Lunch, Dinner, Snack",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Mic dejun, prânz, cină, gustare",
+          "id": "ROMANIAN-037-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "038",
+      "title": "Tip",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Bacşiş",
+          "id": "ROMANIAN-038-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "039",
+      "title": "Bus",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Autobuz",
+          "id": "ROMANIAN-039-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "040",
+      "title": "Television",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Televizor",
+          "id": "ROMANIAN-040-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "041",
+      "title": "Stop!",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Stop!",
+          "id": "ROMANIAN-041-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "042",
+      "title": "Call a doctor!",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Chemați un doctor!",
+          "id": "ROMANIAN-042-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cheamă un doctor!",
+          "id": "ROMANIAN-042-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "043",
+      "title": "Call an ambulance!",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Chemați ambulanța!",
+          "id": "ROMANIAN-043-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cheamă ambulanța!",
+          "id": "ROMANIAN-043-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "044",
+      "title": "Call the police!",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Chemați poliția!",
+          "id": "ROMANIAN-044-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cheamă poliția!",
+          "id": "ROMANIAN-044-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "045",
+      "title": "The nearest hospital?",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cel mai apropiat spital?",
+          "id": "ROMANIAN-045-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "046",
+      "title": "Goodbye",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "La revedere",
+          "id": "ROMANIAN-046-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Pa",
+          "id": "ROMANIAN-046-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "047",
+      "title": "I'm just looking.",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Mă uit doar.",
+          "id": "ROMANIAN-047-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "048",
+      "title": "What time do you open/close?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "La ce ora deschideți/inchideți?",
+          "id": "ROMANIAN-048-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "La ce ora deschizi/inchizi?",
+          "id": "ROMANIAN-048-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "049",
+      "title": "Size",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Mărime",
+          "id": "ROMANIAN-049-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "050",
+      "title": "Clothes",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Haine",
+          "id": "ROMANIAN-050-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "051",
+      "title": "Post Office",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Poştă",
+          "id": "ROMANIAN-051-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "052",
+      "title": "I have a reservation.",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Am o rezervare.",
+          "id": "ROMANIAN-052-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "053",
+      "title": "Do you have any vacant rooms?",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Ai vreo cameră liberă?",
+          "id": "ROMANIAN-053-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "054",
+      "title": "Menu",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Meniu",
+          "id": "ROMANIAN-054-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "055",
+      "title": "Food: rare, medium, well done",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Mancare: rar, mediu, bine-făcut",
+          "id": "ROMANIAN-055-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "056",
+      "title": "The bill, please",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Nota, vă rog",
+          "id": "ROMANIAN-056-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Nota, vă rog",
+          "id": "ROMANIAN-056-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "ROMANIAN-057",
+      "title": "I can't speak Romanian well.",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Nu pot sa vorbesc romana bine.",
+          "id": "ROMANIAN-057-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "058",
+      "title": "Good morning, Good afternoon, Good evening/Good night",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Bună dimineata, Bună ziua, Bună seara / Noapte bună",
+          "id": "ROMANIAN-058-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "059",
+      "title": "I need your help.",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Am nevoie de ajutorul dumneavoastră",
+          "id": "ROMANIAN-059-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Am nevoie de ajutorul tău",
+          "id": "ROMANIAN-059-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "060",
+      "title": "Now, Later, Before",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Acum, mai târziu, înainte",
+          "id": "ROMANIAN-060-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "061",
+      "title": "Morning, Afternoon, Evening",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "dimineață, dupa-amiază, seară",
+          "id": "ROMANIAN-061-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "062",
+      "title": "Who, What, When, Why, Where?",
+      "translations": [
+        {
+          "notes": "Source: Alexandra Marin (@xmonodev) from Bucharest, Romania",
+          "content": "Cine, Ce, Când, De ce, Unde?",
+          "id": "ROMANIAN-062-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Romanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    }
+
+  ]
+}

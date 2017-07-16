@@ -1,0 +1,1399 @@
+{
+  "vocab": [
+    {
+      "isBookmarked": false,
+      "id": "001",
+      "title": "How do you say _____?",
+      "translations": [
+        {
+          "notes": "Albania. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Si I thoni?",
+          "id": "ALBANIAN-001-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-15"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Qysh I thuni?",
+          "id": "ALBANIAN-001-002",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "002",
+      "title": "What is your name?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Si e keni emrin?",
+          "id": "ALBANIAN-002-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-15"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Qysh e ki emrin?",
+          "id": "ALBANIAN-002-002",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "003",
+      "title": "My name is _____.",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Emri im është _____.",
+          "id": "ALBANIAN-003-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Emri jam osht _____.",
+          "id": "ALBANIAN-003-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "004",
+      "title": "How are you?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Si jeni?",
+          "id": "ALBANIAN-004-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Qysh je?",
+          "id": "ALBANIAN-004-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "005",
+      "title": "Where are you from?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Nga jeni?",
+          "id": "ALBANIAN-005-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Prej kahit je?",
+          "id": "ALBANIAN-005-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "006",
+      "title": "I am from _____.",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Un ë jam nga _____.",
+          "id": "ALBANIAN-006-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Unë jam prej _____.",
+          "id": "ALBANIAN-006-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "007",
+      "title": "Do you speak English?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A flisni Anglisht?",
+          "id": "ALBANIAN-007-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A fol Anglisht?",
+          "id": "ALBANIAN-007-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "008",
+      "title": "I don't know.",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Unë nuk e di.",
+          "id": "ALBANIAN-008-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Unë s’di.",
+          "id": "ALBANIAN-008-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "009",
+      "title": "I don't understand you.",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Unë nuk po kuptoj.",
+          "id": "ALBANIAN-009-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Unë s’po kuptoj.",
+          "id": "ALBANIAN-009-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "010",
+      "title": "Do you understand me?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A po më kuptoni?",
+          "id": "ALBANIAN-010-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A po m’kupton?",
+          "id": "ALBANIAN-010-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "011",
+      "title": "Yes",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Po",
+          "id": "ALBANIAN-011-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "012",
+      "title": "No",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Jo",
+          "id": "ALBANIAN-012-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "013",
+      "title": "Maybe",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Ndoshta",
+          "id": "ALBANIAN-013-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Nashta",
+          "id": "ALBANIAN-013-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "014",
+      "title": "Thank you",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Faleminderit",
+          "id": "ALBANIAN-014-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "015",
+      "title": "Please",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Të lutem.",
+          "id": "ALBANIAN-015-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "T'lutem.",
+          "id": "ALBANIAN-015-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "016",
+      "title": "Excuse me",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Më falni.",
+          "id": "ALBANIAN-016-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "M'fal.",
+          "id": "ALBANIAN-016-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "017",
+      "title": "How old are you?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Sa vjeç jeni?",
+          "id": "ALBANIAN-017-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Sa vjeç je?",
+          "id": "ALBANIAN-017-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "018",
+      "title": "What time is it?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Sa është ora?",
+          "id": "ALBANIAN-018-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Sa osht ora?",
+          "id": "ALBANIAN-018-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "019",
+      "title": "Do you have a job?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A punoni?",
+          "id": "ALBANIAN-019-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A punon?",
+          "id": "ALBANIAN-019-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "020",
+      "title": "Where do you work?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Ku punoni?",
+          "id": "ALBANIAN-020-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Ku punon?",
+          "id": "ALBANIAN-020-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "021",
+      "title": "Do you go to school?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A shkoni në shkollë?",
+          "id": "ALBANIAN-021-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A shkon në shkollë?",
+          "id": "ALBANIAN-021-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "022",
+      "title": "Are you married?",
+      "translations": [
+        {
+          "notes": "To a man. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A jeni I martuar?",
+          "id": "ALBANIAN-022-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "To a woman. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A jeni e martuar?",
+          "id": "ALBANIAN-022-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "To a man. Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A je I martun?",
+          "id": "ALBANIAN-022-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "To a woman. Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A je e martune?",
+          "id": "ALBANIAN-022-004",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "023",
+      "title": "Do you have children?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A keni fëmijë?",
+          "id": "ALBANIAN-023-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A ki fmi?",
+          "id": "ALBANIAN-023-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "024",
+      "title": "What do you do for fun?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Cfarë bëni për tu argëtuar?",
+          "id": "ALBANIAN-024-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Shka bon për mu argëtu?",
+          "id": "ALBANIAN-024-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "025",
+      "title": "I like _____.",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Më pëlqen _____.",
+          "id": "ALBANIAN-025-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "026",
+      "title": "Which soccer team do you support?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Cilin ekip futbolli e mbeshtetni?",
+          "id": "ALBANIAN-026-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Cilin ekip t’futbollit e perkrah?",
+          "id": "ALBANIAN-026-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "027",
+      "title": "Boy",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Djalë",
+          "id": "ALBANIAN-027-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "028",
+      "title": "Kid",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Fëmijë",
+          "id": "ALBANIAN-028-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Fmi",
+          "id": "ALBANIAN-028-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "029",
+      "title": "Watch out!",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Kujdes!",
+          "id": "ALBANIAN-029-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "030",
+      "title": "Cab driver",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Shofer taksie",
+          "id": "ALBANIAN-030-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Taksist",
+          "id": "ALBANIAN-030-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "031",
+      "title": "Police Officer",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Polici",
+          "id": "ALBANIAN-031-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "032",
+      "title": "Police Station",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Stacioni I policisë",
+          "id": "ALBANIAN-032-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "033",
+      "title": "What do you want?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Cfarë doni?",
+          "id": "ALBANIAN-033-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Shka po don?",
+          "id": "ALBANIAN-033-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "034",
+      "title": "How much does this cost?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Sa bën kjo?",
+          "id": "ALBANIAN-034-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Sa kushton kjo?",
+          "id": "ALBANIAN-034-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "035",
+      "title": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "E hëne, E Martë, E Mërkure, E Enjte, E Premte, E Shtunë, E Diele",
+          "id": "ALBANIAN-035-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "E hone,E marte, E merkure, E ejte, E premte, E shtune, E diele",
+          "id": "ALBANIAN-035-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "036",
+      "title": "Exit",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Dalja",
+          "id": "ALBANIAN-036-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "037",
+      "title": "Breakfast, Lunch, Dinner, Snack",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Mengjesi, Dreka, Darka",
+          "id": "ALBANIAN-037-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "038",
+      "title": "Tip",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Bakshish",
+          "id": "ALBANIAN-038-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "039",
+      "title": "Bus",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Autobus",
+          "id": "ALBANIAN-039-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "040",
+      "title": "Television",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Television",
+          "id": "ALBANIAN-040-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "041",
+      "title": "Stop!",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Stop / Ndalo!",
+          "id": "ALBANIAN-041-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Nalu!",
+          "id": "ALBANIAN-041-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "042",
+      "title": "Call a doctor!",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Thirre mjekun!",
+          "id": "ALBANIAN-042-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "043",
+      "title": "Call an ambulance!",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Thirre ambulance!",
+          "id": "ALBANIAN-043-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Thirre ndihmen e shpejtë!",
+          "id": "ALBANIAN-043-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "044",
+      "title": "Call the police!",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Thirre policinë!",
+          "id": "ALBANIAN-044-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "045",
+      "title": "The nearest hospital?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Spitali më I afërt?",
+          "id": "ALBANIAN-045-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "046",
+      "title": "Goodbye",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Mirupafshim",
+          "id": "ALBANIAN-046-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "047",
+      "title": "I'm just looking.",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Unë vetëm po shikoj.",
+          "id": "ALBANIAN-047-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Vetëm po kqyri.",
+          "id": "ALBANIAN-047-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "048",
+      "title": "What time do you open/close?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Në ora sa e hapni / mbyllni?",
+          "id": "ALBANIAN-048-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Në ora sa e çelni / mshelni?",
+          "id": "ALBANIAN-048-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "049",
+      "title": "Size",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Numri / madhësia",
+          "id": "ALBANIAN-049-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "050",
+      "title": "Clothes",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Rrobat",
+          "id": "ALBANIAN-050-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Teshat",
+          "id": "ALBANIAN-050-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "051",
+      "title": "Post Office",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Posta",
+          "id": "ALBANIAN-051-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "052",
+      "title": "I have a reservation.",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Kam rezervim",
+          "id": "ALBANIAN-052-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "053",
+      "title": "Do you have any vacant rooms?",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A keni ndonjë dhomë të lire?",
+          "id": "ALBANIAN-053-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "A keni naj dhomë t’lirë?",
+          "id": "ALBANIAN-053-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "054",
+      "title": "Menu",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Menjun",
+          "id": "ALBANIAN-054-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "055",
+      "title": "Food: rare, medium, well done",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Ushqimi: pak I pjekur, mesatarisht, I pjekur mirë",
+          "id": "ALBANIAN-055-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "056",
+      "title": "The bill, please",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Faturën të lutem",
+          "id": "ALBANIAN-056-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "ALBANIAN-057",
+      "title": "I can't speak Albanian well.",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Unë s’flas mire Shqip.",
+          "id": "ALBANIAN-057-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "058",
+      "title": "Good morning, Good afternoon, Good evening/Good night",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Mirëmëngjesi, Mirëdita, Mirëmbrëma.",
+          "id": "ALBANIAN-058-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Miremengjesi, Miredita, Mirmroma.",
+          "id": "ALBANIAN-058-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "059",
+      "title": "I need your help.",
+      "translations": [
+        {
+          "notes": "Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "Më duhet ndihma juaj.",
+          "id": "ALBANIAN-059-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Gjakova. Source: Valentina Petraj from Gjakova, Kosova",
+          "content": "M’duhet ndihma jote.",
+          "id": "ALBANIAN-059-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Albanian",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "vocab": [
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-001",
+      "title": "I have completed my task.",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "All done",
+          "id": "TODDLER-001-001",
+          "phonetic": "ah-dun",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-002",
+      "title": "Banana",
+      "translations": [
+        {
+		  "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "banana",
+          "id": "TODDLER-002-001",
+          "phonetic": "la la",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-003",
+      "title": "It is time to bathe.",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "Bath",
+          "id": "TODDLER-003-001",
+          "phonetic": "ba-TH",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-004",
+      "title": "I would like my pacifier.",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "binky!",
+          "id": "TODDLER-004-001",
+          "phonetic": "bink-ee",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-005",
+      "title": "Here is a feline.",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "cat",
+          "id": "TODDLER-005-001",
+          "phonetic": "kat",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        },
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "meow",
+          "id": "TODDLER-005-002",
+          "phonetic": "maow",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-006",
+      "title": "Father",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "daddy",
+          "id": "TODDLER-006-001",
+          "phonetic": "da-dee",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-007",
+      "title": "I would like a dairy product.",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "Milk",
+          "id": "TODDLER-007-001",
+          "phonetic": "mil-ka",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-008",
+      "title": "Grandmother (maternal)",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "Mimi",
+          "id": "TODDLER-008-001",
+          "phonetic": "me-me",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-009",
+      "title": "Mother",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "Mommy",
+          "id": "TODDLER-009-001",
+          "phonetic": "ma-me",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-010",
+      "title": "Stuffed animal",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "Mr. Monkey",
+          "id": "TODDLER-010-001",
+          "phonetic": "mista mun-kee",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-011",
+      "title": "It is time for bed.",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "Night-Night",
+          "id": "TODDLER-011-001",
+          "phonetic": "nite-nite",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-012",
+      "title": "May I?",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "Please",
+          "id": "TODDLER-012-001",
+          "phonetic": "peas",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-013",
+      "title": "I am stuck.",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "Stuck",
+          "id": "TODDLER-013-001",
+          "phonetic": "stuk",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-014",
+      "title": "I am grateful.",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "Thank you",
+          "id": "TODDLER-014-001",
+          "phonetic": "tank-yu",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TODDLER-015",
+      "title": "I need hydration.",
+      "translations": [
+        {
+          "notes": "Toddler. Source: Ben (@benjamminstl) and Jackson Bishop, St. Louis MO",
+          "content": "water",
+          "id": "TODDLER-015-001",
+          "phonetic": "wa-ta",
+          "createdAt": "2015-12-20",
+          "language": "Toddler English",
+          "modifiedAt": "2015-12-20"
+        }
+      ],
+      "modifiedAt": "2015-12-20",
+      "createdAt": "2015-12-20"
+    }
+  ]
+}

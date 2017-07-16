@@ -12,19 +12,44 @@ namespace HowYouSay.Pages
             InitializeComponent();
 
 			var masterPageItems = new List<MasterPageItem>();
-			masterPageItems.Add(new MasterPageItem
-			{
-				Title = "Languages",
+
+            // Settings
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Languages",
                 TargetType = typeof(LanguagesPage)
-			});
-			masterPageItems.Add(new MasterPageItem
-			{
-				Title = "Starter Phrases",
+            });
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Starter Phrases",
                 TargetType = typeof(StarterPhrasesPage)
+            });
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Export Data"
+            });
+
+            // About
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = $"Version 1.1" // TODO replace with dynamic
+            });
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Made With Xamarin.Forms"
+            });
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "About How You Say"
+
+             });
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Feedback & Support"
 			});
 			masterPageItems.Add(new MasterPageItem
 			{
-				Title = "Export Data"
+				Title = "Rate Us"
 			});
 
 			listView.ItemsSource = masterPageItems;

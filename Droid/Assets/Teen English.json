@@ -1,0 +1,202 @@
+{
+  "vocab": [
+    {
+      "isBookmarked": false,
+      "id": "TEEN-001",
+      "title": "Family",
+      "translations": [
+        {
+          "notes": "Call anyone this. Like \"dude\". Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Fam",
+          "id": "TEEN-001-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-002",
+      "title": "Fooled You!",
+      "translations": [
+        {
+          "notes": "Like \"psych\". Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Yeet",
+          "id": "TEEN-002-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-003",
+      "title": "Get Excited",
+      "translations": [
+        {
+          "notes": "Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Turnt Up",
+          "id": "TEEN-003-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-004",
+      "title": "Get together with friends",
+      "translations": [
+        {
+          "notes": "Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Squad up",
+          "id": "TEEN-004-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-005",
+      "title": "Got 100% on a test",
+      "translations": [
+        {
+          "notes": "Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Dropped a hundo",
+          "id": "TEEN-005-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-006",
+      "title": "I agree",
+      "translations": [
+        {
+          "notes": "From Twitter, but used in conversation. Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "RT",
+          "id": "TEEN-006-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-007",
+      "title": "Mad",
+      "translations": [
+        {
+          "notes": "Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Salty",
+          "id": "TEEN-007-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-008",
+      "title": "Rough",
+      "translations": [
+        {
+          "notes": "Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Rachet",
+          "id": "TEEN-008-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-009",
+      "title": "That's Cool",
+      "translations": [
+        {
+          "notes": "Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Lit",
+          "id": "TEEN-009-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-010",
+      "title": "Want it to happen",
+      "translations": [
+        {
+          "notes": "Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Ship (it)",
+          "id": "TEEN-010-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "TEEN-011",
+      "title": "White Girl",
+      "translations": [
+        {
+          "notes": "Source: Maddie & Declan Ortinau from St. Louis, Missouri",
+          "content": "Basic",
+          "id": "TEEN-011-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Teen English",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    }
+  ]
+}

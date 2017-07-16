@@ -1,0 +1,1426 @@
+{
+  "vocab": [
+    {
+      "isBookmarked": false,
+      "id": "001",
+      "title": "How do you say _____?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Como dizer___?",
+          "id": "PORTUGUESE-001-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-15"
+        },
+        {
+          "notes": "",
+          "content": "Como eu falo___?",
+          "id": "PORTUGUESE-001-002",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "002",
+      "title": "What is your name?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Qual é seu nome?",
+          "id": "PORTUGUESE-002-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-15"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Como você se chama?",
+          "id": "PORTUGUESE-002-002",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "003",
+      "title": "My name is _____.",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Meu nome é___?",
+          "id": "PORTUGUESE-003-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Eu me chamo?",
+          "id": "PORTUGUESE-003-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "004",
+      "title": "How are you?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Olá tudo bem?",
+          "id": "PORTUGUESE-004-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Como vai você?",
+          "id": "PORTUGUESE-004-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "005",
+      "title": "Where are you from?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "De onde você é?",
+          "id": "PORTUGUESE-005-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "006",
+      "title": "I am from _____.",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Eu sou de___?",
+          "id": "PORTUGUESE-006-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "007",
+      "title": "Do you speak English?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Você fala inglês?",
+          "id": "PORTUGUESE-007-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "008",
+      "title": "I don't know.",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Eu não sei.",
+          "id": "PORTUGUESE-008-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "009",
+      "title": "I don't understand you.",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Eu não consigo te entender.",
+          "id": "PORTUGUESE-009-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "010",
+      "title": "Do you understand me?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Você me entende?",
+          "id": "PORTUGUESE-010-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "011",
+      "title": "Yes",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Sim",
+          "id": "PORTUGUESE-011-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "012",
+      "title": "No",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Não",
+          "id": "PORTUGUESE-012-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "013",
+      "title": "Maybe",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Talvez",
+          "id": "PORTUGUESE-013-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "014",
+      "title": "Thank you",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Obrigado!",
+          "id": "PORTUGUESE-014-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "015",
+      "title": "Please",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Por favor",
+          "id": "PORTUGUESE-015-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Faz favor",
+          "id": "PORTUGUESE-015-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "016",
+      "title": "Excuse me",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Desculpe",
+          "id": "PORTUGUESE-016-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Pode me dar licença",
+          "id": "PORTUGUESE-016-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "da licença",
+          "id": "PORTUGUESE-016-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "com licença",
+          "id": "PORTUGUESE-016-004",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Com a sua licença",
+          "id": "PORTUGUESE-016-005",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "017",
+      "title": "How old are you?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Quantos anos você tem?",
+          "id": "PORTUGUESE-017-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "018",
+      "title": "What time is it?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Que horas são?",
+          "id": "PORTUGUESE-018-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "019",
+      "title": "Do you have a job?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Você trabalha?",
+          "id": "PORTUGUESE-019-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "020",
+      "title": "Where do you work?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Onde?",
+          "id": "PORTUGUESE-020-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "021",
+      "title": "Do you go to school?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Você vai para a escola?",
+          "id": "PORTUGUESE-021-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "022",
+      "title": "Are you married?",
+      "translations": [
+        {
+          "notes": "To a man. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Você é casado? ",
+          "id": "PORTUGUESE-022-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "To a woman. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Você é casada? ",
+          "id": "PORTUGUESE-022-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "023",
+      "title": "Do you have children?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Tem filhos?",
+          "id": "PORTUGUESE-023-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "024",
+      "title": "What do you do for fun?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "O que você faz para se divertir?",
+          "id": "PORTUGUESE-024-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "025",
+      "title": "I like _____.",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Eu gosto de _____.",
+          "id": "PORTUGUESE-025-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "026",
+      "title": "Which soccer team do you support?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Que time você torce?",
+          "id": "PORTUGUESE-026-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "027",
+      "title": "Boy",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Menino",
+          "id": "PORTUGUESE-027-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Piá",
+          "id": "PORTUGUESE-027-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Guri",
+          "id": "PORTUGUESE-027-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Garoto",
+          "id": "PORTUGUESE-027-004",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "028",
+      "title": "Kid",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Criança",
+          "id": "PORTUGUESE-028-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Piá",
+          "id": "PORTUGUESE-028-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Guri",
+          "id": "PORTUGUESE-028-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "029",
+      "title": "Watch out!",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Cuidado!",
+          "id": "PORTUGUESE-029-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "É perigoso!",
+          "id": "PORTUGUESE-029-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Perigo!",
+          "id": "PORTUGUESE-029-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "030",
+      "title": "Cab driver",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Taxista",
+          "id": "PORTUGUESE-030-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Motorista de taxi",
+          "id": "PORTUGUESE-030-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "031",
+      "title": "Police Officer",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Policial",
+          "id": "PORTUGUESE-031-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "032",
+      "title": "Police Station",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Delegacia",
+          "id": "PORTUGUESE-032-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "033",
+      "title": "What do you want?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "O que você quer?",
+          "id": "PORTUGUESE-033-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "034",
+      "title": "How much does this cost?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Quanto custa isso?",
+          "id": "PORTUGUESE-034-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "035",
+      "title": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Segunda-Feira, Terça-Feira, Quarta-Feira, Quinta-Feira, Sábado, Domingo",
+          "id": "PORTUGUESE-035-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "036",
+      "title": "Exit",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Saída",
+          "id": "PORTUGUESE-036-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "037",
+      "title": "Breakfast, Lunch, Dinner, Snack",
+      "translations": [
+        {
+          "notes": "Breakfast. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Café da Manhã",
+          "id": "PORTUGUESE-037-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Lunch. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Almoço",
+          "id": "PORTUGUESE-037-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Dinner. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Jantar",
+          "id": "PORTUGUESE-037-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Snack. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Lanche",
+          "id": "PORTUGUESE-037-004",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "038",
+      "title": "Tip",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Gorjeta",
+          "id": "PORTUGUESE-038-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "039",
+      "title": "Bus",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Ônibus",
+          "id": "PORTUGUESE-039-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "040",
+      "title": "Television",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Televisão",
+          "id": "PORTUGUESE-040-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "041",
+      "title": "Stop!",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Pare!",
+          "id": "PORTUGUESE-041-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "042",
+      "title": "Call a doctor!",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Chame um medico!",
+          "id": "PORTUGUESE-042-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "043",
+      "title": "Call an ambulance!",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Chame uma ambulância!",
+          "id": "PORTUGUESE-043-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "044",
+      "title": "Call the police!",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Chame a policia!",
+          "id": "PORTUGUESE-044-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "045",
+      "title": "The nearest hospital?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Onde fica os hospital mas próximo?",
+          "id": "PORTUGUESE-045-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "046",
+      "title": "Goodbye",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Tchau",
+          "id": "PORTUGUESE-046-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "047",
+      "title": "I'm just looking.",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Estou só a ver obrigado / Estou só olhando, obrigado!",
+          "id": "PORTUGUESE-047-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "048",
+      "title": "What time do you open/close?",
+      "translations": [
+        {
+          "notes": "Open. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "A que horas abre?",
+          "id": "PORTUGUESE-048-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Close. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "A que horas fecha?",
+          "id": "PORTUGUESE-048-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "049",
+      "title": "Size",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "tamanho",
+          "id": "PORTUGUESE-049-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "050",
+      "title": "Clothes",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "roupas",
+          "id": "PORTUGUESE-050-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "051",
+      "title": "Post Office",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Correios",
+          "id": "PORTUGUESE-051-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "052",
+      "title": "I have a reservation.",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Tenho um quarto reservado",
+          "id": "PORTUGUESE-052-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "053",
+      "title": "Do you have any vacant rooms?",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Tem um quarto livre?",
+          "id": "PORTUGUESE-053-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "054",
+      "title": "Menu",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "cardápio",
+          "id": "PORTUGUESE-054-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "055",
+      "title": "Food: rare, medium, well done",
+      "translations": [
+        {
+          "notes": "Rare. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "mal passado",
+          "id": "PORTUGUESE-055-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Medium. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "ao ponto",
+          "id": "PORTUGUESE-055-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Well Done. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "bem passado",
+          "id": "PORTUGUESE-055-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "056",
+      "title": "The bill, please",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "A conta faz favor",
+          "id": "PORTUGUESE-056-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "A conta por favor",
+          "id": "PORTUGUESE-056-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "PORTUGUESE-057",
+      "title": "I can't speak Portuguese well.",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Não falo bem português.",
+          "id": "PORTUGUESE-057-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "058",
+      "title": "Good morning, Good afternoon, Good evening/Good night",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Bom dia",
+          "id": "PORTUGUESE-058-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Boa tarde",
+          "id": "PORTUGUESE-058-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Boa noite",
+          "id": "PORTUGUESE-058-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "059",
+      "title": "I need your help.",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Preciso da sua ajuda",
+          "id": "PORTUGUESE-059-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Preciso da tua ajuda",
+          "id": "PORTUGUESE-059-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "060",
+      "title": "Now, Later, Before",
+      "translations": [
+        {
+          "notes": "Now. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "agora",
+          "id": "PORTUGUESE-060-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Later. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "depois",
+          "id": "PORTUGUESE-060-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Before. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "antes",
+          "id": "PORTUGUESE-060-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "061",
+      "title": "Morning, Afternoon, Evening",
+      "translations": [
+        {
+          "notes": "Morning. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "manhã",
+          "id": "PORTUGUESE-061-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Afternoon. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "tarde",
+          "id": "PORTUGUESE-061-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Evening. Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "noite",
+          "id": "PORTUGUESE-061-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "062",
+      "title": "Girl",
+      "translations": [
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Menina",
+          "id": "PORTUGUESE-062-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Guria",
+          "id": "PORTUGUESE-062-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: William S Rodriguez (@WilliamSRodz) from Curitiba / Paraná, Brazil, Paulo Ortins (@pauloortins) from Salvador/Bahia, Brazil",
+          "content": "Garota",
+          "id": "PORTUGUESE-062-003",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Portuguese",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    }
+  ]
+}

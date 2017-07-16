@@ -1,0 +1,607 @@
+{
+  "vocab": [
+    {
+      "isBookmarked": false,
+      "id": "001",
+      "title": "How do you say _____?",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wie sagt man _____?",
+          "id": "GERMAN-001-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "002",
+      "title": "What is your name?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wie heißen Sie?",
+          "id": "GERMAN-002-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wie heißt du?",
+          "id": "GERMAN-002-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "003",
+      "title": "My name is _____.",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Meine Name ist _____.",
+          "id": "GERMAN-003-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "004",
+      "title": "How are you?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wie geht es ihnen?",
+          "id": "GERMAN-004-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wie geht es dir?",
+          "id": "GERMAN-004-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "005",
+      "title": "Where are you from?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Woher kommen Sie?",
+          "id": "GERMAN-005-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Woher kommst du?",
+          "id": "GERMAN-005-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "006",
+      "title": "I am from _____.",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Ich komme aus _____.",
+          "id": "GERMAN-006-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "007",
+      "title": "Do you speak English?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Sprechen Sie Englisch?",
+          "id": "GERMAN-007-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Sprichst du Englisch?",
+          "id": "GERMAN-007-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "008",
+      "title": "I don't know.",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Ich weiß nicht.",
+          "id": "GERMAN-008-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "009",
+      "title": "I don't understand you.",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Ich verstehe Sie nicht.",
+          "id": "GERMAN-009-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Ich verstehe dich nicht.",
+          "id": "GERMAN-009-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "010",
+      "title": "Do you understand me?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Können Sie mich verstehen?",
+          "id": "GERMAN-010-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Kannst du mich verstehen?",
+          "id": "GERMAN-010-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "011",
+      "title": "Yes",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Ja",
+          "id": "GERMAN-011-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "012",
+      "title": "No",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Nein",
+          "id": "GERMAN-012-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "013",
+      "title": "Maybe",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Vielleicht",
+          "id": "GERMAN-013-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "014",
+      "title": "Thank you",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Danke",
+          "id": "GERMAN-014-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "015",
+      "title": "Please",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Bitte",
+          "id": "GERMAN-015-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "016",
+      "title": "Excuse me",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Entschuldigung Sie",
+          "id": "GERMAN-016-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Entschuldigung",
+          "id": "GERMAN-016-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "017",
+      "title": "How old are you?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wie alt sind Sie?",
+          "id": "GERMAN-017-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wie alt bist du?",
+          "id": "GERMAN-017-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "018",
+      "title": "What time is it?",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wie spät ist es?",
+          "id": "GERMAN-018-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "019",
+      "title": "Do you have a job?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Was sind Sie von Beruf?",
+          "id": "GERMAN-019-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Was bist du von Beruf?",
+          "id": "GERMAN-019-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "020",
+      "title": "Where do you work?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wo arbeiten Sie?",
+          "id": "GERMAN-020-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Wo arbeitest du?",
+          "id": "GERMAN-020-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "021",
+      "title": "Do you go to school?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Gehen Sie zur Schule?",
+          "id": "GERMAN-021-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Gehst Du zur Schule?",
+          "id": "GERMAN-021-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "022",
+      "title": "Are you married?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Sind Sie verheiratet?",
+          "id": "GERMAN-022-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Bist du verheiratet?",
+          "id": "GERMAN-022-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "023",
+      "title": "Do you have children?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Haben Sie Kinder?",
+          "id": "GERMAN-023-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Hast du Kinder?",
+          "id": "GERMAN-023-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "024",
+      "title": "What do you do for fun?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Was machen Sie in Ihrer Freizeit?",
+          "id": "GERMAN-024-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Was machst du in deiner Freizeit?",
+          "id": "GERMAN-024-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "025",
+      "title": "I like _____.",
+      "translations": [
+        {
+          "notes": "Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Ich mag ____.",
+          "id": "GERMAN-025-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "026",
+      "title": "Which soccer team do you support?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Was ist Ihr Lieblingsfußballverein?",
+          "id": "GERMAN-026-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Peter Kallai (@paedda) from Dülmen, North Rhine-Westphalia, Germany",
+          "content": "Was ist dein Lieblingsfußballverein?",
+          "id": "GERMAN-026-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "German",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    }
+  ]
+}

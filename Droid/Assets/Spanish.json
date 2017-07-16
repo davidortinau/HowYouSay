@@ -1,0 +1,607 @@
+{
+  "vocab": [
+    {
+      "isBookmarked": false,
+      "id": "001",
+      "title": "How do you say _____?",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Cómo se dice ______?",
+          "id": "SPANISH-001-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "002",
+      "title": "What is your name?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Cuál es su nombre?",
+          "id": "SPANISH-002-001",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-15"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Cuál es tu nombre?",
+          "id": "SPANISH-002-002",
+          "phonetic": "",
+          "createdAt": "2015-12-15",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-15"
+        }
+      ],
+      "modifiedAt": "2015-12-15",
+      "createdAt": "2015-12-15"
+    },
+    {
+      "isBookmarked": false,
+      "id": "003",
+      "title": "My name is _____.",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "Mi nombre es _______.",
+          "id": "SPANISH-003-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "004",
+      "title": "How are you?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Cómo está?",
+          "id": "SPANISH-004-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Cómo estás?",
+          "id": "SPANISH-004-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "005",
+      "title": "Where are you from?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Dé donde es usted?",
+          "id": "SPANISH-005-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Dé donde eres tú?",
+          "id": "SPANISH-005-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "006",
+      "title": "I am from _____.",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "Yo soy de ______.",
+          "id": "SPANISH-006-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "007",
+      "title": "Do you speak English?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Habla Inglés?",
+          "id": "SPANISH-007-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Hablas Inglés?",
+          "id": "SPANISH-007-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "008",
+      "title": "I don't know.",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "No sé.",
+          "id": "SPANISH-008-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "009",
+      "title": "I don't understand you.",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "No Lo entiendo.",
+          "id": "SPANISH-009-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "No Te entiendo.",
+          "id": "SPANISH-009-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "010",
+      "title": "Do you understand me?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Me entiende?",
+          "id": "SPANISH-010-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Me entiendes?",
+          "id": "SPANISH-010-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "011",
+      "title": "Yes",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "Si",
+          "id": "SPANISH-011-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "012",
+      "title": "No",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "No",
+          "id": "SPANISH-012-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "013",
+      "title": "Maybe",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "Quizás",
+          "id": "SPANISH-013-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "014",
+      "title": "Thank you",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "Gracias",
+          "id": "SPANISH-014-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "015",
+      "title": "Please",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "Por favor",
+          "id": "SPANISH-015-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "016",
+      "title": "Excuse me",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "Disculpe",
+          "id": "SPANISH-016-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "Disculpa",
+          "id": "SPANISH-016-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "017",
+      "title": "How old are you?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Cuántos años tiene?",
+          "id": "SPANISH-017-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Cuántos años tienes?",
+          "id": "SPANISH-017-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "018",
+      "title": "What time is it?",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Qué hora es?",
+          "id": "SPANISH-018-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "019",
+      "title": "Do you have a job?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Tiene Usted un trabajo?",
+          "id": "SPANISH-019-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Tienes trabajo?",
+          "id": "SPANISH-019-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "020",
+      "title": "Where do you work?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Dónde trabaja?",
+          "id": "SPANISH-020-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Dónde trabajas?",
+          "id": "SPANISH-020-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "021",
+      "title": "Do you go to school?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Va Usted a la escuela?",
+          "id": "SPANISH-021-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Vas a la escuela?",
+          "id": "SPANISH-021-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "022",
+      "title": "Are you married?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Está casado? / ¿Está casada?",
+          "id": "SPANISH-022-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Estás casado? / ¿Estás casada?",
+          "id": "SPANISH-022-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "023",
+      "title": "Do you have children?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Tiene hijos?",
+          "id": "SPANISH-023-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Tienes hijos?",
+          "id": "SPANISH-023-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "024",
+      "title": "What do you do for fun?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Qué hace Usted para divertirse?",
+          "id": "SPANISH-024-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Qué haces para divertirte?",
+          "id": "SPANISH-024-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "025",
+      "title": "I like _____.",
+      "translations": [
+        {
+          "notes": "Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "Me gusta _______.",
+          "id": "SPANISH-025-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    },
+    {
+      "isBookmarked": false,
+      "id": "026",
+      "title": "Which soccer team do you support?",
+      "translations": [
+        {
+          "notes": "Formal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Cuál es su equipo de fútbol favorito?",
+          "id": "SPANISH-026-001",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        },
+        {
+          "notes": "Informal. Source: Alejandro Ramirez (@alejandrormz) from Aguascalientes, Mexico",
+          "content": "¿Cuál es tu equipo de fútbol favorito?",
+          "id": "SPANISH-026-002",
+          "phonetic": "",
+          "createdAt": "2015-12-14",
+          "language": "Spanish",
+          "modifiedAt": "2015-12-14"
+        }
+      ],
+      "modifiedAt": "2015-12-14",
+      "createdAt": "2015-12-14"
+    }
+  ]
+}

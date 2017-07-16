@@ -29,6 +29,8 @@ namespace HowYouSay.ViewModels
 
         public HomeViewModel()
         {
+            IsBusy = false;
+
 			NavToAddCommand = new Command(AddEntry);
             DeleteEntryCommand = new Command<VocabEntry>(DeleteEntry);
             NavToMenuCommand = new Command(GoToMenu);

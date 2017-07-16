@@ -19,7 +19,7 @@ namespace HowYouSay
 			System.Diagnostics.Debug.WriteLine("====================================");
 
             // This lookup NOT required for Windows platforms - the Culture will be automatically set
-            if (Device.OS == TargetPlatform.iOS || Device.OS == TargetPlatform.Android)
+            if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
             {
                 // determine the correct, supported .NET culture
                 var ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
