@@ -4,28 +4,55 @@
     xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Forms"
     BackgroundColor="#11313F"
     x:Class="HowYouSay.Pages.HomeViewPage">
-    
-    <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="AddButton" Order="Primary" Text="Add" Priority="0" Command="{Binding NavToAddCommand}" />
-    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
-        <StackLayout>
+        
+        <RelativeLayout>
             <StackLayout
+                x:Name="toggleButtons"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
+                             Property=Y,
+                             Constant=0}"
                 HeightRequest="60"
                 Orientation="Horizontal">
                 <Button
-                    HorizontalOptions="StartAndExpand"
+                    HorizontalOptions="FillAndExpand"
                     VerticalOptions="Fill"
+                    BorderColor="Transparent"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
                     Text="{local:Translate FullListLabel}"
-                    Command="{Binding ToggleCommand}" CommandParameter="full" />
+                    Command="{Binding ToggleCommand}" CommandParameter="full">
+                </Button>
                 <Button
-                    HorizontalOptions="EndAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Transparent"
                     VerticalOptions="Fill"
+                    BorderWidth="0"
                     Image="icon_bookmark.png"
-                    Command="{Binding ToggleCommand}" CommandParameter="bookmarked" />
+                    Command="{Binding ToggleCommand}" CommandParameter="bookmarked">
+                </Button>
             </StackLayout>
-            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+            <ActivityIndicator 
+                RelativeLayout.XConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=0.5,
+                             Constant=1}"
+                RelativeLayout.YConstraint =
+                            "{ConstraintExpression Type=RelativeToView,
+                            ElementName=toggleButtons,
+                             Property=Height,
+                             Factor=1}"
+                IsRunning="{Binding IsBusy}" 
+                IsVisible="{Binding IsBusy}"/>
             <ListView 
+                RelativeLayout.YConstraint =
+                            "{ConstraintExpression Type=RelativeToView,
+                            ElementName=toggleButtons,
+                             Property=Height,
+                             Factor=1}"
                 BackgroundColor="#11313F"
                 ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
                 <ListView.ItemTemplate>
@@ -41,10 +68,22 @@
                 </ListView.ItemTemplate>
             </ListView>
             <Button 
+                RelativeLayout.XConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=0.5,
+                             Constant=-40}"
+                RelativeLayout.YConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Height,
+                             Factor=1,
+                            Constant=-80}"
+                BorderWidth="0"
                 Command="{Binding NavToAddCommand}"
+                BackgroundColor="Transparent"
                 MinimumWidthRequest="40"
                 MinimumHeightRequest="40"
                 Image="button_add.png"/>
-        </StackLayout>
+        </RelativeLayout>
 	</ContentPage.Content>
 </ContentPage>

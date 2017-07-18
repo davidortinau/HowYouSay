@@ -10,6 +10,7 @@ namespace HowYouSay.Pages
         public MasterPage()
         {
             InitializeComponent();
+
         }
     }
 }

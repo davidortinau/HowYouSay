@@ -2,13 +2,13 @@
 <MasterDetailPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    xmlns:local="clr-namespace:HowYouSay.Pages;assembly=HowYouSay.Forms"
+    xmlns:local="clr-namespace:HowYouSay.Pages;assembly=HowYouSay.Forms" 
     x:Class="HowYouSay.Pages.MasterPage">
 	<MasterDetailPage.Master>
         <local:MenuPage x:Name="masterPage" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
-        <NavigationPage>
+        <NavigationPage BarTextColor="White" BarBackgroundColor="#11313F">
             <x:Arguments>
                 <local:HomeViewPage />
             </x:Arguments>
