@@ -40,6 +40,14 @@
                     BorderWidth="0"
                     Image="icon_bookmark.png"
                     Command="{Binding ToggleCommand}" CommandParameter="bookmarked">
+                    <Button.Triggers>
+                        <DataTrigger TargetType="Button" Binding="{Binding IsFullTabSelected}" Value="true">
+                            <Setter Property="Image" Value="icon_bookmark.png" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Button" Binding="{Binding IsFullTabSelected}" Value="false">
+                            <Setter Property="Image" Value="icon_bookmark_selected.png" />
+                        </DataTrigger>
+                    </Button.Triggers>
                 </Button>
             </StackLayout>
             <ActivityIndicator 
