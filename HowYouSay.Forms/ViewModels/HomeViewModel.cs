@@ -15,6 +15,8 @@ namespace HowYouSay.ViewModels
     {
 		private Realm _realm;
 
+        public Action Changed { get; set; }
+
 		public IQueryable<VocabEntry> Entries { get; private set; }
 
         public ICommand NavToAddCommand { get; private set; }
@@ -26,6 +28,26 @@ namespace HowYouSay.ViewModels
 		public ICommand DeleteEntryCommand { get; private set; }
 
         public INavigation Navigation { get; set; }
+
+        private bool _isFullTabSelected = true;
+        public bool IsFullTabSelected {
+            get
+            {
+                return _isFullTabSelected;
+            }
+            set
+            {
+                SetProperty(ref _isFullTabSelected, value, onChanged: Changed);
+                OnPropertyChanged(nameof(IsBookmarkedTabSelected));
+            }
+        }
+
+        public bool IsBookmarkedTabSelected
+        {
+            get {
+                return !_isFullTabSelected;
+            }
+        }
 
         public HomeViewModel()
         {
@@ -84,7 +106,8 @@ namespace HowYouSay.ViewModels
 
         private void Toggle(string destination)
         {
-            // TODO implement the toggle
+
+            IsFullTabSelected = (destination == ListTabs.FULL);
         }
 
         internal void EditEntry(VocabEntry entry)
@@ -100,4 +123,10 @@ namespace HowYouSay.ViewModels
 			_realm.Write(() => _realm.Remove(entry));
 		}
     }
+
+	static class ListTabs
+	{
+		public const string FULL = "full";
+		public const string BOOKMARKED = "bookmarked";
+	}
 }

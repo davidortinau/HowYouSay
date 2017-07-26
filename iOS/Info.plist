@@ -38,8 +38,6 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.cbre.collision.uat</string>
 	<key>CFBundleVersion</key>
 	<string>5</string>
 	<key>CFBundleLocalizations</key>
@@ -48,5 +46,9 @@
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.simplyprofound.howyousay</string>
+	<key>XSLaunchImageAssets</key>
+	<string>Assets.xcassets/LaunchImage.launchimage</string>
 </dict>
 </plist>

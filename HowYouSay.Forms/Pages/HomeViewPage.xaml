@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Forms"
+    xmlns:converters="clr-namespace:HowYouSay.ValueConverters;assembly=HowYouSay.Forms"
     BackgroundColor="#11313F"
     x:Class="HowYouSay.Pages.HomeViewPage">
 
@@ -21,9 +22,16 @@
                     VerticalOptions="Fill"
                     BorderColor="Transparent"
                     BackgroundColor="Transparent"
-                    TextColor="White"
                     Text="{local:Translate FullListLabel}"
                     Command="{Binding ToggleCommand}" CommandParameter="full">
+                    <Button.Triggers>
+                        <DataTrigger TargetType="Button" Binding="{Binding IsFullTabSelected}" Value="true">
+                            <Setter Property="TextColor" Value="#ffffff" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Button" Binding="{Binding IsFullTabSelected}" Value="false">
+                            <Setter Property="TextColor" Value="#34686e" />
+                        </DataTrigger>
+                    </Button.Triggers>
                 </Button>
                 <Button
                     HorizontalOptions="FillAndExpand"

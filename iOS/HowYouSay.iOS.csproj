@@ -128,7 +128,7 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -523,6 +523,7 @@
     <ImageAsset Include="Assets.xcassets\white_mic.imageset\white_mic%402x.png">
       <InProject>false</InProject>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Fody.2.0.6\build\netstandard1.4\Fody.targets" Condition="Exists('..\packages\Fody.2.0.6\build\netstandard1.4\Fody.targets')" />
