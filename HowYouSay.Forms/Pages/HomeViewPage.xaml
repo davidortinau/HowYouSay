@@ -6,6 +6,10 @@
     BackgroundColor="#11313F"
     x:Class="HowYouSay.Pages.HomeViewPage">
 
+     <ContentPage.ToolbarItems>
+        <ToolbarItem Name="SearchButton" Order="Primary" Icon="icon_search.png" Priority="0" Command="{Binding SearchCommand}" />
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         
         <RelativeLayout>

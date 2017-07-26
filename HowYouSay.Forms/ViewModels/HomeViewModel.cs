@@ -27,6 +27,8 @@ namespace HowYouSay.ViewModels
 
 		public ICommand DeleteEntryCommand { get; private set; }
 
+        public ICommand SearchCommand { get; private set; }
+
         public INavigation Navigation { get; set; }
 
         private bool _isFullTabSelected = true;
@@ -57,6 +59,7 @@ namespace HowYouSay.ViewModels
             DeleteEntryCommand = new Command<VocabEntry>(DeleteEntry);
             NavToMenuCommand = new Command(GoToMenu);
             ToggleCommand = new Command<string>(Toggle);
+            SearchCommand = new Command(OpenSearch);
 
 			ConnectToRealm().ContinueWith(task =>
 			{
@@ -96,6 +99,11 @@ namespace HowYouSay.ViewModels
 
 			Navigation.PushAsync(page);
 		}
+
+        private void OpenSearch()
+        {
+            
+        }
 
         private void GoToMenu()
         {
