@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace HowYouSay.Views
 {
-	public partial class TranslationCardView : ViewCell
+	public partial class TranslationCardView : ContentView
 	{
 		public TranslationCardView()
 		{

@@ -5,7 +5,13 @@
     xmlns:converters="clr-namespace:HowYouSay.ValueConverters;assembly=HowYouSay.Forms"
     BackgroundColor="#11313F"
     x:Class="HowYouSay.Pages.HomeViewPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:SelectedTabColorConverter x:Key="conv"/>
+        </ResourceDictionary>            
+    </ContentPage.Resources>
 
+    
      <ContentPage.ToolbarItems>
         <ToolbarItem Name="SearchButton" Order="Primary" Icon="icon_search.png" Priority="0" Command="{Binding SearchCommand}" />
     </ContentPage.ToolbarItems>
@@ -27,15 +33,9 @@
                     BorderColor="Transparent"
                     BackgroundColor="Transparent"
                     Text="{local:Translate FullListLabel}"
-                    Command="{Binding ToggleCommand}" CommandParameter="full">
-                    <Button.Triggers>
-                        <DataTrigger TargetType="Button" Binding="{Binding IsFullTabSelected}" Value="true">
-                            <Setter Property="TextColor" Value="#ffffff" />
-                        </DataTrigger>
-                        <DataTrigger TargetType="Button" Binding="{Binding IsFullTabSelected}" Value="false">
-                            <Setter Property="TextColor" Value="#34686e" />
-                        </DataTrigger>
-                    </Button.Triggers>
+                    Command="{Binding ToggleCommand}" CommandParameter="full"
+                    TextColor="{Binding IsFullTabSelected, Converter={StaticResource conv}, ConverterParameter='#ffffff;#34686e'}"
+                    >
                 </Button>
                 <Button
                     HorizontalOptions="FillAndExpand"
@@ -77,7 +77,7 @@
                 ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Title}" >
+                        <TextCell Text="{Binding Title}" TextColor="#FFFFFF">
                             <TextCell.ContextActions>
                                 <MenuItem Text="Delete" IsDestructive="true" 
                                           Command="{Binding BindingContext.DeleteEntryCommand, Source={x:Reference EntriesListView}" 

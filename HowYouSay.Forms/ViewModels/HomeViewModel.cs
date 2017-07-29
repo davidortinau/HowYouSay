@@ -80,7 +80,7 @@ namespace HowYouSay.ViewModels
 			OnPropertyChanged(nameof(Entries));
 		}
 
-        private void AddEntry()
+        private async void AddEntry()
 		{
             var entry = new VocabEntry
 			{
@@ -95,9 +95,18 @@ namespace HowYouSay.ViewModels
 				_realm.Add<VocabEntry>(entry);
 			});
 
-			var page = new VocabEntryDetailsPage(new VocabEntryDetailsViewModel(entry));
+			try
+			{
+				var page = new VocabEntryDetailsPage(new VocabEntryDetailsViewModel(entry));
+				await Navigation.PushAsync(page);
+			}
+			catch (Exception ex)
+			{
+				//App.ShowMessageBox("An error occred navigating to the Job List page", "Navigation Failed!");
+                System.Diagnostics.Debug.WriteLine("Navigation failed " + ex.Message);
+			};
 
-			Navigation.PushAsync(page);
+			
 		}
 
         private void OpenSearch()

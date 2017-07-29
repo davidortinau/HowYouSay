@@ -10,8 +10,9 @@ namespace HowYouSay.ValueConverters
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
 		{
+            var colors = ((string)parameter).Split((';'));
             var isSelected = (bool)value;
-            return (isSelected) ? Color.White : Color.FromHex("#333333");
+            return (isSelected) ? Color.FromHex(colors[0]) : Color.FromHex(colors[1]);
 		}
 
 		public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
