@@ -7,11 +7,25 @@ namespace HowYouSay.Pages
 {
     public partial class MenuPage : ContentPage
     {
+        public ListView ListView
+        {
+            get {
+                return listView;
+            }
+        }
+
         public MenuPage()
         {
             InitializeComponent();
 
 			var masterPageItems = new List<MasterPageItem>();
+
+			// Home
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Home",
+                TargetType = typeof(HomeViewPage)
+			});
 
             // Settings
             masterPageItems.Add(new MasterPageItem
@@ -53,6 +67,8 @@ namespace HowYouSay.Pages
 			});
 
 			listView.ItemsSource = masterPageItems;
+
+			
 
 		}
     }

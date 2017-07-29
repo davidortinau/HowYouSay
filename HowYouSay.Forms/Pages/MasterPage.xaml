@@ -5,7 +5,7 @@
     xmlns:local="clr-namespace:HowYouSay.Pages;assembly=HowYouSay.Forms" 
     x:Class="HowYouSay.Pages.MasterPage">
 	<MasterDetailPage.Master>
-        <local:MenuPage x:Name="masterPage" />
+        <local:MenuPage x:Name="menuPage" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <NavigationPage BarTextColor="White" BarBackgroundColor="#11313F">
