@@ -133,6 +133,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Effects\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.xib" />
@@ -148,6 +149,7 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Localize.cs" />
     <Compile Include="Effects\InputViewEffect.cs" />
+    <Compile Include="Renderers\NoLineNavigationRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HowYouSay.Forms\HowYouSay.Forms.csproj">

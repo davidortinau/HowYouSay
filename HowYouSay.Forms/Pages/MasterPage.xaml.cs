@@ -28,5 +28,12 @@ namespace HowYouSay.Pages
 				IsPresented = false;
 			}
 		}
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+
+        }
     }
 }
