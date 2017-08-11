@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="ValueConverters\SelectedTabColorConverter.cs" />
     <Compile Include="Effects\InputFieldEffect.cs" />
+    <Compile Include="Effects\RemoveNavBarBorderEffect.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

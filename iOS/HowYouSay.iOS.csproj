@@ -150,6 +150,7 @@
     <Compile Include="Localize.cs" />
     <Compile Include="Effects\InputViewEffect.cs" />
     <Compile Include="Renderers\NoLineNavigationRenderer.cs" />
+    <Compile Include="Effects\RemoveNavBarBorderEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HowYouSay.Forms\HowYouSay.Forms.csproj">
