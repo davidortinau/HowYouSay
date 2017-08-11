@@ -10,18 +10,24 @@ namespace HowYouSay.Pages
 {
     public partial class VocabEntryDetailsPage : ContentPage
     {
+		VocabEntryDetailsViewModel _vm;
 
 		public VocabEntryDetailsPage(VocabEntryDetailsViewModel viewModel)
 		{
 			InitializeComponent();
-			BindingContext = viewModel;
+			BindingContext = _vm = viewModel;
 			viewModel.Navigation = Navigation;
+		}
+
+		protected override void OnAppearing()
+		{
+			base.OnAppearing();
 		}
 
 		protected override void OnDisappearing()
 		{
 			base.OnDisappearing();
-			(BindingContext as VocabEntryDetailsViewModel)?.OnDisappearing();
+			_vm?.OnDisappearing();
 			BindingContext = null;
 		}
     }

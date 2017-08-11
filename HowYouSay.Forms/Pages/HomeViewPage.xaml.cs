@@ -18,19 +18,18 @@ namespace HowYouSay.Pages
             InitializeComponent();
 
             BindingContext = _vm = new HomeViewModel{ Navigation = Navigation };
+			Xamarin.Forms.NavigationPage.SetBackButtonTitle(this, "");
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
 			_vm.OnAppearing();
-            //(this.Parent as Xamarin.Forms.NavigationPage).On<iOS>().SetIsNavigationBarTranslucent(true);
-            //(this.Parent as Xamarin.Forms.NavigationPage).Effects.Add(new RemoveNavBarBorderEffect());
 		}
 
 		void OnItemTapped(object sender, ItemTappedEventArgs e)
 		{
-            (BindingContext as HomeViewModel).EditEntry((VocabEntry)e.Item);
+            _vm.EditEntry((VocabEntry)e.Item);
 		}
 
 		void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
