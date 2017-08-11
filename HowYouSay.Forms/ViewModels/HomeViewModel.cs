@@ -61,12 +61,7 @@ namespace HowYouSay.ViewModels
             ToggleCommand = new Command<string>(Toggle);
             SearchCommand = new Command(OpenSearch);
 
-			ConnectToRealm().ContinueWith(task =>
-			{
-				IsBusy = false;
-				if (task.Exception != null)
-				{/* error */}
-			});
+
         }
 
 		async Task ConnectToRealm()
@@ -138,6 +133,16 @@ namespace HowYouSay.ViewModels
 		private void DeleteEntry(VocabEntry entry)
 		{
 			_realm.Write(() => _realm.Remove(entry));
+		}
+
+		public void OnAppearing()
+		{
+			ConnectToRealm().ContinueWith(task =>
+			{
+				IsBusy = false;
+				if (task.Exception != null)
+				{/* error */}
+			});
 		}
     }
 
