@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
 using HowYouSay.Models;
+using HowYouSay.Pages;
 using MvvmHelpers;
 using Realms;
 using Xamarin.Forms;
@@ -19,7 +20,23 @@ namespace HowYouSay.ViewModels
 
 		public ICommand SaveCommand { get; private set; }
 
+		public ICommand RecordCommand { get; private set; }
+
 		public IList<TranslationViewModel> Translations { get; private set; }
+
+		public bool HasAudio
+		{
+			get {
+				return false;
+			}
+		}
+
+		public string AudioUrl
+		{
+			get {
+				return string.Empty;
+			}
+		}
 
 		public new string Title
 		{
@@ -65,6 +82,7 @@ namespace HowYouSay.ViewModels
 				AddTranslation();
 
 			SaveCommand = new Command(Save);
+			RecordCommand = new Command(GoToRecord);
 
 			var q = from e in Entry.Translations
 						   select new TranslationViewModel(e);
@@ -74,6 +92,11 @@ namespace HowYouSay.ViewModels
 		private void Save()
 		{
 			Navigation.PopAsync(true);
+		}
+
+		private void GoToRecord()
+		{
+			Navigation.PushAsync(new AudioPage{ VM = new AudioViewModel(Entry)});
 		}
 
 		void AddTranslation()

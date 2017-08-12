@@ -72,6 +72,10 @@
     <Compile Include="ValueConverters\SelectedTabColorConverter.cs" />
     <Compile Include="Effects\InputFieldEffect.cs" />
     <Compile Include="Effects\RemoveNavBarBorderEffect.cs" />
+    <Compile Include="Pages\AudioPage.xaml.cs">
+      <DependentUpon>AudioPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AudioViewModel.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -99,6 +103,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\StarterPhrasesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AudioPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -44,7 +44,7 @@
 		<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 			<Button Image="button_bookmark.png"/>
 			
-			<Button Image="button_record_mini.png"/>
+			<Button Image="button_record_mini.png" Command="{Binding RecordCommand}"/>
 			
 		</StackLayout>
 
