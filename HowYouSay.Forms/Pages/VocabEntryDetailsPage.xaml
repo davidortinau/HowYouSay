@@ -42,9 +42,14 @@
 		</controls:CarouselViewControl>
 
 		<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-			<Button Image="button_bookmark.png"/>
+			<Button 
+                Image="button_bookmark.png" 
+                BackgroundColor="Transparent"/>
 			
-			<Button Image="button_record_mini.png" Command="{Binding RecordCommand}"/>
+			<Button 
+                Image="button_record_mini.png" 
+                BackgroundColor="Transparent"
+                Command="{Binding RecordCommand}"/>
 			
 		</StackLayout>
 

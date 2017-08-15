@@ -7,6 +7,9 @@ namespace HowYouSay.Models
 {
     public class VocabEntry : RealmObject
     {
+		[PrimaryKey]
+		public string Id { get; set; }
+
 		[Ignored]
         public string Title
 		{

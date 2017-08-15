@@ -8,6 +8,7 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:SelectedTabColorConverter x:Key="conv"/>
+            <converters:InverseBoolConverter x:Key="boolConv"/>
         </ResourceDictionary>            
     </ContentPage.Resources>
 
@@ -54,6 +55,39 @@
                     </Button.Triggers>
                 </Button>
             </StackLayout>
+            <BoxView 
+                IsVisible="{Binding IsFullTabSelected}"
+                RelativeLayout.YConstraint =
+                            "{ConstraintExpression Type=RelativeToView,
+                            ElementName=toggleButtons,
+                             Property=Y,
+                             Factor=1,
+                Constant=50}"
+                RelativeLayout.WidthConstraint =
+                "{ConstraintExpression Type=RelativeToParent,
+                    Property=Width,
+                Factor=0.5}"
+                HeightRequest="3"
+                BackgroundColor="#D5441B"></BoxView>
+            <BoxView 
+                IsVisible="{Binding IsFullTabSelected, Converter={StaticResource boolConv}}"
+                RelativeLayout.YConstraint=
+                            "{ConstraintExpression Type=RelativeToView,
+                            ElementName=toggleButtons,
+                             Property=Y,
+                             Factor=1,
+                Constant=50}"
+                RelativeLayout.WidthConstraint=
+                "{ConstraintExpression Type=RelativeToParent,
+                    Property=Width,
+                Factor=0.5}"
+                RelativeLayout.XConstraint=
+                "{ConstraintExpression Type=RelativeToParent,
+                    Property=Width,
+                    Factor=0.5}"
+                HeightRequest="3"
+                BackgroundColor="#D5441B">
+            </BoxView>
             <ActivityIndicator 
                 RelativeLayout.XConstraint =
                             "{ConstraintExpression Type=RelativeToParent,
@@ -73,6 +107,10 @@
                             ElementName=toggleButtons,
                              Property=Height,
                              Factor=1}"
+                RelativeLayout.WidthConstraint=
+                "{ConstraintExpression Type=RelativeToParent,
+                    Property=Width,
+                Factor=1}"
                 BackgroundColor="#11313F"
                 ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
                 <ListView.ItemTemplate>
@@ -92,7 +130,7 @@
                             "{ConstraintExpression Type=RelativeToParent,
                              Property=Width,
                              Factor=0.5,
-                             Constant=-20}"
+                             Constant=-30}"
                 RelativeLayout.YConstraint =
                             "{ConstraintExpression Type=RelativeToParent,
                              Property=Height,
@@ -101,8 +139,8 @@
                 BorderWidth="0"
                 Command="{Binding NavToAddCommand}"
                 BackgroundColor="Transparent"
-                MinimumWidthRequest="40"
-                MinimumHeightRequest="40"
+                WidthRequest="60"
+                HeightRequest="60"
                 Image="button_add.png"/>
         </RelativeLayout>
 	</ContentPage.Content>

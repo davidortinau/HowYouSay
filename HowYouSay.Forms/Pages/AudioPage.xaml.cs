@@ -19,9 +19,13 @@ namespace HowYouSay.Pages
 		public AudioPage()
 		{
 			InitializeComponent();
+			NavigationPage.SetHasNavigationBar(this, false);
 			//NavigationPage.SetHasBackButton(this, false);
 			//NavigationPage.SetBackButtonTitle(this, "Close");
 			// really should be X icon
+
+			if(_vm == null)
+				BindingContext = new AudioViewModel(null);
 
 		}
 	}

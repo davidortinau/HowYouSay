@@ -79,6 +79,7 @@ namespace HowYouSay.ViewModels
 		{
             var entry = new VocabEntry
 			{
+				Id = new Guid().ToString(),
 				Metadata = new EntryMetadata
 				{
 					Date = DateTimeOffset.Now
@@ -92,7 +93,9 @@ namespace HowYouSay.ViewModels
 
 			try
 			{
-				var page = new VocabEntryDetailsPage(new VocabEntryDetailsViewModel(entry));
+				var page = new VocabEntryDetailsPage{
+					EntryId = entry.Id
+				};
 				await Navigation.PushAsync(page);
 			}
 			catch (Exception ex)
@@ -125,7 +128,9 @@ namespace HowYouSay.ViewModels
         internal void EditEntry(VocabEntry entry)
 		{
 
-			var page = new VocabEntryDetailsPage(new VocabEntryDetailsViewModel(entry));
+			var page = new VocabEntryDetailsPage{
+				EntryId = entry.Title
+			};
 
 			Navigation.PushAsync(page);
 		}

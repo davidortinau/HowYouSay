@@ -38,6 +38,12 @@ namespace HowYouSay.ViewModels
 			}
 		}
 
+		internal void OnAppearing()
+		{
+			
+
+		}
+
 		public new string Title
 		{
 			get
@@ -74,19 +80,28 @@ namespace HowYouSay.ViewModels
 			}
 		}
 
-		public VocabEntryDetailsViewModel(VocabEntry entry)
+		public VocabEntryDetailsViewModel(string entryId)
 		{
-			_realm = Realm.GetInstance();
-			Entry = entry;
-			if (Entry.Translations == null || Entry.Translations.Count == 0)
-				AddTranslation();
-
 			SaveCommand = new Command(Save);
 			RecordCommand = new Command(GoToRecord);
 
+			_realm = Realm.GetInstance();
+			Entry = _realm.Find<VocabEntry>(entryId);
+
+			if (Entry == null)
+			{
+				// we don't have one so bail
+				Navigation.PopAsync();
+				return;
+			}
+
+			if (Entry.Translations == null || Entry.Translations.Count == 0)
+				AddTranslation();
+
 			var q = from e in Entry.Translations
-						   select new TranslationViewModel(e);
+					select new TranslationViewModel(e);
 			Translations = q.ToList();
+
 		}
 
 		private void Save()

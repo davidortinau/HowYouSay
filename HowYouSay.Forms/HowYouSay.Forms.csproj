@@ -38,6 +38,7 @@
     </Compile>
     <Compile Include="Services\IVocabClient.cs" />
     <Compile Include="Models\EntryMetadata.cs" />
+    <Compile Include="ValueConverters\InverseBoolConverter.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ILocalize.cs" />
     <Compile Include="Resx\AppResources.Designer.cs">
@@ -76,6 +77,7 @@
       <DependentUpon>AudioPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\AudioViewModel.cs" />
+    <Compile Include="ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
