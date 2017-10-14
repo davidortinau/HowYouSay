@@ -18,14 +18,24 @@ namespace HowYouSay.ViewModels
 		{
 			_navService = NavigationService.Instance;
 
-			ItemSelectedCommand = new Command(OnMenuItemSelected);
+			ItemSelectedCommand = new Command<MasterPageItem>(OnMenuItemSelected);
 
 			InitMenuItems();
 		}
 
-		private async void OnMenuItemSelected()
+		private async void OnMenuItemSelected(MasterPageItem pageItem)
 		{
-			await _navService.PushAsync<HomeViewModel>();
+			Type vm = pageItem.TargetType;
+			if(vm == typeof(LanguagesViewModel))
+			{
+				await _navService.PushAsync<LanguagesViewModel>();	
+			}
+			else if(vm == typeof(HomeViewModel))
+			{
+				await _navService.PushAsync<HomeViewModel>();	
+			}
+
+
 		}
 
 		private void InitMenuItems()
@@ -41,7 +51,7 @@ namespace HowYouSay.ViewModels
 			_masterPageItems.Add(new MasterPageItem
 			{
 				Title = "Languages",
-				TargetType = typeof(HomeViewModel)
+				TargetType = typeof(LanguagesViewModel)
 			});
 			_masterPageItems.Add(new MasterPageItem
 			{
