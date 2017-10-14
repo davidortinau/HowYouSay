@@ -83,6 +83,7 @@
     <Compile Include="Behaviors\EventToCommandBehavior.cs" />
     <Compile Include="Behaviors\BehaviorBase.cs" />
     <Compile Include="ViewModels\LanguagesViewModel.cs" />
+    <Compile Include="Models\Language.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

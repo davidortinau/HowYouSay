@@ -23,17 +23,31 @@ namespace HowYouSay.ViewModels
 			InitMenuItems();
 		}
 
+		MasterPageItem _lastSelected;
 		private async void OnMenuItemSelected(MasterPageItem pageItem)
 		{
+			if(pageItem == null) return;
+
+
+
 			Type vm = pageItem.TargetType;
-			if(vm == typeof(LanguagesViewModel))
-			{
-				await _navService.PushAsync<LanguagesViewModel>();	
-			}
-			else if(vm == typeof(HomeViewModel))
-			{
-				await _navService.PushAsync<HomeViewModel>();	
-			}
+			var viewModel = Activator.CreateInstance(vm) as IViewModel;
+			_navService.SwitchDetailPage(viewModel);
+			_lastSelected = pageItem;
+
+			//if(vm == typeof(LanguagesViewModel))
+			//{
+			//	if(_lastSelected == null || _lastSelected != pageItem){
+			//		_lastSelected = pageItem;
+
+			//		await _navService.PushAsync<LanguagesViewModel>();	
+			//	}
+			//}
+			//else if(vm == typeof(HomeViewModel))
+			//{
+			//	_lastSelected = pageItem;
+			//	await _navService.PushAsync<HomeViewModel>();	
+			//}
 
 
 		}

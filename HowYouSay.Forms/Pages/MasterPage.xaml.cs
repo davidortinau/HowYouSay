@@ -12,7 +12,9 @@ namespace HowYouSay.Pages
 			InitializeComponent();
 
 			homePage.ViewModel = new ViewModels.HomeViewModel();
-			menuPage.ViewModel = new ViewModels.MenuViewModel();
+			menuPage.ViewModel = new ViewModels.MenuViewModel(){
+				
+			};
 			menuPage.ListView.ItemSelected += OnItemSelected;
 		}
 

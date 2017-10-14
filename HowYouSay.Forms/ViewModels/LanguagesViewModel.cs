@@ -10,40 +10,53 @@ namespace HowYouSay.ViewModels
 {
 	public class LanguagesViewModel : BaseViewModel, IViewModel
 	{
-		INavigationService _navService { get; set; }
-
 		public ICommand LanguageSelectedCommand { get; private set; }
 
 		public LanguagesViewModel()
 		{
-			_navService = NavigationService.Instance;
+			LanguageSelectedCommand = new Command<Language>(OnLanguageSelected);
 
-			LanguageSelectedCommand = new Command(OnLanguageSelected);
-
-			InitMenuItems();
+			Init();
 		}
 
-		private async void OnLanguageSelected()
+		private async void OnLanguageSelected(Language lang)
 		{
-			await _navService.PushAsync<HomeViewModel>();
+			_languages.Find(x => x.Title == lang.Title).On = !lang.On;
+			// persist ?
 		}
 
-		private void InitMenuItems()
+		private void Init()
 		{
-			_languages = new List<string>(){
-				"Albanian",
-				"English",
-				"German",
-				"Portuguese",
-				"Romanian",
-				"Spanish"
+			_languages = new List<Language>(){
+				new Language {
+					Title = "Albanian",
+					On = false
+				},
+				new Language {
+					Title = "English",
+					On = true
+				},
+				new Language {
+					Title = "German",
+					On = false
+				},
+				new Language {
+					Title = "Portuguese",
+					On = false
+				},
+				new Language {
+					Title = "Romanian"
+				},
+				new Language {
+					Title = "Spanish"
+				}
 			};
 
 			OnPropertyChanged(nameof(Languages));
 		}
 
-		private List<string> _languages;
-		public List<string> Languages { get => _languages; set {
+		private List<Language> _languages;
+		public List<Language> Languages { get => _languages; set {
 				_languages = value; 
 				OnPropertyChanged(nameof(Languages));
 			}
