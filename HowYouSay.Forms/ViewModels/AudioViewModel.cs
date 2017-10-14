@@ -76,9 +76,9 @@ namespace HowYouSay.ViewModels
 			TranslationTitle = _entry.Translations[0].Title;
 		}
 
-		private void Close()
+		private async void Close()
 		{
-			Navigation.PopAsync(true);
+			await Navigation.PopModalAsync(true);
 		}
 	}
 }

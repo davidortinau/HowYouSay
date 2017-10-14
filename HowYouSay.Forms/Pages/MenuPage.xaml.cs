@@ -1,75 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using CodeMill.VMFirstNav;
 using HowYouSay.Models;
+using HowYouSay.ViewModels;
 using Xamarin.Forms;
 
 namespace HowYouSay.Pages
 {
-    public partial class MenuPage : ContentPage
-    {
-        public ListView ListView
-        {
-            get {
-                return listView;
-            }
-        }
-
-        public MenuPage()
-        {
-            InitializeComponent();
-
-			var masterPageItems = new List<MasterPageItem>();
-
-			// Home
-			masterPageItems.Add(new MasterPageItem
+	public partial class MenuPage : ContentPage, IViewFor<MenuViewModel>
+	{
+		public ListView ListView
+		{
+			get
 			{
-				Title = "Home",
-                TargetType = typeof(HomeViewPage)
-			});
-
-            // Settings
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Languages",
-                TargetType = typeof(LanguagesPage)
-            });
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Starter Phrases",
-                TargetType = typeof(StarterPhrasesPage)
-            });
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Export Data"
-            });
-
-            // About
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = $"Version 1.1" // TODO replace with dynamic
-            });
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Made With Xamarin.Forms"
-            });
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "About How You Say"
-
-             });
-			masterPageItems.Add(new MasterPageItem
-			{
-				Title = "Feedback & Support"
-			});
-			masterPageItems.Add(new MasterPageItem
-			{
-				Title = "Rate Us"
-			});
-
-			listView.ItemsSource = masterPageItems;
-
-			
-
+				return listView;
+			}
 		}
-    }
+
+		MenuViewModel _vm;
+		public MenuViewModel ViewModel
+		{
+			get => _vm; 
+			set
+			{
+				BindingContext = _vm = value;
+			}
+		}
+
+		public MenuPage()
+		{
+			InitializeComponent();
+		}
+	}
 }

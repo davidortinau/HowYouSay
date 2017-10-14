@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using CodeMill.VMFirstNav;
 using HowYouSay.Models;
 using HowYouSay.Pages;
 using MvvmHelpers;
@@ -11,58 +12,64 @@ using Xamarin.Forms;
 
 namespace HowYouSay.ViewModels
 {
-    public class HomeViewModel : BaseViewModel
-    {
+	public class HomeViewModel : BaseViewModel, IViewModel
+	{
 		private Realm _realm;
 
-        public Action Changed { get; set; }
+		public Action Changed { get; set; }
 
 		public IQueryable<VocabEntry> Entries { get; private set; }
 
-        public ICommand NavToAddCommand { get; private set; }
+		public ICommand NavToAddCommand { get; private set; }
 
-        public ICommand NavToMenuCommand { get; private set; }
+		public ICommand NavToMenuCommand { get; private set; }
 
-        public ICommand ToggleCommand { get; private set; }
+		public ICommand ToggleCommand { get; private set; }
 
 		public ICommand DeleteEntryCommand { get; private set; }
 
-        public ICommand SearchCommand { get; private set; }
+		public ICommand SearchCommand { get; private set; }
 
-        public INavigation Navigation { get; set; }
+		public INavigation Navigation { get; set; }
 
-        private bool _isFullTabSelected = true;
-        public bool IsFullTabSelected {
-            get
-            {
-                return _isFullTabSelected;
-            }
-            set
-            {
-                SetProperty(ref _isFullTabSelected, value, onChanged: Changed);
-                OnPropertyChanged(nameof(IsBookmarkedTabSelected));
-            }
-        }
+		public INavigationService _navService { get; set; }
 
-        public bool IsBookmarkedTabSelected
-        {
-            get {
-                return !_isFullTabSelected;
-            }
-        }
+		private bool _isFullTabSelected = true;
+		public bool IsFullTabSelected
+		{
+			get
+			{
+				return _isFullTabSelected;
+			}
+			set
+			{
+				SetProperty(ref _isFullTabSelected, value, onChanged: Changed);
+				OnPropertyChanged(nameof(IsBookmarkedTabSelected));
+			}
+		}
 
-        public HomeViewModel()
-        {
-            IsBusy = false;
+		public bool IsBookmarkedTabSelected
+		{
+			get
+			{
+				return !_isFullTabSelected;
+			}
+		}
+
+		public HomeViewModel()
+		{
+			IsBusy = false;
+
+			_navService = NavigationService.Instance;
 
 			NavToAddCommand = new Command(AddEntry);
-            DeleteEntryCommand = new Command<VocabEntry>(DeleteEntry);
-            NavToMenuCommand = new Command(GoToMenu);
-            ToggleCommand = new Command<string>(Toggle);
-            SearchCommand = new Command(OpenSearch);
+			DeleteEntryCommand = new Command<VocabEntry>(DeleteEntry);
+			NavToMenuCommand = new Command(GoToMenu);
+			ToggleCommand = new Command<string>(Toggle);
+			SearchCommand = new Command(OpenSearch);
 
 
-        }
+		}
 
 		async Task ConnectToRealm()
 		{
@@ -75,9 +82,9 @@ namespace HowYouSay.ViewModels
 			OnPropertyChanged(nameof(Entries));
 		}
 
-        private async void AddEntry()
+		private async void AddEntry()
 		{
-            var entry = new VocabEntry
+			var entry = new VocabEntry
 			{
 				Id = new Guid().ToString(),
 				Metadata = new EntryMetadata
@@ -93,46 +100,47 @@ namespace HowYouSay.ViewModels
 
 			try
 			{
-				var page = new VocabEntryDetailsPage{
-					EntryId = entry.Id
-				};
-				await Navigation.PushAsync(page);
+				await _navService.PushAsync<VocabEntryDetailsViewModel>((vm) => vm.SetEntry(entry.Id));
+				//var page = new VocabEntryDetailsPage{
+				//	EntryId = entry.Id
+				//};
+				//await Navigation.PushAsync(page);
 			}
 			catch (Exception ex)
 			{
 				//App.ShowMessageBox("An error occred navigating to the Job List page", "Navigation Failed!");
-                System.Diagnostics.Debug.WriteLine("Navigation failed " + ex.Message);
+				System.Diagnostics.Debug.WriteLine("Navigation failed " + ex.Message);
 			};
 
-			
+
 		}
 
-        private void OpenSearch()
-        {
-            
-        }
+		private void OpenSearch()
+		{
 
-        private void GoToMenu()
-        {
+		}
+
+		private void GoToMenu()
+		{
 			//var page = new VocabEntryDetailsPage(new VocabEntryDetailsViewModel(entry));
 
 			//Navigation.PushAsync(page);
-        }
+		}
 
-        private void Toggle(string destination)
-        {
-
-            IsFullTabSelected = (destination == ListTabs.FULL);
-        }
-
-        internal void EditEntry(VocabEntry entry)
+		private void Toggle(string destination)
 		{
 
-			var page = new VocabEntryDetailsPage{
-				EntryId = entry.Title
-			};
+			IsFullTabSelected = (destination == ListTabs.FULL);
+		}
 
-			Navigation.PushAsync(page);
+		internal async void EditEntry(VocabEntry entry)
+		{
+			await _navService.PushAsync<VocabEntryDetailsViewModel>((vm) => vm.SetEntry(entry.Id));
+			//var page = new VocabEntryDetailsPage{
+			//	EntryId = entry.Id
+			//};
+
+			//Navigation.PushAsync(page);
 		}
 
 		private void DeleteEntry(VocabEntry entry)
@@ -149,7 +157,7 @@ namespace HowYouSay.ViewModels
 				{/* error */}
 			});
 		}
-    }
+	}
 
 	static class ListTabs
 	{

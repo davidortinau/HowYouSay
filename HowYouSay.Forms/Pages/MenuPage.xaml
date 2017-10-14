@@ -4,14 +4,25 @@
     Icon="icon_menu.png"
     Title="Menu"
     BackgroundColor="#11313F"
+    xmlns:converters="using:HowYouSay.ValueConverters"
+    xmlns:behaviors="using:HowYouSay.Behaviors"
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="HowYouSay.Pages.MenuPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 	<ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand">
             <ListView 
+                ItemsSource="{Binding MasterPageItems}"
                 BackgroundColor="#11313F"
                 x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+                <ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="ItemSelected" Command="{Binding ItemSelectedCommand}" Converter="{StaticResource SelectedItemConverter}" />
+                </ListView.Behaviors>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ImageCell TextColor="White" Text="{Binding Title}" ImageSource="{Binding IconSource}" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CodeMill.VMFirstNav;
 using HowYouSay.ViewModels;
 using Xamarin.Forms;
 
@@ -8,15 +9,16 @@ using Xamarin.Forms;
 
 namespace HowYouSay.Pages
 {
-    public partial class VocabEntryDetailsPage : ContentPage
-    {
+	public partial class VocabEntryDetailsPage : ContentPage, IViewFor<VocabEntryDetailsViewModel>
+	{
 		VocabEntryDetailsViewModel _vm;
-		public VocabEntryDetailsViewModel VM
+		public VocabEntryDetailsViewModel ViewModel
 		{
-			set{
+			get => _vm;
+			set
+			{
 				_vm = value;
 				BindingContext = _vm;
-				_vm.Navigation = Navigation;
 			}
 		}
 
@@ -30,10 +32,10 @@ namespace HowYouSay.Pages
 		protected override void OnAppearing()
 		{
 			base.OnAppearing();
-			if(_vm == null)
-			{
-				BindingContext = _vm = new VocabEntryDetailsViewModel(EntryId);
-			}
+			//if (_vm == null)
+			//{
+			//	BindingContext = VM = new VocabEntryDetailsViewModel(EntryId);
+			//}
 			_vm?.OnAppearing();
 		}
 
@@ -43,5 +45,5 @@ namespace HowYouSay.Pages
 			_vm?.OnDisappearing();
 			BindingContext = null;
 		}
-    }
+	}
 }
