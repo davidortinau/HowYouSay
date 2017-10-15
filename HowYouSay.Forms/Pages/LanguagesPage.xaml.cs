@@ -13,6 +13,12 @@ namespace HowYouSay.Pages
 			InitializeComponent();
 		}
 
+		protected override void OnAppearing()
+		{
+			base.OnAppearing();
+			_vm?.OnAppearing();
+		}
+
 		LanguagesViewModel _vm;
 		public LanguagesViewModel ViewModel { get => _vm; set => BindingContext = _vm = value; }
 	}

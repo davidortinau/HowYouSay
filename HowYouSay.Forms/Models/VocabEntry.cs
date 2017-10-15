@@ -5,13 +5,13 @@ using System.Linq;
 
 namespace HowYouSay.Models
 {
-    public class VocabEntry : RealmObject
-    {
+	public class VocabEntry : RealmObject
+	{
 		[PrimaryKey]
 		public string Id { get; set; }
 
 		[Ignored]
-        public string Title
+		public string Title
 		{
 			get
 			{
@@ -26,14 +26,14 @@ namespace HowYouSay.Models
 			}
 		}
 
-        public bool IsBookmarked { get; set; }
+		public bool IsBookmarked { get; set; }
 
-        public IList<Translation> Translations { get; }
+		public IList<Translation> Translations { get; }
 
-        public EntryMetadata Metadata { get; set; }
+		public EntryMetadata Metadata { get; set; }
 
 		// If we remove that and use Metadata.Date in the binding, exception is thrown when deleting item. See #883.
 		public DateTimeOffset Date => Metadata.Date;
 
-    }
+	}
 }
