@@ -14,6 +14,7 @@
     <ContentPage.Content>
         <ListView 
                 ItemsSource="{Binding Languages}"
+            ItemSelected="Handle_ItemSelected"
                 BackgroundColor="#11313F"
                 x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default">
                 <ListView.Behaviors>
@@ -21,7 +22,16 @@
                 </ListView.Behaviors>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <SwitchCell Text="{Binding Title}" On="{Binding On}"  />
+                        <ViewCell>
+                            <Grid Padding="20,0,20,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Title}" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Switch Grid.Column="1" IsToggled="{Binding On}" InputTransparent="true" HorizontalOptions="End" VerticalOptions="Center"/>
+                            </Grid>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

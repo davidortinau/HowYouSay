@@ -25,6 +25,7 @@ namespace HowYouSay.ViewModels
 
 		private async void OnLanguageSelected(Language lang)
 		{
+			if(lang == null) return;
 
 			var language = _realm.Find<Language>(lang.Title);
 			if (language != null)
@@ -71,7 +72,7 @@ namespace HowYouSay.ViewModels
 				{/* error */}
 			});
 
-			Debug.WriteLine(_languages.Count());
+			//Debug.WriteLine(_languages.Count());
 			if (_languages == null || _languages.Count() == 0)
 			{
 				Init();
