@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:HowYouSay"
+	xmlns:views="clr-namespace:HowYouSay.Views"
+    xmlns:effects="clr-namespace:HowYouSay.Effects"
+    BackgroundColor="#11313F"
+	xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+	x:Class="HowYouSay.Pages.VocabEntryDetailsPage">
+	<StackLayout>
+		<Label 
+            Text="{local:Translate EntryPageTitle}"
+            FontSize="13"
+            TextColor="#8ECEBF"
+            XAlign="Center"/>
+		<Entry 
+			Text="{Binding Title}"
+            TextColor="#FFFFFF"
+            PlaceholderColor="#34686E"
+            FontSize="32"
+            BackgroundColor="Transparent"
+			Placeholder="{local:Translate EntryInputPlaceholder}" 
+			HorizontalTextAlignment="Center">
+            <Entry.Effects>
+                <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
+            </Entry.Effects>
+        </Entry>
+		
+		<controls:CarouselViewControl 
+			Orientation="Horizontal" 
+			InterPageSpacing="40" 
+            Margin="20"
+			ItemsSource="{Binding Translations}" 
+			VerticalOptions="FillAndExpand" 
+			HorizontalOptions="FillAndExpand">
+			<controls:CarouselViewControl.ItemTemplate>
+				<DataTemplate>
+					<views:TranslationCardView />
+				</DataTemplate>
+			</controls:CarouselViewControl.ItemTemplate>
+		</controls:CarouselViewControl>
+
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+			<Button 
+                Image="button_bookmark.png" 
+                BackgroundColor="Transparent"/>
+			
+			<Button 
+                Image="button_record_mini.png" 
+                BackgroundColor="Transparent"
+                Command="{Binding RecordCommand}"/>
+			
+		</StackLayout>
+
+	</StackLayout>
+</ContentPage>

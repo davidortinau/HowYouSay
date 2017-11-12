@@ -4,8 +4,8 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     ios:Page.UseSafeArea="true"
     BackgroundColor="#11313F" 
-    xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Forms"
-    xmlns:converters="clr-namespace:HowYouSay.ValueConverters;assembly=HowYouSay.Forms"
+    xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Shared"
+    xmlns:converters="clr-namespace:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
     x:Class="HowYouSay.Pages.HomeViewPage">
     <ContentPage.Resources>
         <ResourceDictionary>

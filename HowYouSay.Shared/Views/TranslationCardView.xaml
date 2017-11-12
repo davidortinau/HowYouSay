@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:HowYouSay"
+    xmlns:effects="clr-namespace:HowYouSay.Effects"
+	x:Class="HowYouSay.Views.TranslationCardView">
+    <Frame BackgroundColor="#11313F">
+    	<StackLayout>
+    		<Label 
+                Text="{local:Translate TranslationLabel}" 
+                FontSize="13"
+                TextColor="#8ECEBF" />
+    		<Entry 
+                Placeholder="{local:Translate TranslationInputPlaceholder}"
+                Text="{Binding Translation}"
+                HorizontalTextAlignment="Start"
+                BackgroundColor="Transparent"
+                TextColor="#FFFFFF"
+                PlaceholderColor="#34686E"
+                FontSize="32">
+                <Entry.Effects>
+                    <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
+                </Entry.Effects>
+            </Entry>
+
+    		<Label 
+                Text="{local:Translate PhoneticLabel}" 
+                FontSize="13"
+                TextColor="#8ECEBF"/>
+    		<Entry Placeholder="{local:Translate PhoneticInputPlaceholder}" 
+    			Text="{Binding Phonetic}"
+                TextColor="#FFFFFF"
+                PlaceholderColor="#34686E"
+                BackgroundColor="Transparent"
+                FontSize="16"
+    			HorizontalTextAlignment="Start">
+                <Entry.Effects>
+                    <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
+                </Entry.Effects>
+            </Entry>
+
+    		<Label 
+                Text="{local:Translate LanguageLabel}" 
+                FontSize="13"
+                TextColor="#8ECEBF"/>
+    		<Entry Placeholder="{local:Translate LanguageInputPlaceholder}" 
+    			Text="{Binding Language}"
+                BackgroundColor="Transparent"
+                FontSize="16"
+                TextColor="#FFFFFF"
+                PlaceholderColor="#34686E"
+    			HorizontalTextAlignment="Start">
+                <Entry.Effects>
+                    <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
+                </Entry.Effects>
+            </Entry>
+
+    		<Label 
+                Text="{local:Translate NotesLabel}" 
+                FontSize="13"
+                TextColor="#8ECEBF"/>
+    		<Entry Placeholder="{local:Translate NotesInputPlaceholder}" 
+    			Text="{Binding Notes}"
+                BackgroundColor="Transparent"
+                FontSize="16"
+                TextColor="#FFFFFF"
+                PlaceholderColor="#34686E"
+    			HorizontalTextAlignment="Start">
+                <Entry.Effects>
+                    <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
+                </Entry.Effects>
+            </Entry>
+    	</StackLayout>
+    </Frame>
+</ContentView>

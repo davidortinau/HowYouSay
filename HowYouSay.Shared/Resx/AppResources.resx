@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="FullListLabel" xml:space="preserve">
+        <value>FULL LIST</value>
+        <comment>label for list tab</comment>
+    </data>
+	<data name="SearchInputPlaceholder" xml:space="preserve">
+        <value>search term</value>
+        <comment>placeholder for search field</comment>
+    </data>
+	<data name="EntryPageTitle" xml:space="preserve">
+        <value>TERM/PHRASE</value>
+        <comment>label at top of vocab page</comment>
+    </data>
+	<data name="EntryInputPlaceholder" xml:space="preserve">
+        <value>how you say</value>
+        <comment>placeholder for vocab entry</comment>
+    </data>
+	<data name="TranslationLabel" xml:space="preserve">
+        <value>TRANSLATION</value>
+        <comment>label above translation field</comment>
+    </data>
+	<data name="TranslationInputPlaceholder" xml:space="preserve">
+        <value>add a translation</value>
+        <comment>placeholder for translation entry</comment>
+    </data>
+	<data name="PhoneticLabel" xml:space="preserve">
+        <value>PHONETIC</value>
+        <comment>label above phonetic field</comment>
+    </data>
+    <data name="PhoneticInputPlaceholder" xml:space="preserve">
+        <value>haw yu se</value>
+        <comment>placeholder for phonetic entry</comment>
+    </data>
+	<data name="LanguageLabel" xml:space="preserve">
+        <value>LANGUAGE</value>
+        <comment>label above language field</comment>
+    </data>
+    <data name="LanguageInputPlaceholder" xml:space="preserve">
+        <value>English</value>
+        <comment>placeholder for language entry</comment>
+    </data>
+	<data name="NotesLabel" xml:space="preserve">
+        <value>NOTES</value>
+        <comment>label above notes field</comment>
+    </data>
+    <data name="NotesInputPlaceholder" xml:space="preserve">
+        <value>Additional details</value>
+        <comment>placeholder for notes entry</comment>
+    </data>
+</root>

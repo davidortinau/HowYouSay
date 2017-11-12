@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    BackgroundColor="#11313F"
+    x:Class="HowYouSay.Pages.AudioPage">
+
+    <ContentPage.Content>
+        <RelativeLayout>
+            <Button 
+                RelativeLayout.XConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=0,
+                             Constant=4}"
+                RelativeLayout.YConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Height,
+                             Factor=0,
+                            Constant=24}"
+                BorderWidth="0"
+                BackgroundColor="Transparent"
+                WidthRequest="40"
+                HeightRequest="40"
+                Image="icon_close.png" 
+                Command="{Binding CloseCommand}" />
+            <Label 
+                RelativeLayout.YConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Height,
+                             Factor=0,
+                            Constant=52}"
+                RelativeLayout.WidthConstraint=
+                    "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=1,
+                            Constant=0}"
+                x:Name="TranslationTitle"
+                Text="{Binding TranslationTitle}"
+                FontSize="32"
+                TextColor="#FFFFFF"
+                HorizontalTextAlignment="Center"/>
+            <Label 
+                RelativeLayout.YConstraint=
+                            "{ConstraintExpression Type=RelativeToView,
+                             ElementName=TranslationTitle,
+                             Property=Y,
+                             Factor=1,
+                            Constant=44}"
+                RelativeLayout.WidthConstraint=
+                    "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=1,
+                            Constant=0}"
+                Text="{Binding EntryTitle}"
+                FontSize="13"
+                TextColor="#8ECEBF"
+                HorizontalTextAlignment="Center"/>
+
+            <Label 
+                RelativeLayout.YConstraint=
+                            "{ConstraintExpression Type=RelativeToView,
+                             ElementName=RecordBtn,
+                             Property=Y,
+                             Factor=1,
+                            Constant=-30}"
+                RelativeLayout.XConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                Property=Width,
+                Factor=0.5,
+                Constant=-30}"
+                Text="{Binding TimeCode}"
+                FontSize="13"
+                WidthRequest="60"
+                TextColor="#8ECEBF"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Button 
+                RelativeLayout.XConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=0,
+                             Constant=20}"
+                RelativeLayout.YConstraint =
+                            "{ConstraintExpression Type=RelativeToView,
+                             ElementName=RecordBtn,
+                             Property=Y,
+                             Factor=1,
+                            Constant=26}"
+                BorderWidth="0"
+                BackgroundColor="Transparent"
+                WidthRequest="52"
+                HeightRequest="52"
+                Image="button_play.png"/>
+
+            <Button 
+                x:Name="RecordBtn"
+                RelativeLayout.XConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=0.5,
+                             Constant=-51}"
+                RelativeLayout.YConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Height,
+                             Factor=1,
+                            Constant=-130}"
+                BorderWidth="0"
+                BackgroundColor="Transparent"
+                WidthRequest="102"
+                HeightRequest="102"
+                Image="button_record.png"/>
+
+            <Button 
+                RelativeLayout.XConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=1,
+                             Constant=-72}"
+                RelativeLayout.YConstraint =
+                            "{ConstraintExpression Type=RelativeToView,
+                             ElementName=RecordBtn,
+                             Property=Y,
+                             Factor=1,
+                            Constant=26}"
+                BorderWidth="0"
+                BackgroundColor="Transparent"
+                WidthRequest="52"
+                HeightRequest="52"
+                Image="button_delete.png"/>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

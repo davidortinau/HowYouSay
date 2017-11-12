@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    BackgroundColor="#11313F"
+    xmlns:converters="using:HowYouSay.ValueConverters"
+    xmlns:behaviors="using:HowYouSay.Behaviors"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="HowYouSay.Pages.LanguagesPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ListView 
+                ItemsSource="{Binding Languages}"
+            ItemSelected="Handle_ItemSelected"
+                BackgroundColor="#11313F"
+                x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default">
+                <ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="ItemSelected" Command="{Binding LanguageSelectedCommand}" Converter="{StaticResource SelectedItemConverter}" />
+                </ListView.Behaviors>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="20,0,20,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Title}" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Switch Grid.Column="1" IsToggled="{Binding On}" InputTransparent="true" HorizontalOptions="End" VerticalOptions="Center"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+	</ContentPage.Content>
+</ContentPage>
