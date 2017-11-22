@@ -45,7 +45,7 @@ namespace HowYouSay.Pages
 		{
 			base.OnDisappearing();
 			_vm?.OnDisappearing();
-			BindingContext = null;
+			//BindingContext = null;
 		}
 	}
 }

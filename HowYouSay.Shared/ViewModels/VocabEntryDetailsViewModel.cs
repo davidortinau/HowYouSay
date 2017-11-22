@@ -57,6 +57,10 @@ namespace HowYouSay.ViewModels
 						Date = DateTimeOffset.Now
 					}
 				};
+
+				_realm.Write(()=>{
+					_realm.Add(Entry);
+				});
 			}
 
 			if (Entry.Translations == null || Entry.Translations.Count == 0)
@@ -149,7 +153,7 @@ namespace HowYouSay.ViewModels
 					_realm.Add<VocabEntry>(Entry);
 				});
 			}
-			Navigation.PopAsync(true);
+			//Navigation.PopAsync(true);
 		}
 
 		private void trimEmptyTranslation(VocabEntry entry)
@@ -192,7 +196,9 @@ namespace HowYouSay.ViewModels
 				return Entry.IsBookmarked;
 			}
 			set{
-				Entry.IsBookmarked = value;
+				_realm.Write(()=>{
+					Entry.IsBookmarked = value;	
+				});
 				OnPropertyChanged(nameof(IsBookmarked));
 			}
 		}
