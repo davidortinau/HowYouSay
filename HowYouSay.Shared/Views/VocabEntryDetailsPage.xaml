@@ -43,10 +43,12 @@
         </Entry>
 		
 		<controls:CarouselViewControl
+            x:Name="TranslationsCarousel"
             Grid.Row="2"
 			Orientation="Horizontal" 
 			InterPageSpacing="40" 
             Margin="20"
+            Position="{Binding CurrentTranslationIndex}"
 			ItemsSource="{Binding Translations}" 
 			VerticalOptions="FillAndExpand" 
 			HorizontalOptions="FillAndExpand">

@@ -28,6 +28,21 @@ namespace HowYouSay.ViewModels
 
 		public IList<TranslationViewModel> Translations { get; private set; }
 
+		int currentTranslationIndex;
+		public int CurrentTranslationIndex
+		{
+			get
+			{
+				return currentTranslationIndex;
+			}
+
+			set
+			{
+				currentTranslationIndex = value;
+				OnPropertyChanged(nameof(CurrentTranslationIndex));
+			}
+		}
+
 		public void SetEntry(string entryId)
 		{
 			if(!string.IsNullOrEmpty(entryId))
@@ -167,6 +182,8 @@ namespace HowYouSay.ViewModels
 			});
 			Translations.Add(new TranslationViewModel(translation));
 			OnPropertyChanged(nameof(Translations));
+
+			CurrentTranslationIndex = Translations.Count -1;
 		}
 
 		public bool IsBookmarked

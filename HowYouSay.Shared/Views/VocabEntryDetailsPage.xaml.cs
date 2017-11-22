@@ -1,4 +1,5 @@
-﻿using HowYouSay.ViewModels;
+﻿using CarouselView.FormsPlugin.Abstractions;
+using HowYouSay.ViewModels;
 using Xamarin.Forms;
 
 // TODO add empty cards for languages I am using but haven't added a translation yet. 
@@ -26,6 +27,7 @@ namespace HowYouSay.Pages
 		public VocabEntryDetailsPage()
 		{
 			InitializeComponent();
+
 		}
 
 		protected override void OnAppearing()
