@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using CodeMill.VMFirstNav;
-using HowYouSay.Models;
-using HowYouSay.ViewModels;
+﻿using HowYouSay.ViewModels;
 using Xamarin.Forms;
 
 namespace HowYouSay.Pages
 {
-	public partial class MenuPage : ContentPage, IViewFor<MenuViewModel>
+	public partial class MenuPage : ContentPage
 	{
 		public ListView ListView
 		{

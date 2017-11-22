@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using CodeMill.VMFirstNav;
-using HowYouSay.Models;
+﻿using HowYouSay.Models;
 using HowYouSay.ViewModels;
 using Xamarin.Forms;
 
 namespace HowYouSay.Pages
 {
-	public partial class LanguagesPage : ContentPage, IViewFor<LanguagesViewModel>
+	public partial class LanguagesPage : ContentPage
 	{
 		void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
 		{

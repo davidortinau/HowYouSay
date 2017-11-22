@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Input;
-using CodeMill.VMFirstNav;
 using HowYouSay.Models;
 using HowYouSay.Pages;
 using MvvmHelpers;
@@ -12,7 +10,7 @@ using Xamarin.Forms;
 
 namespace HowYouSay.ViewModels
 {
-	public class VocabEntryDetailsViewModel : BaseViewModel, IViewModel
+	public class VocabEntryDetailsViewModel : BaseViewModel
 	{
 		Realm _realm;
 
@@ -22,28 +20,28 @@ namespace HowYouSay.ViewModels
 
 		public ICommand SaveCommand { get; private set; }
 
+		public ICommand AddTranslationCommand { get; private set; }
+
 		public ICommand RecordCommand { get; private set; }
+
+		public ICommand BookmarkCommand { get; private set; }
 
 		public IList<TranslationViewModel> Translations { get; private set; }
 
 		public void SetEntry(string entryId)
 		{
-			Entry = _realm.Find<VocabEntry>(entryId);
+			if(!string.IsNullOrEmpty(entryId))
+				Entry = _realm.Find<VocabEntry>(entryId);
 
 			if (Entry == null)
 			{
-				var Entry = new VocabEntry
+				Entry = new VocabEntry
 				{
 					Metadata = new EntryMetadata
 					{
 						Date = DateTimeOffset.Now
 					}
 				};
-
-				_realm.Write(() =>
-				{
-					_realm.Add<VocabEntry>(Entry);
-				});
 			}
 
 			if (Entry.Translations == null || Entry.Translations.Count == 0)
@@ -107,7 +105,7 @@ namespace HowYouSay.ViewModels
 						var t = new Translation
 						{
 							Title = value,
-							Language = "English"
+							Language = "English" // TODO replace with last used
 						};
 						Entry.Translations.Add(t);
 					}
@@ -119,13 +117,38 @@ namespace HowYouSay.ViewModels
 		{
 			SaveCommand = new Command(Save);
 			RecordCommand = new Command(GoToRecord);
+			BookmarkCommand = new Command(ToggleBookmark);
+			AddTranslationCommand = new Command(AddTranslation);
 
 			_realm = Realm.GetInstance();
 		}
 
 		private void Save()
 		{
+			if(!string.IsNullOrEmpty(Entry.Title))
+			{
+				trimEmptyTranslation(Entry);
+
+				_realm.Write(() =>
+				{
+					_realm.Add<VocabEntry>(Entry);
+				});
+			}
 			Navigation.PopAsync(true);
+		}
+
+		private void trimEmptyTranslation(VocabEntry entry)
+		{
+			if(entry.Translations != null)
+			{
+				if(string.IsNullOrEmpty(entry.Translations.Last().Content))
+				{
+					_realm.Write(()=>{
+						entry.Translations.Remove(entry.Translations.Last());	
+					});
+
+				}
+			}
 		}
 
 		private async void GoToRecord()
@@ -137,17 +160,36 @@ namespace HowYouSay.ViewModels
 		{
 			var translation = new Translation
 			{
+				Title = Entry.Title
 			};
-
-			_realm.Write(() =>
-			{
+			_realm.Write(()=>{
 				Entry.Translations.Add(translation);
 			});
+			Translations.Add(new TranslationViewModel(translation));
+			OnPropertyChanged(nameof(Translations));
 		}
+
+		public bool IsBookmarked
+		{
+			get {
+				return Entry.IsBookmarked;
+			}
+			set{
+				Entry.IsBookmarked = value;
+				OnPropertyChanged(nameof(IsBookmarked));
+			}
+		}
+
+		void ToggleBookmark()
+		{
+			IsBookmarked = !IsBookmarked;
+		}
+
 
 		internal void OnDisappearing()
 		{
 			//_transaction.Dispose();
+			Save();
 		}
 	}
 }

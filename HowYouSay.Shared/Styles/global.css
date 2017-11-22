@@ -2,3 +2,9 @@
     color: azure;
     background-color: aliceblue;
 }
+.myClass {
+    background-color: rebeccapurple;
+}
+ContentPage {
+    background-color: #11313F;
+}

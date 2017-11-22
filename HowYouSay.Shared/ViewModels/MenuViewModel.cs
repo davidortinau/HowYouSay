@@ -1,23 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Input;
-using CodeMill.VMFirstNav;
 using HowYouSay.Models;
+using HowYouSay.Pages;
 using MvvmHelpers;
 using Xamarin.Forms;
 
 namespace HowYouSay.ViewModels
 {
-	public class MenuViewModel : BaseViewModel, IViewModel
+	public class MenuViewModel : BaseViewModel
 	{
-		INavigationService _navService { get; set; }
-
 		public ICommand ItemSelectedCommand { get; private set; }
+
+		public INavigation Navigation { get; set; }
 
 		public MenuViewModel()
 		{
-			_navService = NavigationService.Instance;
-
 			ItemSelectedCommand = new Command<MasterPageItem>(OnMenuItemSelected);
 
 			InitMenuItems();
@@ -26,30 +24,28 @@ namespace HowYouSay.ViewModels
 		MasterPageItem _lastSelected;
 		private async void OnMenuItemSelected(MasterPageItem pageItem)
 		{
-			if(pageItem == null) return;
-
-
+			if (pageItem == null) return;
 
 			Type vm = pageItem.TargetType;
-			var viewModel = Activator.CreateInstance(vm) as IViewModel;
-			_navService.SwitchDetailPage(viewModel);
+			//var viewModel = Activator.CreateInstance(vm) as IViewModel;
+			//_navService.SwitchDetailPage(viewModel);
 			_lastSelected = pageItem;
 
-			//if(vm == typeof(LanguagesViewModel))
-			//{
-			//	if(_lastSelected == null || _lastSelected != pageItem){
-			//		_lastSelected = pageItem;
+			if (vm == typeof(LanguagesViewModel))
+			{
+				if (_lastSelected == null || _lastSelected != pageItem)
+				{
+					_lastSelected = pageItem;
 
-			//		await _navService.PushAsync<LanguagesViewModel>();	
-			//	}
-			//}
-			//else if(vm == typeof(HomeViewModel))
-			//{
-			//	_lastSelected = pageItem;
-			//	await _navService.PushAsync<HomeViewModel>();	
-			//}
-
-
+					//await _navService.PushAsync<LanguagesViewModel>();	
+					Navigation.PushAsync(new LanguagesPage());
+				}
+			}
+			else if (vm == typeof(HomeViewModel))
+			{
+				_lastSelected = pageItem;
+				Navigation.PushAsync(new HomeViewPage());
+			}
 		}
 
 		private void InitMenuItems()
@@ -67,11 +63,13 @@ namespace HowYouSay.ViewModels
 				Title = "Languages",
 				TargetType = typeof(LanguagesViewModel)
 			});
+
 			_masterPageItems.Add(new MasterPageItem
 			{
 				Title = "Starter Phrases",
 				TargetType = typeof(HomeViewModel)
 			});
+
 			_masterPageItems.Add(new MasterPageItem
 			{
 				Title = "Export Data"
@@ -103,8 +101,13 @@ namespace HowYouSay.ViewModels
 		}
 
 		private List<MasterPageItem> _masterPageItems;
-		public List<MasterPageItem> MasterPageItems { get => _masterPageItems; set {
-				_masterPageItems = value; 
+		public List<MasterPageItem> MasterPageItems
+		{
+			get => _masterPageItems;
+
+			set
+			{
+				_masterPageItems = value;
 				OnPropertyChanged(nameof(MasterPageItems));
 			}
 		}

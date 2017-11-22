@@ -17,36 +17,6 @@ namespace HowYouSay
 			_model = model;
 
 			_realm = Realm.GetInstance();
-	  //      ConnectToRealm().ContinueWith(task =>
-			//{
-			//		IsBusy = false;
-			//		if (task.Exception != null)
-			//		{/* error */}
-			//});
-        }
-
-		//async Task ConnectToRealm()
-		//{
-		//	IsBusy = true;
-
-
-		//	_realm = Realm.GetInstance();
-		//}
-
-		private void SaveEntry()
-		{
-			var entry = new VocabEntry
-			{
-				Metadata = new EntryMetadata
-				{
-					Date = DateTimeOffset.Now
-				}
-			};
-
-			_realm.Write(() =>
-			{
-				_realm.Add<VocabEntry>(entry);
-			});
 		}
 
 		public string Translation

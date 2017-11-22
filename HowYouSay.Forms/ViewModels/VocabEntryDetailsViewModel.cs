@@ -24,6 +24,8 @@ namespace HowYouSay.ViewModels
 
 		public ICommand RecordCommand { get; private set; }
 
+		public ICommand BookmarkCommand { get; private set; }
+
 		public IList<TranslationViewModel> Translations { get; private set; }
 
 		public void SetEntry(string entryId)
@@ -108,6 +110,7 @@ namespace HowYouSay.ViewModels
 		{
 			SaveCommand = new Command(Save);
 			RecordCommand = new Command(GoToRecord);
+			BookmarkCommand = new Command(ToggleBookmark);
 
 			_realm = Realm.GetInstance();
 		}

@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using HowYouSay.ViewModels;
+﻿using HowYouSay.ViewModels;
 using Xamarin.Forms;
 using HowYouSay.Models;
-using Xamarin.Forms.PlatformConfiguration;
-using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
-using HowYouSay.Effects;
-using CodeMill.VMFirstNav;
 
 namespace HowYouSay.Pages
 {
-	public partial class HomeViewPage : ContentPage, IViewFor<HomeViewModel>
+	public partial class HomeViewPage : ContentPage
 	{
 		HomeViewModel _vm;
 		 	
@@ -18,6 +12,7 @@ namespace HowYouSay.Pages
 			{
 				_vm = value; 
 				BindingContext = _vm;
+				_vm.Navigation = this.Navigation;
 			}
 		}
 

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using CodeMill.VMFirstNav;
 using HowYouSay.Models;
 using MvvmHelpers;
 using Realms;
@@ -12,7 +8,7 @@ using Xamarin.Forms;
 
 namespace HowYouSay.ViewModels
 {
-	public class LanguagesViewModel : BaseViewModel, IViewModel
+	public class LanguagesViewModel : BaseViewModel
 	{
 		private Realm _realm;
 

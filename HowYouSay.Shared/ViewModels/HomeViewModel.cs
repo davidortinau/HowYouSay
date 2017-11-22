@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using CodeMill.VMFirstNav;
 using HowYouSay.Models;
 using HowYouSay.Pages;
 using MvvmHelpers;
@@ -12,7 +10,7 @@ using Xamarin.Forms;
 
 namespace HowYouSay.ViewModels
 {
-	public class HomeViewModel : BaseViewModel, IViewModel
+	public class HomeViewModel : BaseViewModel
 	{
 		private Realm _realm;
 
@@ -31,8 +29,6 @@ namespace HowYouSay.ViewModels
 		public ICommand SearchCommand { get; private set; }
 
 		public INavigation Navigation { get; set; }
-
-		public INavigationService _navService { get; set; }
 
 		private bool _isFullTabSelected = true;
 		public bool IsFullTabSelected
@@ -60,9 +56,6 @@ namespace HowYouSay.ViewModels
 		{
 			IsBusy = false;
 
-			_navService = NavigationService.Instance;
-
-
 			NavToAddCommand = new Command(AddEntry);
 			DeleteEntryCommand = new Command<VocabEntry>(DeleteEntry);
 			NavToMenuCommand = new Command(GoToMenu);
@@ -85,37 +78,16 @@ namespace HowYouSay.ViewModels
 
 		private async void AddEntry()
 		{
-			//var entry = new VocabEntry
-			//{
-			//	Metadata = new EntryMetadata
-			//	{
-			//		Date = DateTimeOffset.Now
-			//	}
-			//};
-
-			//var id = entry.Id;
-
-			//_realm.Write(() =>
-			//{
-			//	_realm.Add<VocabEntry>(entry);
-			//});
-
 			try
 			{
-				
-				await _navService.PushAsync<VocabEntryDetailsViewModel>();
-				//var page = new VocabEntryDetailsPage{
-				//	EntryId = entry.Id
-				//};
-				//await Navigation.PushAsync(page);
+				var page = new VocabEntryDetailsPage();
+				await Navigation.PushAsync(page);
 			}
 			catch (Exception ex)
 			{
 				//App.ShowMessageBox("An error occred navigating to the Job List page", "Navigation Failed!");
 				System.Diagnostics.Debug.WriteLine("Navigation failed " + ex.Message);
 			};
-
-
 		}
 
 		private void OpenSearch()
@@ -138,12 +110,11 @@ namespace HowYouSay.ViewModels
 
 		internal async void EditEntry(VocabEntry entry)
 		{
-			await _navService.PushAsync<VocabEntryDetailsViewModel>((vm) => vm.SetEntry(entry.Id));
-			//var page = new VocabEntryDetailsPage{
-			//	EntryId = entry.Id
-			//};
+			var page = new VocabEntryDetailsPage{
+				EntryId = entry.Id
+			};
 
-			//Navigation.PushAsync(page);
+			Navigation.PushAsync(page);
 		}
 
 		private void DeleteEntry(VocabEntry entry)

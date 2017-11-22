@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using CodeMill.VMFirstNav;
-using HowYouSay.ViewModels;
+﻿using HowYouSay.ViewModels;
 using Xamarin.Forms;
 
 // TODO add empty cards for languages I am using but haven't added a translation yet. 
@@ -9,7 +6,7 @@ using Xamarin.Forms;
 
 namespace HowYouSay.Pages
 {
-	public partial class VocabEntryDetailsPage : ContentPage, IViewFor<VocabEntryDetailsViewModel>
+	public partial class VocabEntryDetailsPage : ContentPage
 	{
 		VocabEntryDetailsViewModel _vm;
 		public VocabEntryDetailsViewModel ViewModel
@@ -18,6 +15,8 @@ namespace HowYouSay.Pages
 			set
 			{
 				_vm = value;
+				_vm.Navigation = this.Navigation;
+				_vm.SetEntry(EntryId);
 				BindingContext = _vm;
 			}
 		}
@@ -32,10 +31,11 @@ namespace HowYouSay.Pages
 		protected override void OnAppearing()
 		{
 			base.OnAppearing();
-			//if (_vm == null)
-			//{
-			//	BindingContext = VM = new VocabEntryDetailsViewModel(EntryId);
-			//}
+			if (_vm == null)
+			{
+				ViewModel = new VocabEntryDetailsViewModel();
+				_vm.SetEntry(EntryId);
+			}
 			_vm?.OnAppearing();
 		}
 

@@ -6,15 +6,30 @@
 	xmlns:views="clr-namespace:HowYouSay.Views"
     xmlns:effects="clr-namespace:HowYouSay.Effects"
     BackgroundColor="#11313F"
+    xmlns:converters="using:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
 	xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
 	x:Class="HowYouSay.Pages.VocabEntryDetailsPage">
-	<StackLayout>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:IsBookmarkedConverter x:Key="conv"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+	
 		<Label 
+            Grid.Row="0"
             Text="{local:Translate EntryPageTitle}"
             FontSize="13"
             TextColor="#8ECEBF"
             XAlign="Center"/>
 		<Entry 
+            Grid.Row="1"
 			Text="{Binding Title}"
             TextColor="#FFFFFF"
             PlaceholderColor="#34686E"
@@ -27,7 +42,8 @@
             </Entry.Effects>
         </Entry>
 		
-		<controls:CarouselViewControl 
+		<controls:CarouselViewControl
+            Grid.Row="2"
 			Orientation="Horizontal" 
 			InterPageSpacing="40" 
             Margin="20"
@@ -41,10 +57,19 @@
 			</controls:CarouselViewControl.ItemTemplate>
 		</controls:CarouselViewControl>
 
-		<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <Button Grid.Row="2" HorizontalOptions="End" VerticalOptions="Center"
+            Image="button_add.png" 
+            x:Name="AddBtn"
+            Margin="0,0,-25,0"
+            BackgroundColor="Transparent"
+            Command="{Binding AddTranslationCommand}"/>
+
+		<StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" MinimumHeightRequest="100">
 			<Button 
-                Image="button_bookmark.png" 
-                BackgroundColor="Transparent"/>
+                Command="{Binding BookmarkCommand}"
+                BackgroundColor="Transparent"
+                Image="{Binding IsBookmarked, Converter={StaticResource conv}, ConverterParameter='button_bookmark_selected.png;button_bookmark.png'}" 
+            />
 			
 			<Button 
                 Image="button_record_mini.png" 
@@ -53,5 +78,5 @@
 			
 		</StackLayout>
 
-	</StackLayout>
+	</Grid>
 </ContentPage>
