@@ -72,7 +72,6 @@ namespace HowYouSay.ViewModels
 			_realm = Realm.GetInstance();
 
 			Entries = _realm.All<VocabEntry>();
-
 			OnPropertyChanged(nameof(Entries));
 		}
 
@@ -106,6 +105,13 @@ namespace HowYouSay.ViewModels
 		{
 
 			IsFullTabSelected = (destination == ListTabs.FULL);
+
+			if(IsFullTabSelected){
+				Entries = _realm.All<VocabEntry>();
+			}else{
+				Entries = _realm.All<VocabEntry>().Where(x => x.IsBookmarked);
+			}
+			OnPropertyChanged(nameof(Entries));
 		}
 
 		internal async void EditEntry(VocabEntry entry)
