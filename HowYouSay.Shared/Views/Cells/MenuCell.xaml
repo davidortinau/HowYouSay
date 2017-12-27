@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HowYouSay.Shared.Views.Cells.MenuCell">
+
+    <StackLayout>
+        <StackLayout.Resources>
+            <StyleSheet Source="../../Styles/MenuPage.css"/>
+        </StackLayout.Resources>
+
+        <Label Margin="20,0,20,0" 
+        StyleClass="MenuListItem" 
+        Text="{Binding Title}"/>
+    </StackLayout>
+</ViewCell>

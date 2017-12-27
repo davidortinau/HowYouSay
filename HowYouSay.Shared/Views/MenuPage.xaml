@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
-    Padding="0,40,0,0"
     Icon="icon_menu.png"
     Title="Menu"
-    BackgroundColor="#11313F"
     xmlns:converters="using:HowYouSay.ValueConverters"
     xmlns:behaviors="using:HowYouSay.Behaviors"
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:cells="using:HowYouSay.Shared.Views.Cells"
     x:Class="HowYouSay.Pages.MenuPage">
     <ContentPage.Resources>
+        <StyleSheet Source="../Styles/Global.css"/>
+        <StyleSheet Source="../Styles/MenuPage.css"/>
         <ResourceDictionary>
             <converters:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
 	<ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand">
-            <ListView 
+            <ListView
+                StyleClass="MenuList"
                 ItemsSource="{Binding MasterPageItems}"
-                BackgroundColor="#11313F"
-                x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+                SeparatorVisibility="None"
+                x:Name="listView">
                 <ListView.Behaviors>
                     <behaviors:EventToCommandBehavior EventName="ItemSelected" Command="{Binding ItemSelectedCommand}" Converter="{StaticResource SelectedItemConverter}" />
                 </ListView.Behaviors>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell TextColor="White" Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+                        <cells:MenuCell />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

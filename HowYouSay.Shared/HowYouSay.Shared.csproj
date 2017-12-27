@@ -10,15 +10,9 @@
     <PackageReference Include="Realm.Database" Version="2.0.0" />
     <PackageReference Include="Realm.DataBinding" Version="1.2.0" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.3.2.47-beta" />
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.91635" />
+    <PackageReference Include="Xamarin.Forms" Version="2.6.0.52014-nightly" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Styles\global.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Styles\global.css" />
-  </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\AudioPage.xaml.cs">
       <DependentUpon>..\Pages\Pages\AudioPage.xaml</DependentUpon>
@@ -41,5 +35,12 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\VocabEntryDetailsPage.xaml.cs">
       <DependentUpon>..\Pages\Pages\VocabEntryDetailsPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Styles\" />
+    <Folder Include="Views\Cells\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Styles\global.css" />
   </ItemGroup>
 </Project>
