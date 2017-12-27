@@ -1,0 +1,20 @@
+﻿@import "colors";
+@import "units";
+
+        
+.ContentPage {
+    background-color: $blue;
+}
+
+.MenuContent {
+    padding-top: $topmargin;
+    background-color: $blue;
+}
+
+.MenuList {
+    background-color: $blue;
+}
+
+.MenuListItem {
+    color: $white;
+}

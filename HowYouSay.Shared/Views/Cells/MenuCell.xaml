@@ -3,11 +3,11 @@
 
     <StackLayout>
         <StackLayout.Resources>
-            <StyleSheet Source="../../Styles/MenuPage.css"/>
+            <StyleSheet Source="../../Styles/MenuCell.css"/>
         </StackLayout.Resources>
 
-        <Label Margin="20,0,20,0" 
-        StyleClass="MenuListItem" 
-        Text="{Binding Title}"/>
+        <Label 
+            StyleClass="MenuListItem" 
+            Text="{Binding Title}"/>
     </StackLayout>
 </ViewCell>

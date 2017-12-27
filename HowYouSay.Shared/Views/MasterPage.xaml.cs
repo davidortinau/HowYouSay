@@ -11,7 +11,7 @@ namespace HowYouSay.Pages
 		{
 			InitializeComponent();
 
-			homePage.ViewModel = new ViewModels.HomeViewModel();
+			homeView.ViewModel = new ViewModels.HomeViewModel();
 			menuPage.ViewModel = new ViewModels.MenuViewModel(){
 				
 			};

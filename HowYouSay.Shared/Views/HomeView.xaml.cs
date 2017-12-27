@@ -4,7 +4,7 @@ using HowYouSay.Models;
 
 namespace HowYouSay.Pages
 {
-	public partial class HomeViewPage : ContentPage
+	public partial class HomeView : ContentPage
 	{
 		HomeViewModel _vm;
 		 	
@@ -16,7 +16,7 @@ namespace HowYouSay.Pages
 			}
 		}
 
-		public HomeViewPage()
+		public HomeView()
 		{
 			InitializeComponent();
 

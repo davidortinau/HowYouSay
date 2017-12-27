@@ -1,0 +1,33 @@
+﻿@import "colors";
+
+.ContentPage {
+    background-color: $blue;
+}
+
+.MainTab {
+    border-color: transparent;
+    background-color: transparent;
+    color: $white;
+    border-width: 0;
+}
+
+.MainTabSelected {
+    @extend .MainTab;
+    color: $teal;
+}
+
+.SelectedIndicator {
+    height: 3;
+    background-color: $orange;
+}
+
+ListView {
+    background-color: $blue;
+}
+
+.AddButton {
+    background-color: transparent;
+    width: 60;
+    height: 60;
+    border: 0;
+}

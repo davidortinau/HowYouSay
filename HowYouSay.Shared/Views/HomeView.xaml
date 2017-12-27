@@ -6,8 +6,9 @@
     BackgroundColor="#11313F" 
     xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Shared"
     xmlns:converters="clr-namespace:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
-    x:Class="HowYouSay.Pages.HomeViewPage">
+    x:Class="HowYouSay.Pages.HomeView">
     <ContentPage.Resources>
+        <StyleSheet Source="../Styles/HomeView.css"/>
         <ResourceDictionary>
             <converters:SelectedTabColorConverter x:Key="conv"/>
             <converters:InverseBoolConverter x:Key="boolConv"/>
@@ -30,22 +31,21 @@
                 HeightRequest="60"
                 Orientation="Horizontal">
                 <Button
+                    TextColor="{Binding IsFullTabSelected, Converter={StaticResource conv}, ConverterParameter='#ffffff;#34686e'}"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="Fill"
-                    BorderColor="Transparent"
-                    BackgroundColor="Transparent"
+                    StyleClass="MainTab"
                     Text="{local:Translate FullListLabel}"
                     Command="{Binding ToggleCommand}" CommandParameter="full"
-                    TextColor="{Binding IsFullTabSelected, Converter={StaticResource conv}, ConverterParameter='#ffffff;#34686e'}"
                     >
                 </Button>
                 <Button
+                    StyleClass="MainTab"
                     HorizontalOptions="FillAndExpand"
-                    BackgroundColor="Transparent"
                     VerticalOptions="Fill"
-                    BorderWidth="0"
                     Image="icon_bookmark.png"
-                    Command="{Binding ToggleCommand}" CommandParameter="bookmarked">
+                    Command="{Binding ToggleCommand}" 
+                    CommandParameter="bookmarked">
                     <Button.Triggers>
                         <DataTrigger TargetType="Button" Binding="{Binding IsFullTabSelected}" Value="true">
                             <Setter Property="Image" Value="icon_bookmark.png" />
@@ -68,8 +68,7 @@
                 "{ConstraintExpression Type=RelativeToParent,
                     Property=Width,
                 Factor=0.5}"
-                HeightRequest="3"
-                BackgroundColor="#D5441B"></BoxView>
+                StyleClass="SelectedIndicator"/>
             <BoxView 
                 IsVisible="{Binding IsFullTabSelected, Converter={StaticResource boolConv}}"
                 RelativeLayout.YConstraint=
@@ -86,9 +85,7 @@
                 "{ConstraintExpression Type=RelativeToParent,
                     Property=Width,
                     Factor=0.5}"
-                HeightRequest="3"
-                BackgroundColor="#D5441B">
-            </BoxView>
+                StyleClass="SelectedIndicator"/>
             <ActivityIndicator 
                 RelativeLayout.XConstraint =
                             "{ConstraintExpression Type=RelativeToParent,
@@ -112,7 +109,6 @@
                 "{ConstraintExpression Type=RelativeToParent,
                     Property=Width,
                 Factor=1}"
-                BackgroundColor="#11313F"
                 ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -137,11 +133,8 @@
                              Property=Height,
                              Factor=1,
                             Constant=-80}"
-                BorderWidth="0"
                 Command="{Binding NavToAddCommand}"
-                BackgroundColor="Transparent"
-                WidthRequest="60"
-                HeightRequest="60"
+                StyleClass="AddButton"
                 Image="button_add.png"/>
         </RelativeLayout>
 	</ContentPage.Content>

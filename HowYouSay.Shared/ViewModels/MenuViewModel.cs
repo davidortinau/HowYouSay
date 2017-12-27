@@ -44,7 +44,7 @@ namespace HowYouSay.ViewModels
 			else if (vm == typeof(HomeViewModel))
 			{
 				_lastSelected = pageItem;
-				Navigation.PushAsync(new HomeViewPage());
+				Navigation.PushAsync(new HomeView());
 			}
 		}
 

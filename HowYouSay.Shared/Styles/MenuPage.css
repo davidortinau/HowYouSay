@@ -1,11 +1,12 @@
-﻿^ContentPage {
-    padding-top: 40;
-}
+.ContentPage {
+  background-color: #11313F; }
+
+.MenuContent {
+  padding-top: 40;
+  background-color: #11313F; }
 
 .MenuList {
-    background-color: #11313F;
-}
+  background-color: #11313F; }
 
 .MenuListItem {
-    color: white;
-}
+  color: #ffffff; }
