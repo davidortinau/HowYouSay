@@ -1,0 +1,19 @@
+^ContentPage {
+  background-color: #11313F; }
+
+.Title {
+  color: #8ECEBF;
+  font-size: 13; }
+
+.TitleEntry {
+  color: #ffffff;
+  font-size: 32;
+  background-color: transparent;
+  text-align: center; }
+
+CarouselViewControl {
+  margin: 20; }
+
+.RightEdgeButton {
+  margin-right: -25;
+  background-color: transparent; }

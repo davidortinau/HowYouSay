@@ -5,16 +5,16 @@
 	xmlns:local="clr-namespace:HowYouSay"
 	xmlns:views="clr-namespace:HowYouSay.Views"
     xmlns:effects="clr-namespace:HowYouSay.Effects"
-    BackgroundColor="#11313F"
     xmlns:converters="using:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
 	xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
 	x:Class="HowYouSay.Pages.VocabEntryDetailsPage">
     <ContentPage.Resources>
+        <StyleSheet Source="../Styles/VocabEntryDetails.css"/>
         <ResourceDictionary>
             <converters:IsBookmarkedConverter x:Key="conv"/>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <Grid>
+    <Grid StyleClass="Content">
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition Height="60"/>
@@ -25,18 +25,14 @@
 		<Label 
             Grid.Row="0"
             Text="{local:Translate EntryPageTitle}"
-            FontSize="13"
-            TextColor="#8ECEBF"
+            StyleClass="Title"
             XAlign="Center"/>
 		<Entry 
             Grid.Row="1"
 			Text="{Binding Title}"
-            TextColor="#FFFFFF"
+            StyleClass="TitleEntry"
             PlaceholderColor="#34686E"
-            FontSize="32"
-            BackgroundColor="Transparent"
-			Placeholder="{local:Translate EntryInputPlaceholder}" 
-			HorizontalTextAlignment="Center">
+            Placeholder="{local:Translate EntryInputPlaceholder}">
             <Entry.Effects>
                 <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
             </Entry.Effects>
@@ -47,7 +43,6 @@
             Grid.Row="2"
 			Orientation="Horizontal" 
 			InterPageSpacing="40" 
-            Margin="20"
             Position="{Binding CurrentTranslationIndex}"
 			ItemsSource="{Binding Translations}" 
 			VerticalOptions="FillAndExpand" 
@@ -62,8 +57,7 @@
         <Button Grid.Row="2" HorizontalOptions="End" VerticalOptions="Center"
             Image="button_add.png" 
             x:Name="AddBtn"
-            Margin="0,0,-25,0"
-            BackgroundColor="Transparent"
+            StyleClass="RightEdgeButton"
             Command="{Binding AddTranslationCommand}"/>
 
 		<StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" MinimumHeightRequest="100">

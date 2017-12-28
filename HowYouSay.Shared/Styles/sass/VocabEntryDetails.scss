@@ -1,0 +1,26 @@
+﻿@import "colors";
+
+\^ContentPage {
+    background-color: $blue;
+}
+
+.Title {
+    color: $lightblue;
+    font-size: 13;
+}
+
+.TitleEntry {
+    color: $white;
+    font-size: 32;
+    background-color: transparent;
+    text-align: center;
+}
+
+CarouselViewControl {
+    margin: 20;
+}
+
+.RightEdgeButton {
+    margin-right: -25;
+    background-color: transparent;
+}

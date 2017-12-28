@@ -1,0 +1,12 @@
+Frame {
+  background-color: #11313F; }
+
+Label {
+  font-size: 13;
+  color: #34686e; }
+
+Entry {
+  background-color: transparent;
+  font-size: 16;
+  color: #ffffff;
+  text-align: left; }

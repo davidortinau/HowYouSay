@@ -1,0 +1,17 @@
+﻿@import "colors";
+
+Frame {    
+    background-color: $blue;
+}
+
+Label {
+    font-size: 13;
+    color: $teal;
+}
+
+Entry {
+    background-color: transparent;
+    font-size: 16;
+    color: $white;
+    text-align: left;
+}

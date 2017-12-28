@@ -1,5 +1,6 @@
-.ContentPage {
-  background-color: #11313F; }
+^ContentPage {
+  background-color: #11313F;
+  color: white; }
 
 .MenuContent {
   padding-top: 40;
