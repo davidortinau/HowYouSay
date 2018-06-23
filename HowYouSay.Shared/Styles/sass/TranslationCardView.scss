@@ -1,12 +1,15 @@
 ﻿@import "colors";
 
-Frame {    
+Frame {
     background-color: $blue;
 }
 
 Label {
     font-size: 13;
-    color: $teal;
+}
+
+.HeaderLabel {
+    color: $lightblue;
 }
 
 Entry {
@@ -14,4 +17,9 @@ Entry {
     font-size: 16;
     color: $white;
     text-align: left;
+}
+
+Editor {
+    color: $white;
+    font-size: 16;
 }

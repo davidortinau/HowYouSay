@@ -1,4 +1,5 @@
-﻿using CarouselView.FormsPlugin.Abstractions;
+﻿using System;
+using CarouselView.FormsPlugin.Abstractions;
 using HowYouSay.ViewModels;
 using Xamarin.Forms;
 
@@ -47,5 +48,22 @@ namespace HowYouSay.Pages
 			_vm?.OnDisappearing();
 			//BindingContext = null;
 		}
+
+        //string _currentColorState = "Normal";
+        //void ToggleValid_OnClicked(object sender, EventArgs e)
+        //{
+        //    if (_currentColorState == "Normal")
+        //    {
+        //        _currentColorState = "Invalid";
+        //    }
+        //    else
+        //    {
+        //        _currentColorState = "Normal";
+        //    }
+
+        //    //CurrentState.Text = $"{_currentColorState}";
+        //    VisualStateManager.GoToState(myLabel, _currentColorState);
+        //    //VisualStateManager.GoToState(AButton, _currentColorState);
+        //}
 	}
 }

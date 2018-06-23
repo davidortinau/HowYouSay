@@ -12,7 +12,7 @@
         <ResourceDictionary>
             <converters:SelectedTabColorConverter x:Key="conv"/>
             <converters:InverseBoolConverter x:Key="boolConv"/>
-        </ResourceDictionary>            
+        </ResourceDictionary>  
     </ContentPage.Resources>
 
      <ContentPage.ToolbarItems>

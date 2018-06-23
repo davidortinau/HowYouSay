@@ -52,5 +52,17 @@
 	<string>Assets.xcassets/LaunchImage.launchimage</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+
+	<key>UIAppFonts</key>
+	<array>
+		<string>gotham_book.ttf</string>
+		<string>gotham_light.ttf</string>
+		<string>gotham_medium.ttf</string>
+		<string>SourceSerifPro-Regular.otf</string>
+		<string>SourceSansPro-Semibold.otf</string>
+		<string>SourceSerifPro-Semibold.otf</string>
+		<string>SourceSansPro-Regular.otf</string>
+		<string>SourceSansPro-Bold.otf</string>
+	</array>
 </dict>
 </plist>

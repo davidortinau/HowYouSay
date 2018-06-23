@@ -5,14 +5,15 @@
 	xmlns:local="clr-namespace:HowYouSay"
     xmlns:effects="clr-namespace:HowYouSay.Effects"
 	x:Class="HowYouSay.Views.TranslationCardView">
-
+ 
     <ContentView.Resources>
         <StyleSheet Source="../Styles/TranslationCardView.css"/>
     </ContentView.Resources>
     
     <Frame>
     	<StackLayout>
-    		<Label 
+    		<Label Style="{StaticResource CardViewLabel}"
+                class="HeaderLabel"
                 Text="{local:Translate TranslationLabel}"  />
     		<Entry 
                 Placeholder="{local:Translate TranslationInputPlaceholder}"
@@ -25,6 +26,8 @@
             </Entry>
 
     		<Label 
+                class="HeaderLabel"
+                Style="{StaticResource CardViewLabel}"
                 Text="{local:Translate PhoneticLabel}" />
     		<Entry Placeholder="{local:Translate PhoneticInputPlaceholder}" 
     			Text="{Binding Phonetic}"
@@ -34,7 +37,9 @@
                 </Entry.Effects>
             </Entry>
 
-    		<Label 
+    		<Label
+                class="HeaderLabel"
+                Style="{StaticResource CardViewLabel}"
                 Text="{local:Translate LanguageLabel}" />
     		<Entry Placeholder="{local:Translate LanguageInputPlaceholder}" 
     			Text="{Binding Language}"
@@ -45,14 +50,16 @@
             </Entry>
 
     		<Label 
+                class="HeaderLabel"
+                Style="{StaticResource CardViewLabel}"
                 Text="{local:Translate NotesLabel}" />
-    		<Entry Placeholder="{local:Translate NotesInputPlaceholder}" 
+    		<Editor  
     			Text="{Binding Notes}"
-                PlaceholderColor="#34686E">
-                <Entry.Effects>
+                AutoSize="TextChanges">
+                <Editor.Effects>
                     <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
-                </Entry.Effects>
-            </Entry>
+                </Editor.Effects>
+            </Editor>
     	</StackLayout>
     </Frame>
 </ContentView>

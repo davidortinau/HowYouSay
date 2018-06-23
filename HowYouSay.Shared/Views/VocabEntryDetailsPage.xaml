@@ -8,12 +8,14 @@
     xmlns:converters="using:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
 	xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
 	x:Class="HowYouSay.Pages.VocabEntryDetailsPage">
+
     <ContentPage.Resources>
         <StyleSheet Source="../Styles/VocabEntryDetails.css"/>
         <ResourceDictionary>
             <converters:IsBookmarkedConverter x:Key="conv"/>
         </ResourceDictionary>
     </ContentPage.Resources>
+    
     <Grid StyleClass="Content">
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -23,10 +25,12 @@
         </Grid.RowDefinitions>
 	
 		<Label 
+            x:Name="myLabel"
             Grid.Row="0"
             Text="{local:Translate EntryPageTitle}"
             StyleClass="Title"
-            XAlign="Center"/>
+            XAlign="Center">
+        </Label>
 		<Entry 
             Grid.Row="1"
 			Text="{Binding Title}"
@@ -37,7 +41,7 @@
                 <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
             </Entry.Effects>
         </Entry>
-		
+
 		<controls:CarouselViewControl
             x:Name="TranslationsCarousel"
             Grid.Row="2"
@@ -73,6 +77,6 @@
                 Command="{Binding RecordCommand}"/>
 			
 		</StackLayout>
-
+  
 	</Grid>
 </ContentPage>

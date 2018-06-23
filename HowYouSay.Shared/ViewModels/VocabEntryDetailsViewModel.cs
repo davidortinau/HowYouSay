@@ -89,6 +89,7 @@ namespace HowYouSay.ViewModels
 
 		internal void OnAppearing()
 		{
+            
 			if (Entry == null)
 			{
 				// we don't have one so bail
@@ -184,6 +185,9 @@ namespace HowYouSay.ViewModels
 			_realm.Write(()=>{
 				Entry.Translations.Add(translation);
 			});
+            if(Translations == null){
+                Translations = new List<TranslationViewModel>();
+            }
 			Translations.Add(new TranslationViewModel(translation));
 			OnPropertyChanged(nameof(Translations));
 

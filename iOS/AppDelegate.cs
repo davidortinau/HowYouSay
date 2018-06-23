@@ -12,13 +12,13 @@ namespace HowYouSay.iOS
 	{
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			//UINavigationBar.Appearance.BarTintColor = Color.FromHex("#11313F").ToUIColor(); //bar background
-			//UINavigationBar.Appearance.TintColor = UIColor.White; //Tint color of button items
-			//UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes()
-			//{
-			//	Font = UIFont.FromName("HelveticaNeue-Light", (nfloat)20f),
-			//	TextColor = UIColor.White
-			//});
+			UINavigationBar.Appearance.BarTintColor = Color.FromHex("#11313F").ToUIColor(); //bar background
+			UINavigationBar.Appearance.TintColor = UIColor.White; //Tint color of button items
+			UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes()
+			{
+				Font = UIFont.FromName("HelveticaNeue-Light", (nfloat)20f),
+				TextColor = UIColor.White
+			});
 
 			global::Xamarin.Forms.Forms.Init();
 			CarouselViewRenderer.Init();

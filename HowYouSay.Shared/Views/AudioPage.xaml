@@ -6,9 +6,24 @@
     BackgroundColor="#11313F"
     x:Class="HowYouSay.Pages.AudioPage">
 
+    <ContentPage.Resources>
+        <StyleSheet>
+            <![CDATA[
+                #MyLabel {
+                    color: #FF6600;
+                }   
+
+                .myLabelStyle {
+                    color: blue;
+                }
+            ]]>
+        </StyleSheet>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <RelativeLayout>
             <Button 
+                x:Name="MyButton"
                 RelativeLayout.XConstraint=
                             "{ConstraintExpression Type=RelativeToParent,
                              Property=Width,
@@ -26,6 +41,7 @@
                 Image="icon_close.png" 
                 Command="{Binding CloseCommand}" />
             <Label 
+                StyleClass="myLabe"
                 RelativeLayout.YConstraint=
                             "{ConstraintExpression Type=RelativeToParent,
                              Property=Height,
@@ -42,6 +58,7 @@
                 TextColor="#FFFFFF"
                 HorizontalTextAlignment="Center"/>
             <Label 
+                x:Name="MyLabel"
                 RelativeLayout.YConstraint=
                             "{ConstraintExpression Type=RelativeToView,
                              ElementName=TranslationTitle,
@@ -78,6 +95,7 @@
                 />
 
             <Button 
+                DisableLayout="true"
                 RelativeLayout.XConstraint =
                             "{ConstraintExpression Type=RelativeToParent,
                              Property=Width,

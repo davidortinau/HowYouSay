@@ -2,11 +2,17 @@ Frame {
   background-color: #11313F; }
 
 Label {
-  font-size: 13;
-  color: #34686e; }
+  font-size: 13; }
+
+.HeaderLabel {
+  color: #8ECEBF; }
 
 Entry {
   background-color: transparent;
   font-size: 16;
   color: #ffffff;
   text-align: left; }
+
+Editor {
+  color: #ffffff;
+  font-size: 16; }
