@@ -52,7 +52,6 @@
 	<string>Assets.xcassets/LaunchImage.launchimage</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-
 	<key>UIAppFonts</key>
 	<array>
 		<string>gotham_book.ttf</string>
@@ -64,5 +63,7 @@
 		<string>SourceSansPro-Regular.otf</string>
 		<string>SourceSansPro-Bold.otf</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The [app name] wants to use your microphone to record audio.</string>
 </dict>
 </plist>

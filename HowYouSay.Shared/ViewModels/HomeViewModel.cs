@@ -10,138 +10,144 @@ using Xamarin.Forms;
 
 namespace HowYouSay.ViewModels
 {
-	public class HomeViewModel : BaseViewModel
-	{
-		private Realm _realm;
+    public class HomeViewModel : BaseViewModel
+    {
+        private Realm _realm;
 
-		public Action Changed { get; set; }
+        public Action Changed { get; set; }
 
-		public IQueryable<VocabEntry> Entries { get; private set; }
+        public IQueryable<VocabEntry> Entries { get; private set; }
 
-		public ICommand NavToAddCommand { get; private set; }
+        public ICommand NavToAddCommand { get; private set; }
 
-		public ICommand NavToMenuCommand { get; private set; }
+        public ICommand NavToMenuCommand { get; private set; }
 
-		public ICommand ToggleCommand { get; private set; }
+        public ICommand ToggleCommand { get; private set; }
 
-		public ICommand DeleteEntryCommand { get; private set; }
+        public ICommand DeleteEntryCommand { get; private set; }
 
-		public ICommand SearchCommand { get; private set; }
+        public ICommand SearchCommand { get; private set; }
 
-		public INavigation Navigation { get; set; }
+        public INavigation Navigation { get; set; }
 
-		private bool _isFullTabSelected = true;
-		public bool IsFullTabSelected
-		{
-			get
-			{
-				return _isFullTabSelected;
-			}
-			set
-			{
-				SetProperty(ref _isFullTabSelected, value, onChanged: Changed);
-				OnPropertyChanged(nameof(IsBookmarkedTabSelected));
-			}
-		}
+        private bool _isFullTabSelected = true;
+        public bool IsFullTabSelected
+        {
+            get
+            {
+                return _isFullTabSelected;
+            }
+            set
+            {
+                SetProperty(ref _isFullTabSelected, value, onChanged: Changed);
+                OnPropertyChanged(nameof(IsBookmarkedTabSelected));
+            }
+        }
 
-		public bool IsBookmarkedTabSelected
-		{
-			get
-			{
-				return !_isFullTabSelected;
-			}
-		}
+        public bool IsBookmarkedTabSelected
+        {
+            get
+            {
+                return !_isFullTabSelected;
+            }
+        }
 
-		public HomeViewModel()
-		{
-			IsBusy = false;
+        public HomeViewModel()
+        {
+            IsBusy = false;
 
-			NavToAddCommand = new Command(AddEntry);
-			DeleteEntryCommand = new Command<VocabEntry>(DeleteEntry);
-			NavToMenuCommand = new Command(GoToMenu);
-			ToggleCommand = new Command<string>(Toggle);
-			SearchCommand = new Command(OpenSearch);
+            NavToAddCommand = new Command(AddEntry);
+            DeleteEntryCommand = new Command<VocabEntry>(DeleteEntry);
+            NavToMenuCommand = new Command(GoToMenu);
+            ToggleCommand = new Command<string>(Toggle);
+            SearchCommand = new Command(OpenSearch);
 
 
-		}
+        }
 
-		async Task ConnectToRealm()
-		{
-			IsBusy = true;
+        async Task ConnectToRealm()
+        {
+            IsBusy = true;
 
-			_realm = Realm.GetInstance();
+            var config = new RealmConfiguration() { SchemaVersion = 1 };
 
-			Entries = _realm.All<VocabEntry>();
-			OnPropertyChanged(nameof(Entries));
-		}
+            _realm = Realm.GetInstance(config);
 
-		private async void AddEntry()
-		{
-			try
-			{
-				var page = new VocabEntryDetailsPage();
-				await Navigation.PushAsync(page);
-			}
-			catch (Exception ex)
-			{
-				//App.ShowMessageBox("An error occred navigating to the Job List page", "Navigation Failed!");
-				System.Diagnostics.Debug.WriteLine("Navigation failed " + ex.Message);
-			};
-		}
+            Entries = _realm.All<VocabEntry>();
+            OnPropertyChanged(nameof(Entries));
+        }
 
-		private void OpenSearch()
-		{
+        private async void AddEntry()
+        {
+            try
+            {
+                var page = new VocabEntryDetailsPage();
+                await Navigation.PushAsync(page);
+            }
+            catch (Exception ex)
+            {
+                //App.ShowMessageBox("An error occred navigating to the Job List page", "Navigation Failed!");
+                System.Diagnostics.Debug.WriteLine("Navigation failed " + ex.Message);
+            };
+        }
 
-		}
+        private void OpenSearch()
+        {
 
-		private void GoToMenu()
-		{
-			//var page = new VocabEntryDetailsPage(new VocabEntryDetailsViewModel(entry));
+        }
 
-			//Navigation.PushAsync(page);
-		}
+        private void GoToMenu()
+        {
+            //var page = new VocabEntryDetailsPage(new VocabEntryDetailsViewModel(entry));
 
-		private void Toggle(string destination)
-		{
+            //Navigation.PushAsync(page);
+        }
 
-			IsFullTabSelected = (destination == ListTabs.FULL);
+        private void Toggle(string destination)
+        {
 
-			if(IsFullTabSelected){
-				Entries = _realm.All<VocabEntry>();
-			}else{
-				Entries = _realm.All<VocabEntry>().Where(x => x.IsBookmarked);
-			}
-			OnPropertyChanged(nameof(Entries));
-		}
+            IsFullTabSelected = (destination == ListTabs.FULL);
 
-		internal async void EditEntry(VocabEntry entry)
-		{
-			var page = new VocabEntryDetailsPage{
-				EntryId = entry.Id
-			};
+            if (IsFullTabSelected)
+            {
+                Entries = _realm.All<VocabEntry>();
+            }
+            else
+            {
+                Entries = _realm.All<VocabEntry>().Where(x => x.IsBookmarked);
+            }
+            OnPropertyChanged(nameof(Entries));
+        }
 
-			Navigation.PushAsync(page);
-		}
+        internal async void EditEntry(VocabEntry entry)
+        {
+            var page = new VocabEntryDetailsPage
+            {
+                EntryId = entry.Id
+            };
 
-		private void DeleteEntry(VocabEntry entry)
-		{
-			_realm.Write(() => _realm.Remove(entry));
-		}
+            Navigation.PushAsync(page);
+        }
 
-		public void OnAppearing()
-		{
-			ConnectToRealm().ContinueWith(task =>
-			{
-				IsBusy = false;
-				if (task.Exception != null)
-				{/* error */}
-			});
-		}
-	}
+        private void DeleteEntry(VocabEntry entry)
+        {
+            _realm.Write(() => _realm.Remove(entry));
+        }
 
-	static class ListTabs
-	{
-		public const string FULL = "full";
-		public const string BOOKMARKED = "bookmarked";
-	}
+        public void OnAppearing()
+        {
+            ConnectToRealm().ContinueWith(task =>
+            {
+                IsBusy = false;
+                if (task.Exception != null)
+                {/* error */}
+            });
+        }
+    }
+
+    static class ListTabs
+    {
+        public const string FULL = "full";
+        public const string BOOKMARKED = "bookmarked";
+    }
 }

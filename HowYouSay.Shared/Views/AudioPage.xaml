@@ -111,6 +111,8 @@
                 BackgroundColor="Transparent"
                 WidthRequest="52"
                 HeightRequest="52"
+                Command="{Binding PlayCommand}"
+                IsVisible="{Binding CanPlay}"
                 Image="button_play.png"/>
 
             <Button 
@@ -129,7 +131,28 @@
                 BackgroundColor="Transparent"
                 WidthRequest="102"
                 HeightRequest="102"
+                IsVisible="{Binding CanRecord}"
+                Command="{Binding StartRecordCommand}"
                 Image="button_record.png"/>
+            <Button 
+                x:Name="StopRecordBtn"
+                RelativeLayout.XConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Width,
+                             Factor=0.5,
+                             Constant=-51}"
+                RelativeLayout.YConstraint =
+                            "{ConstraintExpression Type=RelativeToParent,
+                             Property=Height,
+                             Factor=1,
+                            Constant=-130}"
+                BorderWidth="0"
+                BackgroundColor="Transparent"
+                WidthRequest="102"
+                HeightRequest="102"
+                IsVisible="{Binding IsRecording}"
+                Command="{Binding StartRecordCommand}"
+                Image="button_stop"/>
 
             <Button 
                 RelativeLayout.XConstraint =

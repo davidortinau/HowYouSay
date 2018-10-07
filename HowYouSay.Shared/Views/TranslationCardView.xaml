@@ -4,14 +4,23 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	xmlns:local="clr-namespace:HowYouSay"
     xmlns:effects="clr-namespace:HowYouSay.Effects"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
 	x:Class="HowYouSay.Views.TranslationCardView">
  
     <ContentView.Resources>
         <StyleSheet Source="../Styles/TranslationCardView.css"/>
     </ContentView.Resources>
     
-    <Frame>
-    	<StackLayout>
+    	<StackLayout VerticalOptions="Start" 
+                     Margin="10"
+                     Padding="10"
+                     BackgroundColor="#11313F"
+                    ios:VisualElement.ShadowColor="Black"
+                    ios:VisualElement.ShadowOpacity="0.6"
+                    ios:VisualElement.ShadowRadius="5"
+                    ios:VisualElement.IsShadowEnabled="true"
+                    ios:VisualElement.ShadowOffset="0,0">
+        
     		<Label Style="{StaticResource CardViewLabel}"
                 class="HeaderLabel"
                 Text="{local:Translate TranslationLabel}"  />
@@ -54,12 +63,12 @@
                 Style="{StaticResource CardViewLabel}"
                 Text="{local:Translate NotesLabel}" />
     		<Editor  
-    			Text="{Binding Notes}"
+    			Text="{Binding Notes}" Placeholder="Where did you get this? From whom?"
                 AutoSize="TextChanges">
                 <Editor.Effects>
                     <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
                 </Editor.Effects>
             </Editor>
     	</StackLayout>
-    </Frame>
+    
 </ContentView>
