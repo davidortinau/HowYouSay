@@ -2,44 +2,35 @@
 using Xamarin.Forms;
 using HowYouSay.Models;
 
-namespace HowYouSay.Pages
+namespace HowYouSay.Shared.Views
 {
-	public partial class HomeView : ContentPage
-	{
-		HomeViewModel _vm;
-		 	
-		public HomeViewModel ViewModel { get => _vm; set 
-			{
-				_vm = value; 
-				BindingContext = _vm;
-				_vm.Navigation = this.Navigation;
-			}
-		}
+    public partial class HomeView : ContentPage
+    {
+        public HomeView()
+        {
+            InitializeComponent();
 
-		public HomeView()
-		{
-			InitializeComponent();
+            //Shell.SetBackButtonBehavior(this, new BackButtonBehavior()
+            //{
+            //    TextOverride = ""
+            //});
+        }
 
-			//On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            ViewModel?.OnAppearing();
+        }
 
-			Xamarin.Forms.NavigationPage.SetBackButtonTitle(this, "");
-		}
+        void OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            ViewModel.EditEntry((VocabEntry)e.Item);
 
-		protected override void OnAppearing()
-		{
-			base.OnAppearing();
-			_vm?.OnAppearing();
-		}
+        }
 
-		void OnItemTapped(object sender, ItemTappedEventArgs e)
-		{
-			_vm.EditEntry((VocabEntry)e.Item);
-
-		}
-
-		void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-		{
-			(sender as ListView).SelectedItem = null;
-		}
-	}
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            (sender as ListView).SelectedItem = null;
+        }
+    }
 }

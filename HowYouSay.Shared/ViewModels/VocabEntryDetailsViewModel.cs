@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
 using HowYouSay.Models;
-using HowYouSay.Pages;
+using HowYouSay.Shared.Views;
 using MvvmHelpers;
 using Realms;
 using Xamarin.Forms;
 
 namespace HowYouSay.ViewModels
 {
+    [QueryProperty("ID", "id")]
     public class VocabEntryDetailsViewModel : BaseViewModel
     {
         Realm _realm;
@@ -43,6 +44,14 @@ namespace HowYouSay.ViewModels
             }
         }
 
+        public string ID
+        {
+            set
+            {
+                SetEntry(value);
+            }
+        }
+
         public void SetEntry(string entryId)
         {
             if (!string.IsNullOrEmpty(entryId))
@@ -70,6 +79,11 @@ namespace HowYouSay.ViewModels
             var q = from e in Entry.Translations
                     select new TranslationViewModel(e);
             Translations = q.ToList();
+            
+            OnPropertyChanged(nameof(Title));
+            OnPropertyChanged(nameof(Translations));
+            OnPropertyChanged(nameof(CurrentTranslationIndex));
+            OnPropertyChanged(nameof(IsBookmarked));
         }
 
         public bool HasAudio
@@ -90,7 +104,6 @@ namespace HowYouSay.ViewModels
 
         internal void OnAppearing()
         {
-
             if (Entry == null)
             {
                 // we don't have one so bail
@@ -102,7 +115,7 @@ namespace HowYouSay.ViewModels
         {
             get
             {
-                if (Entry.Translations.Count > 0)
+                if (Entry?.Translations.Count > 0)
                 {
                     // how can I get the default language translation?
                     // Entry.Translations.Where(x => x.Language == mydefault)
@@ -115,6 +128,9 @@ namespace HowYouSay.ViewModels
             }
             set
             {
+                if (string.IsNullOrEmpty(value))
+                    return;
+
                 _realm.Write(() =>
                 {
                     if (Entry.Translations.Count > 0)
@@ -204,7 +220,7 @@ namespace HowYouSay.ViewModels
         {
             get
             {
-                return Entry.IsBookmarked;
+                return (Entry != null) ? Entry.IsBookmarked : false;
             }
             set
             {

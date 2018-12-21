@@ -5,7 +5,7 @@
 	xmlns:local="clr-namespace:HowYouSay"
     xmlns:effects="clr-namespace:HowYouSay.Effects"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-	x:Class="HowYouSay.Views.TranslationCardView">
+	x:Class="HowYouSay.Shared.Views.TranslationCardView">
  
     <ContentView.Resources>
         <StyleSheet Source="../Styles/TranslationCardView.css"/>

@@ -1,29 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <CustomCommands>
-      <CustomCommands>
-        <Command>
-          <type>BeforeBuild</type>
-          <command>gulp sass</command>
-          <workingdir>${ProjectDir}/Styles/sass</workingdir>
-        </Command>
-      </CustomCommands>
-    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Realm" Version="3.2.1" />
-    <PackageReference Include="Realm.Database" Version="3.2.1" />
-    <PackageReference Include="Realm.DataBinding" Version="1.2.0" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.3.2.47-beta" />
-    <PackageReference Include="Xamarin.Forms" Version="3.3.0.893527-pre3" />
-    <PackageReference Include="LiveXAML" Version="2.1.41" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.1.44944" />
+    <PackageReference Include="LiveXAML" Version="2.1.58" />
     <PackageReference Include="Plugin.AudioRecorder" Version="1.1.0" />
     <PackageReference Include="CarouselView.FormsPlugin" Version="5.2.0" />
+    <PackageReference Include="Realm" Version="3.3.0" />
+    <PackageReference Include="Realm.Database" Version="3.3.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,12 +25,6 @@
     </Compile>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\LanguagesPage.xaml.cs">
       <DependentUpon>..\Pages\Pages\LanguagesPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\MasterPage.xaml.cs">
-      <DependentUpon>..\Pages\Pages\MasterPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\MenuPage.xaml.cs">
-      <DependentUpon>..\Pages\Pages\MenuPage.xaml</DependentUpon>
     </Compile>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\StarterPhrasesPage.xaml.cs">
       <DependentUpon>..\Pages\Pages\StarterPhrasesPage.xaml</DependentUpon>

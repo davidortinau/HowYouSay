@@ -5,7 +5,7 @@
     xmlns:behaviors="using:HowYouSay.Behaviors"
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="HowYouSay.Pages.LanguagesPage">
+    x:Class="HowYouSay.Shared.Views.LanguagesPage">
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />

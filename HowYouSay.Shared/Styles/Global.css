@@ -1,3 +1,8 @@
-.ContentPage {
-  padding: 6;
-  background-color: #11313F; }
+.shell {
+    background-color: #11313F;
+    -xf-FlyoutBackgroundColor: #CC0000;
+}
+
+^Shell {
+    -xf-flyout-background-color: #CC0000;
+}

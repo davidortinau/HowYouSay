@@ -6,6 +6,7 @@ using Plugin.AudioRecorder;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
+using CarouselViewRenderer = CarouselView.FormsPlugin.iOS.CarouselViewRenderer;
 
 namespace HowYouSay.iOS
 {
@@ -22,13 +23,9 @@ namespace HowYouSay.iOS
                 TextColor = UIColor.White
             });
 
+            global::Xamarin.Forms.Forms.SetFlags("Shell_Experimental", "CollectionView_Experimental", "CarouselView_Experimental");
             global::Xamarin.Forms.Forms.Init();
             CarouselViewRenderer.Init();
-
-            // Code for starting up the Xamarin Test Cloud Agent
-#if DEBUG
-            Xamarin.Calabash.Start();
-#endif
 
             LoadApplication(new App());
 

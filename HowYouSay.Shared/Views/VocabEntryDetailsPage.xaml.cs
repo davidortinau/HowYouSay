@@ -2,52 +2,40 @@
 using CarouselView.FormsPlugin.Abstractions;
 using HowYouSay.ViewModels;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 // TODO add empty cards for languages I am using but haven't added a translation yet. 
 // gamify it so I need an entry AND a recording to complete each vocabulary entry.
 
-namespace HowYouSay.Pages
+namespace HowYouSay.Shared.Views
 {
-	public partial class VocabEntryDetailsPage : ContentPage
-	{
-		VocabEntryDetailsViewModel _vm;
-		public VocabEntryDetailsViewModel ViewModel
-		{
-			get => _vm;
-			set
-			{
-				_vm = value;
-				_vm.Navigation = this.Navigation;
-				_vm.SetEntry(EntryId);
-				BindingContext = _vm;
-			}
-		}
+    public partial class VocabEntryDetailsPage : ContentPage
+    {
+        public VocabEntryDetailsPage()
+        {
+            InitializeComponent();
+        }
 
-		public string EntryId;
+        public string ID
+        {
+            set
+            {
+                (BindingContext as VocabEntryDetailsViewModel)?.SetEntry(value);
+            }
+        }
 
-		public VocabEntryDetailsPage()
-		{
-			InitializeComponent();
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
-		}
+            (BindingContext as VocabEntryDetailsViewModel)?.OnAppearing();
+        }
 
-		protected override void OnAppearing()
-		{
-			base.OnAppearing();
-			if (_vm == null)
-			{
-				ViewModel = new VocabEntryDetailsViewModel();
-				_vm.SetEntry(EntryId);
-			}
-			_vm?.OnAppearing();
-		}
-
-		protected override void OnDisappearing()
-		{
-			base.OnDisappearing();
-			_vm?.OnDisappearing();
-			//BindingContext = null;
-		}
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            (BindingContext as VocabEntryDetailsViewModel)?.OnDisappearing();
+        }
 
         //string _currentColorState = "Normal";
         //void ToggleValid_OnClicked(object sender, EventArgs e)
@@ -65,5 +53,5 @@ namespace HowYouSay.Pages
         //    VisualStateManager.GoToState(myLabel, _currentColorState);
         //    //VisualStateManager.GoToState(AButton, _currentColorState);
         //}
-	}
+    }
 }

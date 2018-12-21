@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace HowYouSay.Shared.Views
 {
-    public partial class StarterPhrasesPage : ContentPage
+    public partial class AboutPage : ContentPage
     {
-        public StarterPhrasesPage()
+        public AboutPage()
         {
             InitializeComponent();
         }

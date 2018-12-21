@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    BackgroundColor="#11313F" 
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     ios:Page.UseSafeArea="true"
-    BackgroundColor="#11313F" 
     xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Shared"
     xmlns:converters="clr-namespace:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
-    x:Class="HowYouSay.Pages.HomeView">
+    xmlns:viewmodels="clr-namespace:HowYouSay.ViewModels"
+    x:Class="HowYouSay.Shared.Views.HomeView">
+    
+    <ContentPage.BindingContext>
+        <viewmodels:HomeViewModel x:Name="ViewModel"/>
+    </ContentPage.BindingContext>
+    
     <ContentPage.Resources>
         <StyleSheet Source="../Styles/HomeView.css"/>
         <ResourceDictionary>
@@ -18,16 +24,13 @@
      <ContentPage.ToolbarItems>
         <ToolbarItem Name="SearchButton" Order="Primary" Icon="icon_search.png" Priority="0" Command="{Binding SearchCommand}" />
     </ContentPage.ToolbarItems>
-
+    
     <ContentPage.Content>
         
         <RelativeLayout>
             <StackLayout
                 x:Name="toggleButtons"
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
-                RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,
-                             Property=Y,
-                             Constant=0}"
                 HeightRequest="60"
                 Orientation="Horizontal">
                 <Button
@@ -87,55 +90,55 @@
                     Factor=0.5}"
                 StyleClass="SelectedIndicator"/>
             <ActivityIndicator 
-                RelativeLayout.XConstraint =
+                            RelativeLayout.XConstraint =
+                                        "{ConstraintExpression Type=RelativeToParent,
+                                         Property=Width,
+                                         Factor=0.5,
+                                         Constant=1}"
+                            RelativeLayout.YConstraint =
+                                        "{ConstraintExpression Type=RelativeToView,
+                                        ElementName=toggleButtons,
+                                         Property=Height,
+                                         Factor=1}"
+                            IsRunning="{Binding IsBusy}" 
+                            IsVisible="{Binding IsBusy}"/>
+                        <ListView 
+                            RelativeLayout.YConstraint =
+                                        "{ConstraintExpression Type=RelativeToView,
+                                        ElementName=toggleButtons,
+                                         Property=Height,
+                                         Factor=1}"
+                            RelativeLayout.WidthConstraint=
                             "{ConstraintExpression Type=RelativeToParent,
-                             Property=Width,
-                             Factor=0.5,
-                             Constant=1}"
-                RelativeLayout.YConstraint =
-                            "{ConstraintExpression Type=RelativeToView,
-                            ElementName=toggleButtons,
-                             Property=Height,
-                             Factor=1}"
-                IsRunning="{Binding IsBusy}" 
-                IsVisible="{Binding IsBusy}"/>
-            <ListView 
-                RelativeLayout.YConstraint =
-                            "{ConstraintExpression Type=RelativeToView,
-                            ElementName=toggleButtons,
-                             Property=Height,
-                             Factor=1}"
-                RelativeLayout.WidthConstraint=
-                "{ConstraintExpression Type=RelativeToParent,
-                    Property=Width,
-                Factor=1}"
-                ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Title}" TextColor="#FFFFFF">
-                            <TextCell.ContextActions>
-                                <MenuItem Text="Delete" IsDestructive="true" 
-                                          Command="{Binding BindingContext.DeleteEntryCommand, Source={x:Reference EntriesListView}" 
-                                          CommandParameter="{Binding .}" />
-                            </TextCell.ContextActions>
-                        </TextCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Button 
-                RelativeLayout.XConstraint =
-                            "{ConstraintExpression Type=RelativeToParent,
-                             Property=Width,
-                             Factor=0.5,
-                             Constant=-30}"
-                RelativeLayout.YConstraint =
-                            "{ConstraintExpression Type=RelativeToParent,
-                             Property=Height,
-                             Factor=1,
-                            Constant=-80}"
-                Command="{Binding NavToAddCommand}"
-                StyleClass="AddButton"
-                Image="button_add.png"/>
+                                Property=Width,
+                            Factor=1}"
+                            ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <TextCell Text="{Binding Title}" TextColor="#FFFFFF">
+                                        <TextCell.ContextActions>
+                                            <MenuItem Text="Delete" IsDestructive="true" 
+                                                      Command="{Binding BindingContext.DeleteEntryCommand, Source={x:Reference EntriesListView}" 
+                                                      CommandParameter="{Binding .}" />
+                                        </TextCell.ContextActions>
+                                    </TextCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <Button 
+                            RelativeLayout.XConstraint =
+                                        "{ConstraintExpression Type=RelativeToParent,
+                                         Property=Width,
+                                         Factor=0.5,
+                                         Constant=-30}"
+                            RelativeLayout.YConstraint =
+                                        "{ConstraintExpression Type=RelativeToParent,
+                                         Property=Height,
+                                         Factor=1,
+                                        Constant=-80}"
+                            Command="{Binding NavToAddCommand}"
+                            StyleClass="AddButton"
+                            Image="button_add.png"/>
         </RelativeLayout>
 	</ContentPage.Content>
 </ContentPage>

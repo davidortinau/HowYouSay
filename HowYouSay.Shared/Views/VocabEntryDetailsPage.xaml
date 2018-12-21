@@ -3,12 +3,19 @@
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	xmlns:local="clr-namespace:HowYouSay"
-	xmlns:views="clr-namespace:HowYouSay.Views"
+	xmlns:views="clr-namespace:HowYouSay.Shared.Views"
     xmlns:effects="clr-namespace:HowYouSay.Effects"
     xmlns:converters="using:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
 	xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
-	x:Class="HowYouSay.Pages.VocabEntryDetailsPage">
-
+    xmlns:viewmodels="clr-namespace:HowYouSay.ViewModels"
+	xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+	ios:Page.UseSafeArea="true"
+	x:Class="HowYouSay.Shared.Views.VocabEntryDetailsPage">
+    
+	<ContentPage.BindingContext>
+		<viewmodels:VocabEntryDetailsViewModel/>
+	</ContentPage.BindingContext>
+    
     <ContentPage.Resources>
         <StyleSheet Source="../Styles/VocabEntryDetails.css"/>
         <ResourceDictionary>
@@ -41,7 +48,19 @@
                 <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
             </Entry.Effects>
         </Entry>
-
+	    <!--
+	    <CarouselView x:Name="TranslationsCarousel"
+	                  Grid.Row="2"
+	                  ItemsSource="{Binding Translations}" 
+	                  VerticalOptions="FillAndExpand" 
+	                  HorizontalOptions="FillAndExpand">
+		    <CarouselView.ItemTemplate>
+			    <DataTemplate>
+				    <views:TranslationCardView />
+			    </DataTemplate>
+		    </CarouselView.ItemTemplate>
+	    </CarouselView>
+-->
 		<controls:CarouselViewControl
             x:Name="TranslationsCarousel"
             Grid.Row="2"

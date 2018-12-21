@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:views="clr-namespace:HowYouSay.Shared.Views"
+       x:Class="HowYouSay.Shared.AppShell"
+       Route="base"
+       RouteHost="howyousay.com"
+       RouteScheme="app">
+    
+    <ShellContent Title="Home" Route="home" ContentTemplate="{DataTemplate views:HomeView}" />
+    <ShellContent Title="Languages" Route="languages" ContentTemplate="{DataTemplate views:LanguagesPage}"/>
+    <ShellContent Title="Starter Phrases" Route="starter" ContentTemplate="{DataTemplate views:StarterPhrasesPage}"/>
+    <ShellContent Title="About" Route="about" ContentTemplate="{DataTemplate views:AboutPage}"/>
+    
+    <!--
+    Version, Made With, Export Data, Feedback and Support, Rate Us
+    -->
+    
+    <!-- this is just here until the querystring bug is fixed -->
+    <ShellContent Title="Entry Details" Route="details" ContentTemplate="{x:DataTemplate views:VocabEntryDetailsPage}"/>
+    
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <ContentView HeightRequest="100">
+                
+            </ContentView>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+</Shell>

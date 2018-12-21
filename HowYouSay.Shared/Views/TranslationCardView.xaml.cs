@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace HowYouSay.Views
+namespace HowYouSay.Shared.Views
 {
-	public partial class TranslationCardView : ContentView
-	{
-		public TranslationCardView()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class TranslationCardView : ContentView
+    {
+        public TranslationCardView()
+        {
+            InitializeComponent();
+        }
+    }
 }

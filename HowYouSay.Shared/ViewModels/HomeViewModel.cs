@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using HowYouSay.Models;
-using HowYouSay.Pages;
+using HowYouSay.Shared.Views;
 using MvvmHelpers;
 using Realms;
 using Xamarin.Forms;
@@ -58,11 +58,9 @@ namespace HowYouSay.ViewModels
 
             NavToAddCommand = new Command(AddEntry);
             DeleteEntryCommand = new Command<VocabEntry>(DeleteEntry);
-            NavToMenuCommand = new Command(GoToMenu);
+            NavToMenuCommand = new Command<string>(GoToMenu);
             ToggleCommand = new Command<string>(Toggle);
             SearchCommand = new Command(OpenSearch);
-
-
         }
 
         async Task ConnectToRealm()
@@ -81,8 +79,7 @@ namespace HowYouSay.ViewModels
         {
             try
             {
-                var page = new VocabEntryDetailsPage();
-                await Navigation.PushAsync(page);
+                await Shell.CurrentShell.GoToAsync("app:///base/details?id=new");
             }
             catch (Exception ex)
             {
@@ -96,16 +93,17 @@ namespace HowYouSay.ViewModels
 
         }
 
-        private void GoToMenu()
+        async private void GoToMenu(string id)
         {
             //var page = new VocabEntryDetailsPage(new VocabEntryDetailsViewModel(entry));
 
             //Navigation.PushAsync(page);
+            Console.WriteLine("GoToMenu");
+            await Shell.CurrentShell.GoToAsync($"app:///home/vocab?id={id}");
         }
 
         private void Toggle(string destination)
         {
-
             IsFullTabSelected = (destination == ListTabs.FULL);
 
             if (IsFullTabSelected)
@@ -121,12 +119,14 @@ namespace HowYouSay.ViewModels
 
         internal async void EditEntry(VocabEntry entry)
         {
-            var page = new VocabEntryDetailsPage
-            {
-                EntryId = entry.Id
-            };
+            //VocabEntryDetailsPage page = new VocabEntryDetailsPage
+            //{
+            //    EntryId = entry.Id
+            //};
 
-            Navigation.PushAsync(page);
+            //Navigation.PushAsync(page);
+
+            await Shell.CurrentShell.GoToAsync($"app:///base/details?id={entry.Id}");
         }
 
         private void DeleteEntry(VocabEntry entry)
