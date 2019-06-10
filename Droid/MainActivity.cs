@@ -19,16 +19,15 @@ namespace HowYouSay.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-
-            global::Xamarin.Forms.Forms.SetFlags("Shell_Experimental");
+            global::Xamarin.Forms.Forms.SetFlags("Shell_Experimental", "FastRenderers_Experimental");
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App());
 
-            if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.RecordAudio) != Permission.Granted)
-            {
-                ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.RecordAudio }, 1);
-            }
+            //if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.RecordAudio) != Permission.Granted)
+            //{
+            //    ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.RecordAudio }, 1);
+            //}
         }
     }
 }
