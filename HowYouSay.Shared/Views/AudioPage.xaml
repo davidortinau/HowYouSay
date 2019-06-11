@@ -87,7 +87,7 @@
                 Property=Width,
                 Factor=0.5,
                 Constant=-30}"
-                Text="{Binding TimeCode}"
+                Text="{Binding TimeCode, StringFormat='{0:c}'}"
                 FontSize="13"
                 WidthRequest="60"
                 TextColor="#8ECEBF"
@@ -151,7 +151,7 @@
                 WidthRequest="102"
                 HeightRequest="102"
                 IsVisible="{Binding IsRecording}"
-                Command="{Binding StartRecordCommand}"
+                Command="{Binding StopRecordCommand}"
                 Image="button_stop"/>
 
             <Button 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using HowYouSay.Models;
@@ -12,9 +13,9 @@ namespace HowYouSay.ViewModels
     public class AudioViewModel : BaseViewModel
     {
         public INavigation Navigation { get; set; }
-        string timeCode = "00:00";
+        TimeSpan timeCode = TimeSpan.FromSeconds(0);
 
-        public string TimeCode
+        public TimeSpan TimeCode
         {
             get
             {
@@ -24,6 +25,7 @@ namespace HowYouSay.ViewModels
             private set
             {
                 timeCode = value;
+                OnPropertyChanged(nameof(TimeCode));
             }
         }
         string entryTitle = "Title";
@@ -113,8 +115,6 @@ namespace HowYouSay.ViewModels
             StopRecordCommand = new Command(StopRecording);
             PlayCommand = new Command(PlayAudio);
 
-            TimeCode = "00:00";
-
             if (vm == null) return;
 
             _entry = vm;
@@ -143,10 +143,16 @@ namespace HowYouSay.ViewModels
                 {
                     IsRecording = true;
                     var recordTask = await Recorder.StartRecording();
-                    IsRecording = false;
-                    var audioFile = Recorder.GetAudioFilePath();
-                    _entry.Translations[0].AudioPath = audioFile;
+                    //IsRecording = false;
+                    //var audioFile = Recorder.GetAudioFilePath();
+                    //_entry.Translations[0].AudioPath = audioFile;
 
+                    Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+                    {
+                        TimeCode = TimeCode.Add(TimeSpan.FromSeconds(1));
+                        Debug.WriteLine($"TimeCode: {TimeCode.ToString()}");
+                        return IsRecording; // True = Repeat again, False = Stop the timer
+                    });
                     //  TODO save the release obj
                 }
                 else
@@ -163,10 +169,15 @@ namespace HowYouSay.ViewModels
 
         private async void StopRecording()
         {
-            await Recorder.StopRecording();
-            IsRecording = false;
+            if(Recorder != null)
+                await Recorder.StopRecording();
+            
 
-            PlayAudio();
+            var audioFile = Recorder.GetAudioFilePath();
+            _entry.Translations[0].AudioPath = audioFile;
+
+            IsRecording = false;
+            //PlayAudio();
 
         }
 
