@@ -79,7 +79,7 @@ namespace HowYouSay.ViewModels
         {
             try
             {
-                await Shell.CurrentShell.GoToAsync("app:///base/details?id=new");
+                await Shell.Current.GoToAsync("//details?id=new");
             }
             catch (Exception ex)
             {
@@ -99,7 +99,7 @@ namespace HowYouSay.ViewModels
 
             //Navigation.PushAsync(page);
             Console.WriteLine("GoToMenu");
-            await Shell.CurrentShell.GoToAsync($"app:///home/vocab?id={id}");
+            await Shell.Current.GoToAsync($"app:///home/vocab?id={id}");
         }
 
         private void Toggle(string destination)
@@ -126,7 +126,7 @@ namespace HowYouSay.ViewModels
 
             //Navigation.PushAsync(page);
 
-            await Shell.CurrentShell.GoToAsync($"app:///base/details?id={entry.Id}");
+            await Shell.Current.GoToAsync($"app:///base/details?id={entry.Id}");
         }
 
         private void DeleteEntry(VocabEntry entry)

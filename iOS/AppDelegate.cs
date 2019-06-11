@@ -23,7 +23,7 @@ namespace HowYouSay.iOS
                 TextColor = UIColor.White
             });
 
-            global::Xamarin.Forms.Forms.SetFlags("Shell_Experimental", "CollectionView_Experimental", "CarouselView_Experimental");
+            global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental", "CarouselView_Experimental");
             global::Xamarin.Forms.Forms.Init();
             CarouselViewRenderer.Init();
 
