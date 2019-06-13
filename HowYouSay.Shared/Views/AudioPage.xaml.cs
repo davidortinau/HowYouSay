@@ -16,7 +16,7 @@ namespace HowYouSay.Shared.Views
                 BindingContext = _vm;
                 _vm.Navigation = Navigation;
             }
-        }
+        }       
 
         public AudioPage()
         {
@@ -26,8 +26,8 @@ namespace HowYouSay.Shared.Views
             //NavigationPage.SetBackButtonTitle(this, "Close");
             // really should be X icon
 
-            if (_vm == null)
-                BindingContext = new AudioViewModel(null);
+            //if (_vm == null)
+            //    BindingContext = new AudioViewModel(null);
 
         }
     }

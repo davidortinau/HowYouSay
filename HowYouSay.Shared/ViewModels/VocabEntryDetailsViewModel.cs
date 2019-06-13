@@ -193,7 +193,7 @@ namespace HowYouSay.ViewModels
 
         private async void GoToRecord()
         {
-            await Navigation.PushModalAsync(new AudioPage { VM = new AudioViewModel(Entry) });
+            await Shell.Current.Navigation.PushModalAsync(new AudioPage { VM = new AudioViewModel(Entry) });
         }
 
         void AddTranslation()

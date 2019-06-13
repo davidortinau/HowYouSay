@@ -59,12 +59,12 @@
     </Style>
     
     <!-- Shell Styles -->
-    <Style x:Key="BaseStyle" TargetType="Element">
-        <Setter Property="Shell.ShellBackgroundColor" Value="#11313F" />
+    <Style x:Key="BaseStyle" TargetType="Element" ApplyToDerivedTypes="True">
+        <Setter Property="Shell.BackgroundColor" Value="#11313F" />
         <Setter Property="Shell.FlyoutBackgroundColor" Value="#11313F" />
-        <Setter Property="Shell.ShellForegroundColor" Value="White" />
-        <Setter Property="Shell.ShellTitleColor" Value="White" />
-        <Setter Property="Shell.ShellDisabledColor" Value="#B4FFFFFF" />
-        <Setter Property="Shell.ShellUnselectedColor" Value="#95FFFFFF" />
+        <Setter Property="Shell.ForegroundColor" Value="White" />
+        <Setter Property="Shell.TitleColor" Value="White" />
+        <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+        <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
     </Style>
 </ResourceDictionary>
