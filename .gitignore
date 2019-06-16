@@ -40,3 +40,4 @@ Thumbs.db
 *.dotCover
 
 .vs/
+Tools/RealmWeaver.Fody.dll
