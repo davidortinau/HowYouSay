@@ -1,8 +1,5 @@
-﻿using System;
-using CarouselView.FormsPlugin.Abstractions;
-using HowYouSay.ViewModels;
+﻿using HowYouSay.ViewModels;
 using Xamarin.Forms;
-using Xamarin.Forms.Internals;
 
 // TODO add empty cards for languages I am using but haven't added a translation yet. 
 // gamify it so I need an entry AND a recording to complete each vocabulary entry.

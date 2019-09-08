@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 using HowYouSay.Models;
@@ -27,7 +28,7 @@ namespace HowYouSay.ViewModels
 
         public ICommand BookmarkCommand { get; private set; }
 
-        public IList<TranslationViewModel> Translations { get; private set; }
+        public ObservableCollection<TranslationViewModel> Translations { get; private set; }
 
         int currentTranslationIndex;
         public int CurrentTranslationIndex
@@ -78,7 +79,7 @@ namespace HowYouSay.ViewModels
 
             var q = from e in Entry.Translations
                     select new TranslationViewModel(e);
-            Translations = q.ToList();
+            Translations = new ObservableCollection<TranslationViewModel>( q.ToList() );
             
             OnPropertyChanged(nameof(Title));
             OnPropertyChanged(nameof(Translations));
@@ -208,7 +209,7 @@ namespace HowYouSay.ViewModels
             });
             if (Translations == null)
             {
-                Translations = new List<TranslationViewModel>();
+                Translations = new ObservableCollection<TranslationViewModel>();
             }
             Translations.Add(new TranslationViewModel(translation));
             OnPropertyChanged(nameof(Translations));

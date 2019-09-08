@@ -568,7 +568,7 @@
       <Version>1.3.2.47-beta</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>4.2.0.659</Version>
+      <Version>4.2.0.535587-nightly</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

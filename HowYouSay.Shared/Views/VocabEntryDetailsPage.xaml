@@ -1,101 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage 
-	xmlns="http://xamarin.com/schemas/2014/forms" 
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-	xmlns:local="clr-namespace:HowYouSay"
-	xmlns:views="clr-namespace:HowYouSay.Shared.Views"
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HowYouSay"
+    xmlns:views="clr-namespace:HowYouSay.Shared.Views"
     xmlns:effects="clr-namespace:HowYouSay.Effects"
     xmlns:converters="using:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
-	xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
     xmlns:viewmodels="clr-namespace:HowYouSay.ViewModels"
-	xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-	ios:Page.UseSafeArea="true"
-	x:Class="HowYouSay.Shared.Views.VocabEntryDetailsPage">
-    
-	<ContentPage.BindingContext>
-		<viewmodels:VocabEntryDetailsViewModel/>
-	</ContentPage.BindingContext>
-    
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    x:Class="HowYouSay.Shared.Views.VocabEntryDetailsPage">
+
+    <ContentPage.BindingContext>
+        <viewmodels:VocabEntryDetailsViewModel />
+    </ContentPage.BindingContext>
+
     <ContentPage.Resources>
-        <StyleSheet Source="../Styles/VocabEntryDetails.css"/>
+        <StyleSheet Source="../Styles/VocabEntryDetails.css" />
         <ResourceDictionary>
-            <converters:IsBookmarkedConverter x:Key="conv"/>
+            <converters:IsBookmarkedConverter x:Key="conv" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <Grid StyleClass="Content">
         <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
         </Grid.RowDefinitions>
-	
-		<Label 
+
+        <Label
             x:Name="myLabel"
             Grid.Row="0"
-            Text="{local:Translate EntryPageTitle}"
+            Text="{Binding CurrentTranslationIndex}"
             StyleClass="Title"
             XAlign="Center">
         </Label>
-		<Entry 
+        <Entry
             Grid.Row="1"
-			Text="{Binding Title}"
+            Text="{Binding Title}"
             StyleClass="TitleEntry"
             PlaceholderColor="#34686E"
             Placeholder="{local:Translate EntryInputPlaceholder}">
             <Entry.Effects>
-                <effects:InputFieldEffect ClearBackground="true" BorderWidth="0" />
+                <effects:InputFieldEffect ClearBackground="true"
+                                          BorderWidth="0" />
             </Entry.Effects>
         </Entry>
-	    <!--
-	    <CarouselView x:Name="TranslationsCarousel"
-	                  Grid.Row="2"
-	                  ItemsSource="{Binding Translations}" 
-	                  VerticalOptions="FillAndExpand" 
-	                  HorizontalOptions="FillAndExpand">
-		    <CarouselView.ItemTemplate>
-			    <DataTemplate>
-				    <views:TranslationCardView />
-			    </DataTemplate>
-		    </CarouselView.ItemTemplate>
-	    </CarouselView>
--->
-		<controls:CarouselViewControl
-            x:Name="TranslationsCarousel"
-            Grid.Row="2"
-			Orientation="Horizontal" 
-			InterPageSpacing="40" 
-            Position="{Binding CurrentTranslationIndex}"
-			ItemsSource="{Binding Translations}" 
-			VerticalOptions="FillAndExpand" 
-			HorizontalOptions="FillAndExpand">
-			<controls:CarouselViewControl.ItemTemplate>
-				<DataTemplate>
-					<views:TranslationCardView />
-				</DataTemplate>
-			</controls:CarouselViewControl.ItemTemplate>
-		</controls:CarouselViewControl>
 
-        <Button Grid.Row="2" HorizontalOptions="End" VerticalOptions="Center"
-            Image="button_add.png" 
-            x:Name="AddBtn"
-            StyleClass="RightEdgeButton"
-            Command="{Binding AddTranslationCommand}"/>
+        <CarouselView x:Name="TranslationsCarousel"
+                      Grid.Row="2"
+                      PeekAreaInsets="30"
+                      Position="{Binding CurrentTranslationIndex}"
+                      ItemsSource="{Binding Translations}"
+                      VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <views:TranslationCardView />
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
 
-		<StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" MinimumHeightRequest="100">
-			<Button 
+        <Button Grid.Row="2"
+                HorizontalOptions="End"
+                VerticalOptions="Center"
+                Image="button_add.png"
+                x:Name="AddBtn"
+                StyleClass="RightEdgeButton"
+                Command="{Binding AddTranslationCommand}" />
+
+        <StackLayout Grid.Row="3"
+                     Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     MinimumHeightRequest="100">
+            <Button
                 Command="{Binding BookmarkCommand}"
                 BackgroundColor="Transparent"
-                Image="{Binding IsBookmarked, Converter={StaticResource conv}, ConverterParameter='button_bookmark_selected.png;button_bookmark.png'}" 
-            />
-			
-			<Button 
-                Image="button_record_mini.png" 
+                Image="{Binding IsBookmarked, Converter={StaticResource conv}, ConverterParameter='button_bookmark_selected.png;button_bookmark.png'}" />
+
+            <Button
+                Image="button_record_mini.png"
                 BackgroundColor="Transparent"
-                Command="{Binding RecordCommand}"/>
-			
-		</StackLayout>
-  
-	</Grid>
+                Command="{Binding RecordCommand}" />
+
+        </StackLayout>
+
+    </Grid>
 </ContentPage>
