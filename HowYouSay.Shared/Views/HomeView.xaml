@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    BackgroundColor="#11313F" 
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#11313F"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     ios:Page.UseSafeArea="true"
     xmlns:local="clr-namespace:HowYouSay;assembly=HowYouSay.Shared"
     xmlns:converters="clr-namespace:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
     xmlns:viewmodels="clr-namespace:HowYouSay.ViewModels"
     x:Class="HowYouSay.Shared.Views.HomeView">
-    
+
     <ContentPage.BindingContext>
-        <viewmodels:HomeViewModel x:Name="ViewModel"/>
+        <viewmodels:HomeViewModel
+            x:Name="ViewModel" />
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Resources>
-        <StyleSheet Source="../Styles/HomeView.css"/>
+        <StyleSheet
+            Source="../Styles/HomeView.css" />
         <ResourceDictionary>
-            <converters:SelectedTabColorConverter x:Key="conv"/>
-            <converters:InverseBoolConverter x:Key="boolConv"/>
-        </ResourceDictionary>  
+            <converters:SelectedTabColorConverter
+                x:Key="conv" />
+            <converters:InverseBoolConverter
+                x:Key="boolConv" />
+        </ResourceDictionary>
     </ContentPage.Resources>
 
-     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="SearchButton" Order="Primary" Icon="icon_search.png" Priority="0" Command="{Binding SearchCommand}" />
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Name="SearchButton"
+            Order="Primary"
+            Icon="icon_search.png"
+            Priority="0"
+            Command="{Binding SearchCommand}" />
     </ContentPage.ToolbarItems>
-    
+
     <ContentPage.Content>
-        
         <RelativeLayout>
             <StackLayout
                 x:Name="toggleButtons"
@@ -39,106 +48,137 @@
                     VerticalOptions="Fill"
                     StyleClass="MainTab"
                     Text="{local:Translate FullListLabel}"
-                    Command="{Binding ToggleCommand}" CommandParameter="full"
-                    >
+                    Command="{Binding ToggleCommand}"
+                    CommandParameter="full">
                 </Button>
                 <Button
                     StyleClass="MainTab"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="Fill"
                     Image="icon_bookmark.png"
-                    Command="{Binding ToggleCommand}" 
+                    Command="{Binding ToggleCommand}"
                     CommandParameter="bookmarked">
                     <Button.Triggers>
-                        <DataTrigger TargetType="Button" Binding="{Binding IsFullTabSelected}" Value="true">
-                            <Setter Property="Image" Value="icon_bookmark.png" />
+                        <DataTrigger
+                            TargetType="Button"
+                            Binding="{Binding IsFullTabSelected}"
+                            Value="true">
+                            <Setter
+                                Property="Image"
+                                Value="icon_bookmark.png" />
                         </DataTrigger>
-                        <DataTrigger TargetType="Button" Binding="{Binding IsFullTabSelected}" Value="false">
-                            <Setter Property="Image" Value="icon_bookmark_selected.png" />
+                        <DataTrigger
+                            TargetType="Button"
+                            Binding="{Binding IsFullTabSelected}"
+                            Value="false">
+                            <Setter
+                                Property="Image"
+                                Value="icon_bookmark_selected.png" />
                         </DataTrigger>
                     </Button.Triggers>
                 </Button>
             </StackLayout>
-            <BoxView 
+            <BoxView
                 IsVisible="{Binding IsFullTabSelected}"
-                RelativeLayout.YConstraint =
-                            "{ConstraintExpression Type=RelativeToView,
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
                             ElementName=toggleButtons,
                              Property=Y,
                              Factor=1,
                 Constant=50}"
-                RelativeLayout.WidthConstraint =
-                "{ConstraintExpression Type=RelativeToParent,
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
                     Property=Width,
                 Factor=0.5}"
-                StyleClass="SelectedIndicator"/>
-            <BoxView 
+                StyleClass="SelectedIndicator" />
+            <BoxView
                 IsVisible="{Binding IsFullTabSelected, Converter={StaticResource boolConv}}"
-                RelativeLayout.YConstraint=
-                            "{ConstraintExpression Type=RelativeToView,
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
                             ElementName=toggleButtons,
                              Property=Y,
                              Factor=1,
                 Constant=50}"
-                RelativeLayout.WidthConstraint=
-                "{ConstraintExpression Type=RelativeToParent,
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
                     Property=Width,
                 Factor=0.5}"
-                RelativeLayout.XConstraint=
-                "{ConstraintExpression Type=RelativeToParent,
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
                     Property=Width,
                     Factor=0.5}"
-                StyleClass="SelectedIndicator"/>
-            <ActivityIndicator 
-                            RelativeLayout.XConstraint =
-                                        "{ConstraintExpression Type=RelativeToParent,
+                StyleClass="SelectedIndicator" />
+            <ActivityIndicator
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
                                          Property=Width,
                                          Factor=0.5,
                                          Constant=1}"
-                            RelativeLayout.YConstraint =
-                                        "{ConstraintExpression Type=RelativeToView,
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
                                         ElementName=toggleButtons,
                                          Property=Height,
                                          Factor=1}"
-                            IsRunning="{Binding IsBusy}" 
-                            IsVisible="{Binding IsBusy}"/>
-                        <ListView 
-                            RelativeLayout.YConstraint =
-                                        "{ConstraintExpression Type=RelativeToView,
+                IsRunning="{Binding IsBusy}"
+                IsVisible="{Binding IsBusy}" />
+            <CollectionView
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
                                         ElementName=toggleButtons,
                                          Property=Height,
                                          Factor=1}"
-                            RelativeLayout.WidthConstraint=
-                            "{ConstraintExpression Type=RelativeToParent,
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
                                 Property=Width,
                             Factor=1}"
-                            ItemsSource="{Binding Entries}" x:Name="EntriesListView" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <TextCell Text="{Binding Title}" TextColor="#FFFFFF">
-                                        <TextCell.ContextActions>
-                                            <MenuItem Text="Delete" IsDestructive="true" 
-                                                      Command="{Binding BindingContext.DeleteEntryCommand, Source={x:Reference EntriesListView}}" 
-                                                      CommandParameter="{Binding .}" />
-                                        </TextCell.ContextActions>
-                                    </TextCell>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                        <Button 
-                            RelativeLayout.XConstraint =
-                                        "{ConstraintExpression Type=RelativeToParent,
+                ItemsSource="{Binding Entries}"
+                x:Name="EntriesListView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+
+                            <SwipeView
+                                BackgroundColor="Transparent">
+                                <SwipeView.Content>
+                                    <StackLayout
+                                        BackgroundColor="Transparent">
+                                        <Label
+                                            Margin="15,6"
+                                            Text="{Binding Title}"
+                                            FontSize="16"
+                                            BackgroundColor="Transparent"
+                                            TextColor="#FFFFFF">
+                                            <Label.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                    Command="{Binding BindingContext.ViewEntryCommand, Source={x:Reference EntriesListView}}"
+                                                    CommandParameter="{Binding .}" />
+                                            </Label.GestureRecognizers>
+                                        </Label>
+                                        <BoxView
+                                            HeightRequest="1"
+                                            Margin="0,4"
+                                            HorizontalOptions="Fill"
+                                            Opacity="0.2"
+                                            BackgroundColor="White" />
+                                    </StackLayout>
+                                </SwipeView.Content>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem
+                                            Text="Delete"
+                                            IsDestructive="True"
+                                            Command="{Binding BindingContext.DeleteEntryCommand, Source={x:Reference EntriesListView}}"
+                                            CommandParameter="{Binding .}" />
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                            </SwipeView>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
                                          Property=Width,
                                          Factor=0.5,
                                          Constant=-30}"
-                            RelativeLayout.YConstraint =
-                                        "{ConstraintExpression Type=RelativeToParent,
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
                                          Property=Height,
                                          Factor=1,
                                         Constant=-80}"
-                            Command="{Binding NavToAddCommand}"
-                            StyleClass="AddButton"
-                            Image="button_add.png"/>
+                Command="{Binding NavToAddCommand}"
+                StyleClass="AddButton"
+                Image="button_add.png" />
         </RelativeLayout>
-	</ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>

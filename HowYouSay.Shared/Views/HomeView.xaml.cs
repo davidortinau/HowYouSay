@@ -22,9 +22,9 @@ namespace HowYouSay.Shared.Views
             ViewModel?.OnAppearing();
         }
 
-        void OnItemTapped(object sender, ItemTappedEventArgs e)
+        void OnItemTapped(object sender, TappedEventArgs e)
         {
-            ViewModel.EditEntry((VocabEntry)e.Item);
+            ViewModel.EditEntry((VocabEntry)e.Parameter);
 
         }
 
@@ -32,5 +32,6 @@ namespace HowYouSay.Shared.Views
         {
             (sender as ListView).SelectedItem = null;
         }
+
     }
 }

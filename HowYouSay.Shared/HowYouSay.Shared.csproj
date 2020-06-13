@@ -8,10 +8,11 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.3.2.47-beta" />
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.778476-pre1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
     <PackageReference Include="Plugin.AudioRecorder" Version="1.1.0" />
     <PackageReference Include="Realm" Version="3.3.0" />
     <PackageReference Include="Realm.Database" Version="3.3.0" />
+    <PackageReference Include="LiveSharp" Version="1.1.41" />
   </ItemGroup>
 
   <ItemGroup>

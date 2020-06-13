@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using HowYouSay.Models;
@@ -10,8 +11,39 @@ using Xamarin.Forms;
 
 namespace HowYouSay.ViewModels
 {
+    [QueryProperty("EntryID", "id")]
     public class AudioViewModel : BaseViewModel
     {
+        public string EntryID
+        {
+            set
+            {
+                SetEntry(value);
+            }
+        }
+
+        public void SetEntry(string entryId)
+        {
+            if (!string.IsNullOrEmpty(entryId))
+                _entry = _realm.Find<VocabEntry>(entryId);
+
+            if (_entry == null)
+            {
+                // kick out
+            }
+
+            //var q = from e in _entry.Translations
+            //        select new TranslationViewModel(e);
+            //Translations = new ObservableCollection<TranslationViewModel>(q.ToList());
+
+            EntryTitle = _entry.Title;
+            TranslationTitle = _entry.Translations[0].Title;
+            //OnPropertyChanged(nameof(Title));
+            //OnPropertyChanged(nameof(Translations));
+            //OnPropertyChanged(nameof(CurrentTranslationIndex));
+            //OnPropertyChanged(nameof(IsBookmarked));
+        }
+
         public INavigation Navigation { get; set; }
         TimeSpan timeCode = TimeSpan.FromSeconds(0);
 
@@ -56,8 +88,6 @@ namespace HowYouSay.ViewModels
                 translationTitle = value;
             }
         }
-
-
 
         private Realm _realm;
 
@@ -107,7 +137,7 @@ namespace HowYouSay.ViewModels
 
         private AudioRecorderService Recorder;
 
-        public AudioViewModel(VocabEntry vm)
+        public AudioViewModel()
         {
             CloseCommand = new Command(Close);
 
@@ -115,16 +145,21 @@ namespace HowYouSay.ViewModels
             StopRecordCommand = new Command(StopRecording);
             PlayCommand = new Command(PlayAudio);
 
-            if (vm == null) return;
+            var config = new RealmConfiguration() { SchemaVersion = 1 };
+            _realm = Realm.GetInstance(config);
 
-            _entry = vm;
-            EntryTitle = _entry.Title;
-            TranslationTitle = _entry.Translations[0].Title;
         }
 
         private async void Close()
         {
-            await Navigation.PopModalAsync(true);
+            await GoBack();
+        }
+
+        private static async Task GoBack()
+        {
+            var lastRoute = Shell.Current.CurrentState.Location.OriginalString;
+            lastRoute = String.Join("/", lastRoute.Split('/').Reverse().Skip(1).Reverse().ToArray());
+            await Shell.Current.GoToAsync(lastRoute);
         }
 
         private async void StartRecording()

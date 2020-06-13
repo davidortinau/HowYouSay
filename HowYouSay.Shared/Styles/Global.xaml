@@ -11,7 +11,7 @@
     <Color x:Key="accentColor">White</Color>
     <Color x:Key="darkAccentColor">#000000</Color>
     <Color x:Key="NavigationBarTextColor">White</Color>
-    <Color x:Key="NavigationBarBackgroundColor">#7c6a5c</Color>
+    <Color x:Key="NavigationBarBackgroundColor">#11313F</Color>
     <Color x:Key="textColor">#F0F0F9</Color>
     <!-- Global Sizes -->
     <x:Double x:Key="mediumTextSize">20</x:Double>

@@ -12,7 +12,8 @@ namespace HowYouSay.Shared
             InitializeComponent();
 
             Routing.RegisterRoute("details", typeof(VocabEntryDetailsPage));
-            
+            Routing.RegisterRoute("audio", typeof(AudioPage));
+
         }
     }
 }

@@ -10,6 +10,12 @@ namespace HowYouSay
     {
         public App()
         {
+            Device.SetFlags(new string[] {
+                "IndicatorView_Experimental",
+                "CarouselView_Experimental",
+                "SwipeView_Experimental"
+            });
+
             InitializeComponent();
 
             System.Diagnostics.Debug.WriteLine("====== resource debug info =========");

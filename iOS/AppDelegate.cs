@@ -1,12 +1,10 @@
 ﻿using System;
 using AVFoundation;
-using CarouselView.FormsPlugin.iOS;
 using Foundation;
 using Plugin.AudioRecorder;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using CarouselViewRenderer = CarouselView.FormsPlugin.iOS.CarouselViewRenderer;
 
 namespace HowYouSay.iOS
 {
@@ -23,9 +21,8 @@ namespace HowYouSay.iOS
                 TextColor = UIColor.White
             });
 
-            global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental", "CarouselView_Experimental");
+            
             global::Xamarin.Forms.Forms.Init();
-            CarouselViewRenderer.Init();
 
             LoadApplication(new App());
 

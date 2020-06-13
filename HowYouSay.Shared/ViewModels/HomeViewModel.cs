@@ -26,6 +26,8 @@ namespace HowYouSay.ViewModels
 
         public ICommand DeleteEntryCommand { get; private set; }
 
+        public ICommand ViewEntryCommand { get; private set; }
+
         public ICommand SearchCommand { get; private set; }
 
         public INavigation Navigation { get; set; }
@@ -58,6 +60,7 @@ namespace HowYouSay.ViewModels
 
             NavToAddCommand = new Command(AddEntry);
             DeleteEntryCommand = new Command<VocabEntry>(DeleteEntry);
+            ViewEntryCommand = new Command<VocabEntry>(EditEntry);
             NavToMenuCommand = new Command<string>(GoToMenu);
             ToggleCommand = new Command<string>(Toggle);
             SearchCommand = new Command(OpenSearch);
