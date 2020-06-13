@@ -176,7 +176,7 @@ namespace HowYouSay.ViewModels
             {
                 if (!Recorder.IsRecording)
                 {
-                    IsRecording = true;
+                    //IsRecording = true;
                     var recordTask = await Recorder.StartRecording();
                     //IsRecording = false;
                     //var audioFile = Recorder.GetAudioFilePath();
@@ -184,7 +184,7 @@ namespace HowYouSay.ViewModels
 
                     Device.StartTimer(TimeSpan.FromSeconds(1), () =>
                     {
-                        TimeCode = TimeCode.Add(TimeSpan.FromSeconds(1));
+                        //TimeCode = TimeCode.Add(TimeSpan.FromSeconds(1));
                         Debug.WriteLine($"TimeCode: {TimeCode.ToString()}");
                         return IsRecording; // True = Repeat again, False = Stop the timer
                     });
@@ -193,12 +193,13 @@ namespace HowYouSay.ViewModels
                 else
                 {
                     await Recorder.StopRecording();
-                    IsRecording = false;
+                    //IsRecording = false;
                 }
             }
             catch (Exception ex)
             {
-                // TODO something with this
+				// TODO something with this
+				Console.WriteLine(ex);
             }
         }
 
