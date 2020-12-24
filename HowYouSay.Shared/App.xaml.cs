@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using HowYouSay.Shared;
+﻿using HowYouSay.Shared;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,19 +9,13 @@ namespace HowYouSay
     {
         public App()
         {
-            Device.SetFlags(new string[] {
-                "IndicatorView_Experimental",
-                "CarouselView_Experimental",
-                "SwipeView_Experimental"
-            });
-
             InitializeComponent();
 
-            System.Diagnostics.Debug.WriteLine("====== resource debug info =========");
-            var assembly = typeof(App).GetTypeInfo().Assembly;
-            foreach (var res in assembly.GetManifestResourceNames())
-                System.Diagnostics.Debug.WriteLine("found resource: " + res);
-            System.Diagnostics.Debug.WriteLine("====================================");
+            //System.Diagnostics.Debug.WriteLine("====== resource debug info =========");
+            //var assembly = typeof(App).GetTypeInfo().Assembly;
+            //foreach (var res in assembly.GetManifestResourceNames())
+            //    System.Diagnostics.Debug.WriteLine("found resource: " + res);
+            //System.Diagnostics.Debug.WriteLine("====================================");
 
             // This lookup NOT required for Windows platforms - the Culture will be automatically set
             if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
