@@ -17,4 +17,10 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Styles\fonts\SourceSansPro-Bold.otf" />
+    <EmbeddedResource Include="Styles\fonts\SourceSansPro-Bold.otf" />
+    <None Remove="Styles\fonts\fa-solid-900.ttf" />
+    <EmbeddedResource Include="Styles\fonts\fa-solid-900.ttf" />
+  </ItemGroup>
 </Project>

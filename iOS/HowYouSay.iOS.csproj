@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\3bar.imageset\" />
+    <Folder Include="Resources" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.xib" />
@@ -490,29 +491,6 @@
     <ImageAsset Include="Assets.xcassets\3bar.imageset\icon_menu%402x.png">
       <Visible>false</Visible>
     </ImageAsset>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\SourceSansPro-Black.otf" />
-    <BundleResource Include="Resources\SourceSansPro-BlackIt.otf" />
-    <BundleResource Include="Resources\SourceSansPro-Bold.otf" />
-    <BundleResource Include="Resources\SourceSansPro-BoldIt.otf" />
-    <BundleResource Include="Resources\SourceSansPro-ExtraLight.otf" />
-    <BundleResource Include="Resources\SourceSansPro-ExtraLightIt.otf" />
-    <BundleResource Include="Resources\SourceSansPro-It.otf" />
-    <BundleResource Include="Resources\SourceSansPro-Light.otf" />
-    <BundleResource Include="Resources\SourceSansPro-LightIt.otf" />
-    <BundleResource Include="Resources\SourceSansPro-Regular.otf" />
-    <BundleResource Include="Resources\SourceSansPro-Semibold.otf" />
-    <BundleResource Include="Resources\SourceSansPro-SemiboldIt.otf" />
-    <BundleResource Include="Resources\SourceSerifPro-Black.otf" />
-    <BundleResource Include="Resources\SourceSerifPro-Bold.otf" />
-    <BundleResource Include="Resources\SourceSerifPro-ExtraLight.otf" />
-    <BundleResource Include="Resources\SourceSerifPro-Light.otf" />
-    <BundleResource Include="Resources\SourceSerifPro-Regular.otf" />
-    <BundleResource Include="Resources\SourceSerifPro-Semibold.otf" />
-    <BundleResource Include="Resources\gotham_book.ttf" />
-    <BundleResource Include="Resources\gotham_light.ttf" />
-    <BundleResource Include="Resources\gotham_medium.ttf" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Plugin.AudioRecorder">

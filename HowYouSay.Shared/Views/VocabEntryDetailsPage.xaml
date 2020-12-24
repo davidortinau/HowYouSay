@@ -5,9 +5,9 @@
     xmlns:local="clr-namespace:HowYouSay"
     xmlns:views="clr-namespace:HowYouSay.Shared.Views"
     xmlns:effects="clr-namespace:HowYouSay.Effects"
-    xmlns:converters="using:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
     xmlns:viewmodels="clr-namespace:HowYouSay.ViewModels"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:valueConverters="clr-namespace:HowYouSay.ValueConverters;assembly=HowYouSay.Shared"
     ios:Page.UseSafeArea="true"
     x:Class="HowYouSay.Shared.Views.VocabEntryDetailsPage">
 
@@ -18,18 +18,13 @@
     <ContentPage.Resources>
         <StyleSheet Source="../Styles/VocabEntryDetails.css" />
         <ResourceDictionary>
-            <converters:IsBookmarkedConverter x:Key="conv" />
+            <valueConverters:IsBookmarkedConverter x:Key="conv" />
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid StyleClass="Content">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20" />
-            <RowDefinition Height="60" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="100" />
-        </Grid.RowDefinitions>
-
+    <Grid StyleClass="Content"
+          RowDefinitions="20,60,*,100">
+        
         <Label
             x:Name="myLabel"
             Grid.Row="0"
@@ -66,10 +61,21 @@
         <Button Grid.Row="2"
                 HorizontalOptions="End"
                 VerticalOptions="Center"
-                Image="button_add.png"
+                TranslationX="25"
+                WidthRequest="60"
+                HeightRequest="60"
+                BackgroundColor="{StaticResource callToActionColor}"
+                Text="{x:Static local:IconFont.Plus}"
+                FontSize="24"
+                FontFamily="FontAwesome"
+                TextColor="White"
                 x:Name="AddBtn"
-                StyleClass="RightEdgeButton"
-                Command="{Binding AddTranslationCommand}" />
+                Command="{Binding AddTranslationCommand}">
+                <Button.Clip>
+                    <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
+                </Button.Clip>
+            </Button>
+            
 
         <StackLayout Grid.Row="3"
                      Orientation="Horizontal"

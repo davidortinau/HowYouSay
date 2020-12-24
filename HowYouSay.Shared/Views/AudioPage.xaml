@@ -6,8 +6,8 @@
     xmlns:vm="clr-namespace:HowYouSay.ViewModels"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     ios:Page.UseSafeArea="True"
-    BackgroundColor="#11313F"
     Shell.PresentationMode="ModalAnimated"
+    ios:Page.ModalPresentationStyle="PageSheet"
     Shell.NavBarIsVisible="False"
     x:Class="HowYouSay.Shared.Views.AudioPage">
     <ContentPage.BindingContext>
