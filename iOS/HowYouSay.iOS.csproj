@@ -500,7 +500,7 @@
       <Version>5.1.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>5.0.0.1829-pre6</Version>
+      <Version>5.0.0.1874</Version>
     </PackageReference>
     <PackageReference Include="Realm.Fody">
       <Version>5.1.2</Version>

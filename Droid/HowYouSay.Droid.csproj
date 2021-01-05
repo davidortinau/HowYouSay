@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>HowYouSay.Droid</RootNamespace>
     <AssemblyName>HowYouSay.Droid</AssemblyName>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -55,6 +55,7 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <None Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
@@ -577,7 +578,7 @@
       <Version>1.6.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>5.0.0.1829-pre6</Version>
+      <Version>5.0.0.1874</Version>
     </PackageReference>
     <PackageReference Include="Realm.Fody">
       <Version>5.1.2</Version>

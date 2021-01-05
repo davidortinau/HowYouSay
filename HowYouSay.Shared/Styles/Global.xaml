@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xaml-comp compile="true" ?>
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
-                    xmlns:converters="clr-namespace:ConferenceVision.Converters" 
+                    
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <!-- Global Colors -->
     <Color x:Key="primaryColor">#303030</Color>
